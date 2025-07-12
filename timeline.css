@@ -12,16 +12,18 @@
     top: 0;
     left: 0;
     right: 0;
-    height: calc(100vh - 200px); /* Leave space for timeline at bottom */
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 0.7fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
     grid-template-areas:
-      "wall wall wall"
-      "storage work tech"
-      "social . personal";
-    gap: 15px;
-    padding: 20px;
+      "wall wall wall wall wall"
+      "storage storage work tech tech"
+      "social social timeline personal personal";
+    gap: 8px;
+    padding: 10px;
     z-index: 1;
   }
 
@@ -241,24 +243,32 @@
     transform: scale(1.1);
   }
 
+  /* Timeline Grid Area (transparent placeholder) */
+  .timeline-grid-area {
+    grid-area: timeline;
+    background: transparent;
+    pointer-events: none;
+    border: none;
+    position: relative;
+  }
+
   /* ================================================== */
   /* Responsive Design for Office Layout               */
   /* ================================================== */
   
   @media (max-width: 768px) {
     .office-container {
-      height: calc(100vh - 250px); /* More space for timeline on mobile */
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
       grid-template-areas:
-        "wall"
-        "work"
-        "storage"
-        "tech"
-        "social"
-        "personal";
-      gap: 10px;
-      padding: 15px;
+        "wall wall"
+        "storage tech"
+        "work work"
+        "social personal";
+      gap: 6px;
+      padding: 8px;
     }
 
     .zone {
@@ -301,9 +311,19 @@
 
   @media (max-width: 480px) {
     .office-container {
-      height: calc(100vh - 280px);
-      padding: 10px;
-      gap: 8px;
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas:
+        "wall"
+        "work"
+        "storage"
+        "tech"
+        "social"
+        "personal";
+      padding: 5px;
+      gap: 4px;
     }
 
     .zone-label {
@@ -784,8 +804,24 @@
     font-size: 9px;
   }
 
-  /* Ensure timeline container has higher z-index */
+  /* Ensure timeline container has higher z-index and maintains positioning */
   .cards-container {
     z-index: 10;
+    position: fixed;
+  }
+
+  /* Ensure office zones don't interfere with timeline functionality */
+  .office-container {
+    pointer-events: auto;
+  }
+
+  .office-container * {
+    pointer-events: auto;
+  }
+
+  /* Make sure timeline area in grid doesn't block timeline interaction */
+  .timeline-grid-area {
+    pointer-events: none;
+    z-index: 0;
   }
 }
