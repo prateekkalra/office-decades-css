@@ -1,0 +1,827 @@
+@import "background.css" layer(template);
+@layer template, demo;
+
+@layer demo {
+  /* ================================================== */
+  /* Office Layout Zones                               */
+  /* ================================================== */
+  
+  /* Main office container */
+  .office-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas:
+      "wall wall wall wall wall"
+      "storage storage work tech tech"
+      "social social timeline personal personal";
+    gap: 8px;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  /* Zone base styling */
+  .zone {
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .zone:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+
+  /* Zone labels */
+  .zone-label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.9);
+    padding: 3px 8px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+
+  /* Wall Zone */
+  .wall-zone {
+    grid-area: wall;
+    background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(240,240,240,0.4) 100%);
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .wall-item {
+    width: 70px;
+    height: 50px;
+    background: rgba(100,100,100,0.2);
+    border-radius: 6px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #555;
+    transition: all 0.3s ease;
+  }
+
+  .wall-item:hover {
+    background: rgba(100,100,100,0.3);
+    transform: scale(1.1);
+  }
+
+  /* Work Zone */
+  .work-zone {
+    grid-area: work;
+    background: linear-gradient(135deg, rgba(250,250,250,0.4) 0%, rgba(239,239,239,0.4) 100%);
+    justify-content: space-between;
+  }
+
+  .desk-area {
+    width: 85%;
+    height: 35%;
+    background: rgba(139, 69, 19, 0.3);
+    border-radius: 12px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .chair-area {
+    width: 55%;
+    height: 20%;
+    background: rgba(100, 100, 100, 0.3);
+    border-radius: 50%;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .work-item {
+    width: 70%;
+    height: 25%;
+    background: rgba(50, 50, 50, 0.2);
+    border-radius: 8px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 11px;
+    transition: all 0.3s ease;
+  }
+
+  /* Storage Zone */
+  .storage-zone {
+    grid-area: storage;
+    background: linear-gradient(135deg, rgba(248,248,248,0.4) 0%, rgba(232,232,232,0.4) 100%);
+  }
+
+  .storage-item {
+    width: 85%;
+    height: 28%;
+    background: rgba(70, 70, 70, 0.25);
+    border-radius: 8px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #555;
+    transition: all 0.3s ease;
+  }
+
+  .storage-item:hover {
+    background: rgba(70, 70, 70, 0.35);
+    transform: scale(1.05);
+  }
+
+  /* Tech Zone */
+  .tech-zone {
+    grid-area: tech;
+    background: linear-gradient(135deg, rgba(240,248,255,0.4) 0%, rgba(230,243,255,0.4) 100%);
+  }
+
+  .tech-item {
+    width: 75%;
+    height: 28%;
+    background: rgba(0, 100, 200, 0.25);
+    border-radius: 10px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #555;
+    transition: all 0.3s ease;
+  }
+
+  .tech-item:hover {
+    background: rgba(0, 100, 200, 0.35);
+    transform: scale(1.05);
+  }
+
+  /* Social Zone */
+  .social-zone {
+    grid-area: social;
+    background: linear-gradient(135deg, rgba(255,248,240,0.4) 0%, rgba(255,230,217,0.4) 100%);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social-item {
+    width: 45%;
+    height: 70%;
+    background: rgba(255, 165, 0, 0.25);
+    border-radius: 12px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #555;
+    transition: all 0.3s ease;
+  }
+
+  .social-item:hover {
+    background: rgba(255, 165, 0, 0.35);
+    transform: scale(1.05);
+  }
+
+  /* Personal Zone */
+  .personal-zone {
+    grid-area: personal;
+    background: linear-gradient(135deg, rgba(240,255,240,0.4) 0%, rgba(230,255,230,0.4) 100%);
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .personal-item {
+    width: 40%;
+    height: 30%;
+    background: rgba(0, 150, 0, 0.25);
+    border-radius: 50%;
+    border: 2px dashed rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #555;
+    margin: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .personal-item:hover {
+    background: rgba(0, 150, 0, 0.35);
+    transform: scale(1.1);
+  }
+
+  /* Timeline Grid Area (transparent placeholder) */
+  .timeline-grid-area {
+    grid-area: timeline;
+    background: transparent;
+    pointer-events: none;
+    border: none;
+    position: relative;
+  }
+
+  /* ================================================== */
+  /* Responsive Design for Office Layout               */
+  /* ================================================== */
+  
+  @media (max-width: 768px) {
+    .office-container {
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "wall wall"
+        "storage tech"
+        "work work"
+        "social personal";
+      gap: 6px;
+      padding: 8px;
+    }
+
+    .zone {
+      min-height: 80px;
+      padding: 10px;
+    }
+
+    .wall-zone {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 60px;
+    }
+
+    .wall-item {
+      width: 60px;
+      height: 40px;
+      margin: 2px;
+    }
+
+    .social-zone {
+      flex-direction: column;
+      min-height: 100px;
+    }
+
+    .social-item {
+      width: 80%;
+      height: 40%;
+      margin: 5px 0;
+    }
+
+    .personal-zone {
+      min-height: 80px;
+    }
+
+    .personal-item {
+      width: 30%;
+      height: 25%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .office-container {
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas:
+        "wall"
+        "work"
+        "storage"
+        "tech"
+        "social"
+        "personal";
+      padding: 5px;
+      gap: 4px;
+    }
+
+    .zone-label {
+      font-size: 9px;
+      padding: 2px 6px;
+    }
+
+    .wall-item,
+    .storage-item,
+    .tech-item,
+    .social-item,
+    .personal-item,
+    .work-item {
+      font-size: 8px;
+    }
+  }
+  /* Hide radio buttons */
+  input[type="radio"] {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+  }
+  .cards-container {
+    --base-rotation: 0deg;
+    --full-circle: 360deg;
+    --radius: 15vw;
+    --duration: 200ms;
+
+    --cards-container-size: calc(var(--radius) * 2);
+    --cards-container-padding: 2rem;
+
+    --border-color: transparent;
+
+    --label-offset: calc(var(--radius) * -1 - 1rem);
+    --label-size: 30px;
+    --label-color: #666;
+    --label-color-hover: steelblue;
+    --label-line-h: 0;
+    --label-line-h-current: 2rem;
+    --label-dot-size: 10px;
+
+    --title-top: 1.5rem;
+    --title-offset-y: 30px;
+
+    --info-top: 5rem;
+    --info-width: min(70%, 500px);
+    --info-offset-y: 30px;
+
+    box-sizing: content-box;
+    position: fixed;
+    bottom: calc(var(--cards-container-size) / -1.4 + var(--cards-container-padding));
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: var(--cards-container-size);
+    height: var(--cards-container-size);
+    padding: var(--cards-container-padding);
+   
+
+    @media (width > 600px){
+       clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+    @media (min-width: 800px) {
+        --radius: 12vw;
+        --label-size: 40px;
+        --label-dot-size: 15px;
+        --label-line-h-current: 4rem;
+        --title-top: 4rem;
+        --info-top: 8rem;
+      }
+      @media (min-width: 1200px) {
+        --label-size: 50px;
+        --border-color: var(--label-color);
+      }
+    }
+  .cards {
+    position: absolute;
+    inset: var(--cards-container-padding);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease-in-out var(--duration);
+    list-style: none;
+  }
+
+
+
+  .cards li {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    transform-origin:center;
+    display: grid;
+    place-content: center;
+    transform: rotate(calc(var(--i) * 360deg / var(--items)));
+    pointer-events: none;
+  }
+
+  .cards li > label {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transform: translateY(var(--label-offset));
+    width: var(--label-size);
+    height: var(--label-size);
+    cursor: pointer;
+    pointer-events: initial;
+    text-align: center;
+    color: var(--label-color);
+    font-size: clamp(.8rem, 2.5vw + .04rem,1rem);
+    transition: var(--duration) ease-in-out;
+
+  }
+  .cards li > label::before{
+      content: '';
+      position: absolute;
+      top: var(--cards-container-padding);
+      left: 50%;
+      translate: -50% 0;
+      width: var(--label-dot-size);
+      height: var(--label-dot-size);
+      aspect-ratio: 50%;
+      border-radius: 50%;
+      background-color: var(--label-color);
+      transition: background-color var(--duration) ease-in-out;
+  }
+
+  .cards li > label::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50% 5px;
+    width: 2px;
+    height: var(--label-line-h);
+    background-color: steelblue;
+    transition: height 300ms ease-in-out var(--label-line-delay,0ms);
+  }
+  .cards li > label:hover{
+    --label-color: var(--label-color-hover);
+  }
+
+  .cards > li > h2,
+  .cards > li > p{
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+    transform-origin: center;
+  }
+  .cards > li > h2{
+    top: var(--title-top);
+    opacity: var(--title-opacity,0);
+    translate: 0 var(--title-offset-y);
+    transition: var(--duration) ease-in-out var(--title-delay,0ms);
+  }
+  .cards > li > p{
+    top: var(--info-top);
+    margin: 0 auto;
+    width: var(--info-width);
+    z-index: 2;
+    font-size: clamp(.8rem, 2.5vw + 0.05rem, .9rem);
+    text-align: left;
+    text-wrap: pretty;
+    opacity: var(--info-opacity,0);
+    /*translate: 0 var( --info-offset-y);*/
+    transition: var(--duration) ease-in-out var(--info-delay,0ms);
+  }
+
+  /* update custom properties for checked item */
+  li:has(input:checked){
+      --label-opacity: 1;
+      --label-color: var(--label-color-hover);
+      --label-line-h: var(--label-line-h-current);
+      --label-line-delay: calc(var(--duration) * 2);
+
+      --title-opacity: 1;
+      --title-offset-y: 0;
+      --title-delay: calc(var(--duration) * 3);
+
+      --info-opacity: 1;
+      --info-offset-y: 0;
+      --info-delay: calc(var(--duration) * 4);
+      /*outline: 1px dashed red;*/
+  }
+
+  /* rotate container based on checked radio */
+  .cards:has(input:checked) {
+    transform: rotate(calc(var(--base-rotation) - (var(--index) * var(--full-circle) / var(--items))));
+  }
+  /*
+  this would be so much simpler if we could use counter values as custom property values
+  */
+  .cards:has(li:nth-child(1)>input:checked) { --index: 0; }
+  .cards:has(li:nth-child(2)>input:checked) { --index: 1; }
+  .cards:has(li:nth-child(3)>input:checked) { --index: 2; }
+  .cards:has(li:nth-child(4)>input:checked) { --index: 3; }
+  .cards:has(li:nth-child(5)>input:checked) { --index: 4; }
+  .cards:has(li:nth-child(6)>input:checked) { --index: 5; }
+  .cards:has(li:nth-child(7)>input:checked) { --index: 6; }
+  .cards:has(li:nth-child(8)>input:checked) { --index: 7; }
+  .cards:has(li:nth-child(9)>input:checked) { --index: 8; }
+  .cards:has(li:nth-child(10)>input:checked) { --index: 9; }
+  .cards:has(li:nth-child(11)>input:checked) { --index: 10; }
+  .cards:has(li:nth-child(12)>input:checked) { --index: 11; }
+  .cards:has(li:nth-child(13)>input:checked) { --index: 12; }
+  .cards:has(li:nth-child(14)>input:checked) { --index: 13; }
+  .cards:has(li:nth-child(15)>input:checked) { --index: 14; }
+  .cards:has(li:nth-child(16)>input:checked) { --index: 15; }
+  .cards:has(li:nth-child(17)>input:checked) { --index: 16; }
+  .cards:has(li:nth-child(18)>input:checked) { --index: 17; }
+  .cards:has(li:nth-child(19)>input:checked) { --index: 18; }
+  .cards:has(li:nth-child(20)>input:checked) { --index: 19; }
+  .cards:has(li:nth-child(21)>input:checked) { --index: 20; }
+  .cards:has(li:nth-child(22)>input:checked) { --index: 21; }
+  .cards:has(li:nth-child(23)>input:checked) { --index: 22; }
+  .cards:has(li:nth-child(24)>input:checked) { --index: 23; }
+  .cards:has(li:nth-child(25)>input:checked) { --index: 24; }
+  .cards:has(li:nth-child(26)>input:checked) { --index: 25; }
+
+  /* ================================================== */
+  /* Working Dynamic Decade Backgrounds                */
+  /* ================================================== */
+  
+  /* Base background with smooth transitions */
+  body {
+    transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 1950s - Mad Men Era: Light beige/cream */
+  body:has(#item-0:checked) {
+    background: #F5F5DC radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1960s - Space Age: Light orange */
+  body:has(#item-1:checked) {
+    background: #FFE4B5 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1970s - Groovy Office: Light gold */
+  body:has(#item-2:checked) {
+    background: #F0E68C radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1980s - Power Decade: Light pink */
+  body:has(#item-3:checked) {
+    background: #FFB6C1 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1990s - Dot-Com Boom: Light teal */
+  body:has(#item-4:checked) {
+    background: #E0FFFF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 2000s - Millennium Office: Light blue */
+  body:has(#item-5:checked) {
+    background: #F0F8FF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 2010s - Startup Era: Light gray */
+  body:has(#item-6:checked) {
+    background: #F8F8FF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 2020s - Hybrid Era: Light green */
+  body:has(#item-7:checked) {
+    background: #F0FFF0 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* Default 1950s background (since first radio is checked by default) */
+  body {
+    background: #F5F5DC radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* ================================================== */
+  /* Dark Text Colors for Light Backgrounds            */
+  /* ================================================== */
+  
+  /* Timeline labels */
+  .cards li > label {
+    color: #333;
+  }
+  
+  .cards li > label:hover {
+    color: #111;
+  }
+  
+  /* Card titles */
+  .cards > li > h2 {
+    color: #222;
+  }
+  
+  /* Card descriptions */
+  .cards > li > p {
+    color: #444;
+  }
+  
+  /* Active/selected state colors */
+  li:has(input:checked) label {
+    color: #000 !important;
+  }
+  
+  li:has(input:checked) h2 {
+    color: #000;
+  }
+  
+  li:has(input:checked) p {
+    color: #333;
+  }
+
+  /* ================================================== */
+  /* Decade-Responsive Zone Styling                    */
+  /* ================================================== */
+  
+  /* 1950s - Mad Men Era Styling */
+  body:has(#item-0:checked) .work-item::before {
+    content: "Typewriter";
+  }
+  body:has(#item-0:checked) .tech-item:nth-child(2)::before {
+    content: "Rotary Phone";
+  }
+  body:has(#item-0:checked) .wall-item:nth-child(2)::before {
+    content: "Analog Clock";
+  }
+  body:has(#item-0:checked) .storage-item:nth-child(3)::before {
+    content: "Hat Rack";
+  }
+
+  /* 1960s - Space Age Styling */
+  body:has(#item-1:checked) .work-item::before {
+    content: "Electric Typewriter";
+  }
+  body:has(#item-1:checked) .tech-item:nth-child(2)::before {
+    content: "Push Button Phone";
+  }
+  body:has(#item-1:checked) .wall-item:nth-child(2)::before {
+    content: "Space Age Clock";
+  }
+  body:has(#item-1:checked) .personal-item:nth-child(2)::before {
+    content: "Desk Calculator";
+  }
+
+  /* 1970s - Groovy Office Styling */
+  body:has(#item-2:checked) .work-item::before {
+    content: "IBM Selectric";
+  }
+  body:has(#item-2:checked) .tech-item:nth-child(2)::before {
+    content: "Touch Tone Phone";
+  }
+  body:has(#item-2:checked) .social-item:nth-child(3)::before {
+    content: "Shag Carpet Area";
+  }
+
+  /* 1980s - Power Decade Styling */
+  body:has(#item-3:checked) .work-item::before {
+    content: "Word Processor";
+  }
+  body:has(#item-3:checked) .tech-item:nth-child(2)::before {
+    content: "Brick Phone";
+  }
+  body:has(#item-3:checked) .tech-item:nth-child(3)::before {
+    content: "Fax Machine";
+  }
+  body:has(#item-3:checked) .personal-item:nth-child(2)::before {
+    content: "Rolodex";
+  }
+
+  /* 1990s - Dot-Com Boom Styling */
+  body:has(#item-4:checked) .work-item::before {
+    content: "Desktop PC";
+  }
+  body:has(#item-4:checked) .tech-item:nth-child(2)::before {
+    content: "Cordless Phone";
+  }
+  body:has(#item-4:checked) .tech-item:nth-child(3)::before {
+    content: "CRT Monitor";
+  }
+  body:has(#item-4:checked) .personal-item:nth-child(2)::before {
+    content: "Pager";
+  }
+
+  /* 2000s - Millennium Office Styling */
+  body:has(#item-5:checked) .work-item::before {
+    content: "Laptop";
+  }
+  body:has(#item-5:checked) .tech-item:nth-child(2)::before {
+    content: "Flip Phone";
+  }
+  body:has(#item-5:checked) .tech-item:nth-child(3)::before {
+    content: "LCD Monitor";
+  }
+  body:has(#item-5:checked) .personal-item:nth-child(2)::before {
+    content: "iPod";
+  }
+
+  /* 2010s - Startup Era Styling */
+  body:has(#item-6:checked) .work-item::before {
+    content: "MacBook";
+  }
+  body:has(#item-6:checked) .tech-item:nth-child(2)::before {
+    content: "iPhone";
+  }
+  body:has(#item-6:checked) .tech-item:nth-child(3)::before {
+    content: "Multiple Monitors";
+  }
+  body:has(#item-6:checked) .social-item:nth-child(3)::before {
+    content: "Ping Pong Table";
+  }
+
+  /* 2020s - Hybrid Era Styling */
+  body:has(#item-7:checked) .work-item::before {
+    content: "Standing Desk Setup";
+  }
+  body:has(#item-7:checked) .tech-item:nth-child(2)::before {
+    content: "Wireless Headset";
+  }
+  body:has(#item-7:checked) .tech-item:nth-child(3)::before {
+    content: "4K Webcam";
+  }
+  body:has(#item-7:checked) .social-item:nth-child(3)::before {
+    content: "Virtual Meeting";
+  }
+
+  /* Content replacement styling - hide original text and show decade-specific content */
+  .work-item,
+  .tech-item:nth-child(2),
+  .tech-item:nth-child(3),
+  .wall-item:nth-child(2),
+  .storage-item:nth-child(3),
+  .social-item:nth-child(3),
+  .personal-item:nth-child(2) {
+    color: transparent;
+    position: relative;
+  }
+
+  .work-item::before,
+  .tech-item:nth-child(2)::before,
+  .tech-item:nth-child(3)::before,
+  .wall-item:nth-child(2)::before,
+  .storage-item:nth-child(3)::before,
+  .social-item:nth-child(3)::before,
+  .personal-item:nth-child(2)::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555;
+    font-size: inherit;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 9px;
+  }
+
+  /* Ensure timeline container has higher z-index and maintains positioning */
+  .cards-container {
+    z-index: 10;
+    position: fixed;
+  }
+
+  /* Ensure office zones don't interfere with timeline functionality */
+  .office-container {
+    pointer-events: auto;
+  }
+
+  .office-container * {
+    pointer-events: auto;
+  }
+
+  /* Make sure timeline area in grid doesn't block timeline interaction */
+  .timeline-grid-area {
+    pointer-events: none;
+    z-index: 0;
+  }
+}
