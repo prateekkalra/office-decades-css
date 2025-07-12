@@ -210,4 +210,114 @@
   .cards:has(li:nth-child(24)>input:checked) { --index: 23; }
   .cards:has(li:nth-child(25)>input:checked) { --index: 24; }
   .cards:has(li:nth-child(26)>input:checked) { --index: 25; }
+
+  /* ================================================== */
+  /* Working Dynamic Decade Backgrounds                */
+  /* ================================================== */
+  
+  /* Base background with smooth transitions */
+  body {
+    transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 1950s - Mad Men Era: Light beige/cream */
+  body:has(#item-0:checked) {
+    background: #F5F5DC radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1960s - Space Age: Light orange */
+  body:has(#item-1:checked) {
+    background: #FFE4B5 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1970s - Groovy Office: Light gold */
+  body:has(#item-2:checked) {
+    background: #F0E68C radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1980s - Power Decade: Light pink */
+  body:has(#item-3:checked) {
+    background: #FFB6C1 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 1990s - Dot-Com Boom: Light teal */
+  body:has(#item-4:checked) {
+    background: #E0FFFF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 2000s - Millennium Office: Light blue */
+  body:has(#item-5:checked) {
+    background: #F0F8FF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 2010s - Startup Era: Light gray */
+  body:has(#item-6:checked) {
+    background: #F8F8FF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* 2020s - Hybrid Era: Light green */
+  body:has(#item-7:checked) {
+    background: #F0FFF0 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* Default 1950s background (since first radio is checked by default) */
+  body {
+    background: #F5F5DC radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+
+  /* ================================================== */
+  /* Dark Text Colors for Light Backgrounds            */
+  /* ================================================== */
+  
+  /* Timeline labels */
+  .cards li > label {
+    color: #333;
+  }
+  
+  .cards li > label:hover {
+    color: #111;
+  }
+  
+  /* Card titles */
+  .cards > li > h2 {
+    color: #222;
+  }
+  
+  /* Card descriptions */
+  .cards > li > p {
+    color: #444;
+  }
+  
+  /* Active/selected state colors */
+  li:has(input:checked) label {
+    color: #000 !important;
+  }
+  
+  li:has(input:checked) h2 {
+    color: #000;
+  }
+  
+  li:has(input:checked) p {
+    color: #333;
+  }
 }
