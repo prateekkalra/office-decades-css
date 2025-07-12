@@ -68,30 +68,349 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
+  /* 1950s Manual Typewriter - Complete Implementation */
   .typewriter-1950s {
+    position: relative;
     width: 70%;
     height: 25%;
-    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
-    border-radius: 6px;
-    border: 2px solid #000;
+    transform: scale(0.25);
+    transform-origin: center;
+  }
+
+  .typewriter-1950s .typewriter-base {
+    width: 500px;
+    height: 380px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 
+      0 30px 60px rgba(0,0,0,0.8),
+      inset 0 -5px 10px rgba(255,255,255,0.1),
+      inset 0 5px 10px rgba(0,0,0,0.5);
+  }
+
+  .typewriter-1950s .brand-label {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c9a961;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    letter-spacing: 3px;
+    text-shadow: 
+      0 1px 2px rgba(0,0,0,0.5),
+      0 0 5px rgba(201,169,97,0.3);
+  }
+
+  .typewriter-1950s .side-panel {
+    position: absolute;
+    width: 40px;
+    height: 200px;
+    background: linear-gradient(90deg, #2a2a2a 0%, #1a1a1a 100%);
+    top: 80px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+  }
+
+  .typewriter-1950s .side-panel.left { left: -20px; }
+  .typewriter-1950s .side-panel.right { right: -20px; }
+
+  .typewriter-1950s .vent {
+    width: 3px;
+    height: 30px;
+    background: #0a0a0a;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  .typewriter-1950s .paper-mechanism {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 60px;
+  }
+
+  .typewriter-1950s .roller {
+    width: 380px;
+    height: 50px;
+    background: linear-gradient(90deg, 
+      #3a3a3a 0%, 
+      #5a5a5a 20%, 
+      #7a7a7a 40%, 
+      #5a5a5a 60%, 
+      #3a3a3a 80%, 
+      #5a5a5a 100%);
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 
+      0 5px 15px rgba(0,0,0,0.5),
+      inset 0 -2px 5px rgba(255,255,255,0.1);
+    animation: rollerRotate-1950s 4s linear infinite;
+    background-size: 200% 100%;
+  }
+
+  @keyframes rollerRotate-1950s {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+
+  .typewriter-1950s .roller-knob {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #8a8a8a 0%, #4a4a4a 100%);
+    border-radius: 50%;
+    top: 5px;
+    box-shadow: 
+      0 2px 5px rgba(0,0,0,0.5),
+      inset 0 -2px 3px rgba(0,0,0,0.3);
+  }
+
+  .typewriter-1950s .roller-knob.left { left: -20px; }
+  .typewriter-1950s .roller-knob.right { right: -20px; }
+
+  .typewriter-1950s .roller-knob::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #2a2a2a;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.5);
+  }
+
+  .typewriter-1950s .paper {
+    width: 320px;
+    height: 250px;
+    background: linear-gradient(180deg, #fefefe 0%, #f5f5f5 100%);
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 
+      0 5px 20px rgba(0,0,0,0.3),
+      0 0 0 1px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    animation: paperFeed-1950s 10s linear infinite;
+  }
+
+  @keyframes paperFeed-1950s {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-30px); }
+  }
+
+  .typewriter-1950s .paper::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    background: repeating-linear-gradient(
+      90deg,
+      #e0e0e0 0px,
+      #e0e0e0 2px,
+      transparent 2px,
+      transparent 4px
+    );
+  }
+
+  .typewriter-1950s .paper-guide {
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    background: linear-gradient(180deg, #6a6a6a 0%, #4a4a4a 100%);
+    top: -10px;
+    border-radius: 3px;
+    box-shadow: 
+      0 2px 5px rgba(0,0,0,0.3),
+      inset 0 1px 2px rgba(255,255,255,0.2);
+  }
+
+  .typewriter-1950s .paper-guide.left { left: 20px; }
+  .typewriter-1950s .paper-guide.right { right: 20px; }
+
+  .typewriter-1950s .typed-text-1950s {
+    font-family: 'Courier', monospace;
+    font-size: 16px;
+    color: #2c2c2c;
+    line-height: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing1950s 10s steps(40) infinite;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+  }
+
+  @keyframes typing1950s {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 100%; }
+  }
+
+  .typewriter-1950s .carriage-assembly {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    right: 60px;
+    height: 40px;
+  }
+
+  .typewriter-1950s .carriage-rail {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #8a8a8a 0%, #aaa 50%, #8a8a8a 100%);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 
+      0 2px 5px rgba(0,0,0,0.3),
+      inset 0 1px 2px rgba(255,255,255,0.3);
+  }
+
+  .typewriter-1950s .carriage {
+    width: 80px;
+    height: 35px;
+    background: linear-gradient(180deg, #7a7a7a 0%, #5a5a5a 100%);
+    position: absolute;
+    bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    animation: carriageMove-1950s 10s linear infinite;
+  }
+
+  @keyframes carriageMove-1950s {
+    0%, 45% { left: 0; }
+    50%, 95% { left: calc(100% - 80px); }
+    100% { left: 0; }
+  }
+
+  .typewriter-1950s .ribbon-spools {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 50%;
+    top: 2px;
+    box-shadow: 
+      0 2px 5px rgba(0,0,0,0.3),
+      inset 0 -2px 3px rgba(0,0,0,0.5);
+  }
+
+  .typewriter-1950s .ribbon-spools.left { 
+    left: 5px; 
+    animation: spoolRotate-1950s 3s linear infinite; 
+  }
+  .typewriter-1950s .ribbon-spools.right { 
+    right: 5px; 
+    animation: spoolRotate-1950s 3s linear infinite reverse; 
+  }
+
+  @keyframes spoolRotate-1950s {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .typewriter-1950s .keyboard-section {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    right: 30px;
+    height: 180px;
+    background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 
+      inset 0 5px 10px rgba(0,0,0,0.5),
+      0 -2px 5px rgba(255,255,255,0.05);
+  }
+
+  .typewriter-1950s .key-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .typewriter-1950s .key {
+    width: 36px;
+    height: 36px;
+    background: radial-gradient(circle at 30% 30%, #f5f5f5 0%, #d0d0d0 100%);
+    border: 2px solid #8a8a8a;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
-    font-size: 9px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2a2a2a;
+    box-shadow: 
+      0 4px 8px rgba(0,0,0,0.4),
+      inset 0 2px 4px rgba(255,255,255,0.8),
+      inset 0 -2px 4px rgba(0,0,0,0.2);
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    transform: translateY(0);
+    animation: keyPress-1950s 1s ease-in-out infinite;
   }
 
-  .typewriter-1950s::before {
+  .typewriter-1950s .key::before {
     content: '';
     position: absolute;
-    top: 20%;
-    left: 15%;
-    width: 70%;
-    height: 40%;
-    background: #444;
+    width: 4px;
+    height: 15px;
+    background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 100%);
+    bottom: -15px;
     border-radius: 2px;
+    opacity: 0.5;
+  }
+
+  @keyframes keyPress-1950s {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(3px) scale(0.95); }
+  }
+
+  .typewriter-1950s .space-bar {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(180deg, #e0e0e0 0%, #b0b0b0 100%);
+    border: 2px solid #8a8a8a;
+    border-radius: 15px;
+    margin: 15px auto 0;
+    box-shadow: 
+      0 4px 8px rgba(0,0,0,0.4),
+      inset 0 2px 4px rgba(255,255,255,0.6);
+    animation: spacePress-1950s 5s ease-in-out infinite;
+  }
+
+  @keyframes spacePress-1950s {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(3px); }
+  }
+
+  .typewriter-1950s .bell {
+    position: absolute;
+    right: 40px;
+    top: 120px;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #c9a961 0%, #8a6a31 100%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-shadow: 
+      0 2px 5px rgba(0,0,0,0.3),
+      inset 0 1px 2px rgba(255,255,255,0.4);
+    animation: bellRing-1950s 10s ease-in-out infinite;
+  }
+
+  @keyframes bellRing-1950s {
+    0%, 48%, 52%, 100% { transform: rotate(0deg); }
+    49%, 51% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
   }
 
   /* ================================================== */
@@ -127,18 +446,241 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
+  /* 1960s Modern Electric Typewriter - Complete Implementation */
   .typewriter-1960s {
+    position: relative;
     width: 70%;
     height: 25%;
+    transform: scale(0.25);
+    transform-origin: center;
+  }
+
+  .typewriter-1960s .modern-base {
+    width: 480px;
+    height: 350px;
     background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 
+      0 20px 40px rgba(0,0,0,0.3),
+      inset 0 2px 5px rgba(255,255,255,0.8),
+      inset 0 -2px 5px rgba(0,0,0,0.1);
+  }
+
+  .typewriter-1960s .digital-display {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 80px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 
+      inset 0 2px 10px rgba(0,0,0,0.5),
+      0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+
+  .typewriter-1960s .display-text {
+    color: #00ff00;
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    text-shadow: 0 0 5px #00ff00;
+    white-space: nowrap;
+    animation: digitalType-1960s 8s steps(50) infinite;
+  }
+
+  @keyframes digitalType-1960s {
+    0% { width: 0; opacity: 1; }
+    50% { width: 100%; opacity: 1; }
+    100% { width: 100%; opacity: 1; }
+  }
+
+  .typewriter-1960s .cursor-modern {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background: #00ff00;
+    animation: modernBlink-1960s 0.8s infinite;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    box-shadow: 0 0 5px #00ff00;
+  }
+
+  @keyframes modernBlink-1960s {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .typewriter-1960s .modern-paper-slot {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 10px;
+    background: #2a2a2a;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+  }
+
+  .typewriter-1960s .modern-paper {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: white;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: modernPaperFeed-1960s 8s ease-in-out infinite;
+    padding: 20px;
+  }
+
+  @keyframes modernPaperFeed-1960s {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
+  }
+
+  .typewriter-1960s .modern-typed-text {
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    color: #2c2c2c;
+    line-height: 1.6;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: modernTyping-1960s 8s steps(45) infinite;
+  }
+
+  @keyframes modernTyping-1960s {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 100%; }
+  }
+
+  .typewriter-1960s .modern-keyboard {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    height: 150px;
+  }
+
+  .typewriter-1960s .modern-key-row {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+
+  .typewriter-1960s .modern-key {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #f8f8f8 0%, #e0e0e0 100%);
+    border: 1px solid #bbb;
     border-radius: 8px;
-    border: 2px solid #2E5984;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    font-size: 11px;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 
+      0 2px 4px rgba(0,0,0,0.2),
+      inset 0 1px 2px rgba(255,255,255,0.9);
+    position: relative;
+    transition: all 0.1s ease;
+    animation: modernKeyPress-1960s 2s ease-in-out infinite;
+  }
+
+  @keyframes modernKeyPress-1960s {
+    0%, 100% { 
+      transform: translateY(0); 
+      box-shadow: 
+        0 2px 4px rgba(0,0,0,0.2),
+        inset 0 1px 2px rgba(255,255,255,0.9);
+    }
+    50% { 
+      transform: translateY(2px); 
+      box-shadow: 
+        0 1px 2px rgba(0,0,0,0.2),
+        inset 0 1px 2px rgba(0,0,0,0.1);
+    }
+  }
+
+  .typewriter-1960s .modern-key.special {
+    width: 48px;
     font-size: 9px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .typewriter-1960s .modern-key.space-modern {
+    width: 180px;
+  }
+
+  .typewriter-1960s .modern-key.enter {
+    width: 60px;
+  }
+
+  .typewriter-1960s .led-panel {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .typewriter-1960s .led {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+    animation: ledBlink-1960s 3s ease-in-out infinite;
+  }
+
+  .typewriter-1960s .led.power {
+    background: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+  }
+
+  .typewriter-1960s .led.caps {
+    animation-delay: 1s;
+  }
+
+  .typewriter-1960s .led.num {
+    animation-delay: 2s;
+  }
+
+  @keyframes ledBlink-1960s {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  .typewriter-1960s .function-panel {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .typewriter-1960s .function-btn {
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+    border-radius: 5px;
+    color: #ddd;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+      0 2px 5px rgba(0,0,0,0.3),
+      inset 0 1px 2px rgba(255,255,255,0.1);
   }
 
   /* ================================================== */
