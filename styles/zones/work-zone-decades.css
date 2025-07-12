@@ -73,7 +73,7 @@
     position: relative;
     width: 70%;
     height: 25%;
-    transform: scale(0.25);
+    transform: scale(0.4);
     transform-origin: center;
   }
 
@@ -433,11 +433,11 @@
   }
 
   .chair-1960s {
-    width: 50%;
+    width: 55%;
     height: 20%;
-    background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
-    border-radius: 50%;
-    border: 2px solid #E55A31;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    border-radius: 8px;
+    border: 2px solid #FF8C00;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -446,18 +446,18 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
-  /* 1960s Modern Electric Typewriter - Complete Implementation */
+  /* 1960s Electric Typewriter - Complete Implementation */
   .typewriter-1960s {
     position: relative;
     width: 70%;
     height: 25%;
-    transform: scale(0.25);
+    transform: scale(0.4);
     transform-origin: center;
   }
 
   .typewriter-1960s .modern-base {
-    width: 480px;
-    height: 350px;
+    width: 520px;
+    height: 280px;
     background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
     border-radius: 25px;
     position: relative;

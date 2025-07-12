@@ -10,11 +10,11 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1.5fr 1fr;
     grid-template-areas:
       "wall wall wall wall wall"
-      "storage storage work tech tech"
+      "storage storage work work tech"
       "social social timeline personal personal";
     gap: 8px;
     padding: 10px;
