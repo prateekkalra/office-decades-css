@@ -446,7 +446,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
 
-  /* 1960s Electric Typewriter - Complete Implementation */
+  /* 1960s Modern Electric Typewriter - Complete Implementation */
   .typewriter-1960s {
     position: relative;
     width: 70%;
@@ -456,9 +456,9 @@
   }
 
   .typewriter-1960s .modern-base {
-    width: 520px;
-    height: 280px;
-    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    width: 480px;
+    height: 350px;
+    background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
     border-radius: 25px;
     position: relative;
     box-shadow: 
@@ -595,6 +595,7 @@
     position: relative;
     transition: all 0.1s ease;
     animation: modernKeyPress-1960s 2s ease-in-out infinite;
+    animation-delay: calc(var(--k) * 0.02s);
   }
 
   @keyframes modernKeyPress-1960s {
