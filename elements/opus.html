@@ -452,16 +452,34 @@
             width: 300px;
             height: 200px;
             background: white;
-            top: -100px;
+            top: -80px;
             left: 50%;
             transform: translateX(-50%);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             animation: modernPaperFeed 8s ease-in-out infinite;
+            padding: 20px;
         }
 
         @keyframes modernPaperFeed {
             0%, 100% { transform: translateX(-50%) translateY(0); }
             50% { transform: translateX(-50%) translateY(-20px); }
+        }
+
+        .modern-typed-text {
+            font-family: 'Consolas', monospace;
+            font-size: 14px;
+            color: #2c2c2c;
+            line-height: 1.6;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: modernTyping 8s steps(45) infinite;
+        }
+
+        @keyframes modernTyping {
+            0% { width: 0; }
+            50% { width: 100%; }
+            100% { width: 100%; }
         }
 
         /* Modern keyboard design */
@@ -690,7 +708,6 @@
                 <div class="space-bar"></div>
             </div>
         </div>
-        <div class="typewriter-label">1950s Manual Typewriter</div>
     </div>
 
     <!-- 2020 Modern Electric Typewriter -->
@@ -707,7 +724,9 @@
             </div>
 
             <div class="modern-paper-slot"></div>
-            <div class="modern-paper"></div>
+            <div class="modern-paper">
+                <div class="modern-typed-text">Hello World!<br>This is modern digital typing<br>with automatic formatting...</div>
+            </div>
 
             <div class="function-panel">
                 <div class="function-btn">MENU</div>
@@ -771,7 +790,6 @@
                 </div>
             </div>
         </div>
-        <div class="typewriter-label">2020 Modern Electric Typewriter</div>
     </div>
 </body>
 </html>
