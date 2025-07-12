@@ -42,10 +42,10 @@
 
     box-sizing: content-box;
     position: fixed;
-    bottom: 0;
+    bottom: calc(var(--cards-container-size) / -1.4 + var(--cards-container-padding));
     left: 0;
     right: 0;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto;
     width: var(--cards-container-size);
     height: var(--cards-container-size);
     padding: var(--cards-container-padding);
