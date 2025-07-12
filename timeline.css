@@ -17,7 +17,7 @@
   .cards-container {
     --base-rotation: 0deg;
     --full-circle: 360deg;
-    --radius: 40vw;
+    --radius: 15vw;
     --duration: 200ms;
 
     --cards-container-size: calc(var(--radius) * 2);
@@ -42,8 +42,10 @@
 
     box-sizing: content-box;
     position: fixed;
-    inset: 0;
-    margin: 5rem auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto 1rem auto;
     width: var(--cards-container-size);
     height: var(--cards-container-size);
     padding: var(--cards-container-padding);
@@ -53,7 +55,7 @@
        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
     }
     @media (min-width: 800px) {
-        --radius: 30vw;
+        --radius: 12vw;
         --label-size: 40px;
         --label-dot-size: 15px;
         --label-line-h-current: 4rem;
