@@ -1,0 +1,920 @@
+/* Storage Zone Decade-Specific Elements */
+@layer demo {
+  /* Base storage set styling - all hidden by default */
+  .storage-set {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Show specific decade storage sets */
+  body:has(#item-0:checked) .storage-set-1950s { display: flex; opacity: 1; }
+  body:has(#item-1:checked) .storage-set-1960s { display: flex; opacity: 1; }
+  body:has(#item-2:checked) .storage-set-1970s { display: flex; opacity: 1; }
+  body:has(#item-3:checked) .storage-set-1980s { display: flex; opacity: 1; }
+  body:has(#item-4:checked) .storage-set-1990s { display: flex; opacity: 1; }
+  body:has(#item-5:checked) .storage-set-2000s { display: flex; opacity: 1; }
+  body:has(#item-6:checked) .storage-set-2010s { display: flex; opacity: 1; }
+  body:has(#item-7:checked) .storage-set-2020s { display: flex; opacity: 1; }
+
+  /* ================================================== */
+  /* 1950s - Traditional Wood Storage                  */
+  /* ================================================== */
+  
+  .filing-cabinet-1950s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    border-radius: 6px;
+    border: 3px solid #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .filing-cabinet-1950s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #A0522D;
+    border-radius: 2px;
+    border: 1px solid #654321;
+  }
+
+  .filing-cabinet-1950s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #A0522D;
+    border-radius: 2px;
+    border: 1px solid #654321;
+  }
+
+  .coat-rack-1950s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    border-radius: 50% 50% 10% 10%;
+    border: 2px solid #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .coat-rack-1950s::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 80%;
+    background: #654321;
+    border-radius: 2px;
+  }
+
+  .coat-rack-1950s::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px;
+    background: #654321;
+    border-radius: 2px;
+  }
+
+  .plant-1950s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    border-radius: 50% 50% 20% 20%;
+    border: 2px solid #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .plant-1950s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 60%;
+    background: #228B22;
+    border-radius: 50% 50% 0% 0%;
+  }
+
+  /* ================================================== */
+  /* 1960s - Modern Metal & Color                      */
+  /* ================================================== */
+  
+  .filing-cabinet-1960s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #C0C0C0 0%, #A9A9A9 100%);
+    border-radius: 8px;
+    border: 2px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .filing-cabinet-1960s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #FF6B35;
+    border-radius: 2px;
+    border: 1px solid #E55A31;
+  }
+
+  .filing-cabinet-1960s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #FF6B35;
+    border-radius: 2px;
+    border: 1px solid #E55A31;
+  }
+
+  .coat-rack-1960s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #FF6B35 0%, #E55A31 100%);
+    border-radius: 20px;
+    border: 2px solid #CC4125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .coat-rack-1960s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 70%;
+    background: #C0C0C0;
+    border-radius: 3px;
+  }
+
+  .coat-rack-1960s::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 6px;
+    background: #C0C0C0;
+    border-radius: 3px;
+  }
+
+  .plant-1960s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #4682B4 0%, #2F4F4F 100%);
+    border-radius: 15px;
+    border: 2px solid #1C3A4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .plant-1960s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 50%;
+    background: #32CD32;
+    border-radius: 50%;
+  }
+
+  .plant-1960s::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 30%;
+    background: #228B22;
+    border-radius: 50%;
+  }
+
+  /* ================================================== */
+  /* 1970s - Earth Tones & Natural Materials          */
+  /* ================================================== */
+  
+  .filing-cabinet-1970s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #CD853F 0%, #A0522D 100%);
+    border-radius: 6px;
+    border: 3px solid #8B4513;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .filing-cabinet-1970s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #F4A460;
+    border-radius: 2px;
+    border: 1px solid #D2691E;
+  }
+
+  .filing-cabinet-1970s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #F4A460;
+    border-radius: 2px;
+    border: 1px solid #D2691E;
+  }
+
+  .coat-rack-1970s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #DAA520 0%, #B8860B 100%);
+    border-radius: 12px;
+    border: 2px solid #9B7A00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .coat-rack-1970s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 60%;
+    background: repeating-linear-gradient(
+      45deg,
+      #8B4513 0px,
+      #8B4513 4px,
+      #A0522D 4px,
+      #A0522D 8px
+    );
+    border-radius: 4px;
+  }
+
+  .plant-1970s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    border-radius: 50% 50% 15% 15%;
+    border: 2px solid #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .plant-1970s::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 70%;
+    background: #228B22;
+    clip-path: polygon(50% 0%, 80% 35%, 100% 70%, 75% 100%, 25% 100%, 0% 70%, 20% 35%);
+  }
+
+  /* ================================================== */
+  /* 1980s - Power & Status Symbols                    */
+  /* ================================================== */
+  
+  .filing-cabinet-1980s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #000000 0%, #1C1C1C 100%);
+    border-radius: 4px;
+    border: 3px solid #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFD700;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+
+  .filing-cabinet-1980s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #333;
+    border-radius: 2px;
+    border: 1px solid #FFD700;
+  }
+
+  .filing-cabinet-1980s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #333;
+    border-radius: 2px;
+    border: 1px solid #FFD700;
+  }
+
+  .coat-rack-1980s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #2F2F2F 0%, #1A1A1A 100%);
+    border-radius: 8px;
+    border: 2px solid #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFD700;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .coat-rack-1980s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 70%;
+    background: #FFD700;
+    border-radius: 4px;
+  }
+
+  .coat-rack-1980s::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 8px;
+    background: #FFD700;
+    border-radius: 4px;
+  }
+
+  .plant-1980s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #000000 0%, #1C1C1C 100%);
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFD700;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .plant-1980s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 60%;
+    background: #228B22;
+    clip-path: polygon(50% 0%, 65% 20%, 85% 25%, 70% 45%, 85% 65%, 65% 70%, 50% 90%, 35% 70%, 15% 65%, 30% 45%, 15% 25%, 35% 20%);
+  }
+
+  /* ================================================== */
+  /* 1990s - Modular & Functional Design               */
+  /* ================================================== */
+  
+  .filing-cabinet-1990s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #E6E6FA 0%, #D3D3D3 100%);
+    border-radius: 10px;
+    border: 2px solid #A9A9A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .filing-cabinet-1990s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #4682B4;
+    border-radius: 4px;
+    border: 1px solid #2F4F4F;
+  }
+
+  .filing-cabinet-1990s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #4682B4;
+    border-radius: 4px;
+    border: 1px solid #2F4F4F;
+  }
+
+  .coat-rack-1990s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #C0C0C0 0%, #A9A9A9 100%);
+    border-radius: 15px;
+    border: 2px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .coat-rack-1990s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 60%;
+    background: #4682B4;
+    border-radius: 3px;
+  }
+
+  .coat-rack-1990s::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 6px;
+    background: #4682B4;
+    border-radius: 3px;
+  }
+
+  .plant-1990s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #8FBC8F 0%, #556B2F 100%);
+    border-radius: 50%;
+    border: 2px solid #6B8E23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .plant-1990s::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 50%;
+    background: #32CD32;
+    border-radius: 50% 10% 50% 10%;
+  }
+
+  /* ================================================== */
+  /* 2000s - Digital Age & Minimalism                  */
+  /* ================================================== */
+  
+  .filing-cabinet-2000s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #E6F3FF 0%, #CCE7FF 100%);
+    border-radius: 12px;
+    border: 2px solid #87CEEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F4F4F;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .filing-cabinet-2000s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #4169E1;
+    border-radius: 6px;
+    border: 1px solid #0000CD;
+  }
+
+  .filing-cabinet-2000s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #4169E1;
+    border-radius: 6px;
+    border: 1px solid #0000CD;
+  }
+
+  .coat-rack-2000s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%);
+    border-radius: 20px;
+    border: 1px solid #C0C0C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .coat-rack-2000s::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 50%;
+    background: #4169E1;
+    border-radius: 2px;
+  }
+
+  .coat-rack-2000s::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 4px;
+    background: #4169E1;
+    border-radius: 2px;
+  }
+
+  .plant-2000s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #98FB98 0%, #90EE90 100%);
+    border-radius: 25px;
+    border: 2px solid #228B22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #006400;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .plant-2000s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 60%;
+    background: repeating-linear-gradient(
+      90deg,
+      #32CD32 0px,
+      #32CD32 2px,
+      #228B22 2px,
+      #228B22 4px
+    );
+    border-radius: 50%;
+  }
+
+  /* ================================================== */
+  /* 2010s - Smart & Stylish Storage                   */
+  /* ================================================== */
+  
+  .filing-cabinet-2010s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8F8F8 100%);
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .filing-cabinet-2010s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #FF6B35;
+    border-radius: 8px;
+    border: 1px solid #E55A31;
+  }
+
+  .filing-cabinet-2010s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #FF6B35;
+    border-radius: 8px;
+    border: 1px solid #E55A31;
+  }
+
+  .coat-rack-2010s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
+    border-radius: 25px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .coat-rack-2010s::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 40%;
+    background: #FF6B35;
+    border-radius: 1.5px;
+  }
+
+  .coat-rack-2010s::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 3px;
+    background: #FF6B35;
+    border-radius: 1.5px;
+  }
+
+  .plant-2010s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #32CD32 0%, #228B22 100%);
+    border-radius: 50% 10% 50% 10%;
+    border: 2px solid #006400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .plant-2010s::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 40%;
+    background: #98FB98;
+    border-radius: 50%;
+  }
+
+  /* ================================================== */
+  /* 2020s - Smart & Sustainable Storage               */
+  /* ================================================== */
+  
+  .filing-cabinet-2020s {
+    width: 85%;
+    height: 35%;
+    background: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
+    border-radius: 20px;
+    border: 1px solid #B0D4F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F4F4F;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .filing-cabinet-2020s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #32CD32;
+    border-radius: 10px;
+    border: 1px solid #228B22;
+  }
+
+  .filing-cabinet-2020s::after {
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    width: 70%;
+    height: 15%;
+    background: #32CD32;
+    border-radius: 10px;
+    border: 1px solid #228B22;
+  }
+
+  .coat-rack-2020s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F0F0 100%);
+    border-radius: 30px;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .coat-rack-2020s::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 30%;
+    background: #4169E1;
+    border-radius: 1px;
+  }
+
+  .coat-rack-2020s::after {
+    content: '';
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 2px;
+    background: #4169E1;
+    border-radius: 1px;
+  }
+
+  .plant-2020s {
+    width: 85%;
+    height: 28%;
+    background: linear-gradient(135deg, #98FB98 0%, #90EE90 100%);
+    border-radius: 50%;
+    border: 2px solid #32CD32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #006400;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .plant-2020s::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, #32CD32 30%, #228B22 70%);
+    border-radius: 50%;
+  }
+
+  .plant-2020s::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #4169E1;
+    border-radius: 50%;
+  }
+}

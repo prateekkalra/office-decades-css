@@ -1,0 +1,9 @@
+/* Zone Decades Main Import File */
+/* Import all zone-specific decade CSS modules */
+
+@import "work-zone-decades.css";
+@import "tech-zone-decades.css";
+@import "storage-zone-decades.css";
+@import "wall-zone-decades.css";
+@import "social-zone-decades.css";
+@import "personal-zone-decades.css";

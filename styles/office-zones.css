@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
+    position: relative;
   }
 
   .wall-item {
@@ -82,6 +83,14 @@
   .storage-zone {
     grid-area: storage;
     background: linear-gradient(135deg, rgba(248,248,248,0.4) 0%, rgba(232,232,232,0.4) 100%);
+    position: relative;
+  }
+
+  /* Tech Zone */
+  .tech-zone {
+    grid-area: tech;
+    background: linear-gradient(135deg, rgba(240,248,255,0.4) 0%, rgba(230,243,255,0.4) 100%);
+    position: relative;
   }
 
   .storage-item {
@@ -103,37 +112,13 @@
     transform: scale(1.05);
   }
 
-  /* Tech Zone */
-  .tech-zone {
-    grid-area: tech;
-    background: linear-gradient(135deg, rgba(240,248,255,0.4) 0%, rgba(230,243,255,0.4) 100%);
-  }
-
-  .tech-item {
-    width: 75%;
-    height: 28%;
-    background: rgba(0, 100, 200, 0.25);
-    border-radius: 10px;
-    border: 2px dashed rgba(0,0,0,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    color: #555;
-    transition: all 0.3s ease;
-  }
-
-  .tech-item:hover {
-    background: rgba(0, 100, 200, 0.35);
-    transform: scale(1.05);
-  }
-
   /* Social Zone */
   .social-zone {
     grid-area: social;
     background: linear-gradient(135deg, rgba(255,248,240,0.4) 0%, rgba(255,230,217,0.4) 100%);
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
   }
 
   .social-item {
@@ -161,6 +146,7 @@
     background: linear-gradient(135deg, rgba(240,255,240,0.4) 0%, rgba(230,255,230,0.4) 100%);
     flex-wrap: wrap;
     justify-content: space-around;
+    position: relative;
   }
 
   .personal-item {

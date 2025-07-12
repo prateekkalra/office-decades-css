@@ -1,0 +1,878 @@
+/* Tech Zone Decade-Specific Elements */
+@layer demo {
+  /* Base tech set styling - all hidden by default */
+  .tech-set {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Show specific decade tech sets */
+  body:has(#item-0:checked) .tech-set-1950s { display: flex; opacity: 1; }
+  body:has(#item-1:checked) .tech-set-1960s { display: flex; opacity: 1; }
+  body:has(#item-2:checked) .tech-set-1970s { display: flex; opacity: 1; }
+  body:has(#item-3:checked) .tech-set-1980s { display: flex; opacity: 1; }
+  body:has(#item-4:checked) .tech-set-1990s { display: flex; opacity: 1; }
+  body:has(#item-5:checked) .tech-set-2000s { display: flex; opacity: 1; }
+  body:has(#item-6:checked) .tech-set-2010s { display: flex; opacity: 1; }
+  body:has(#item-7:checked) .tech-set-2020s { display: flex; opacity: 1; }
+
+  /* ================================================== */
+  /* 1950s - Basic Communication Tech                  */
+  /* ================================================== */
+  
+  .rotary-phone-1950s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
+    border-radius: 50% 50% 20% 20%;
+    border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .rotary-phone-1950s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 60%;
+    border: 2px solid #444;
+    border-radius: 50%;
+  }
+
+  .rotary-phone-1950s::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: #444;
+    border-radius: 50%;
+  }
+
+  .intercom-1950s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+    border-radius: 8px;
+    border: 2px solid #3E2723;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .intercom-1950s::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+    background: #333;
+    border-radius: 4px;
+  }
+
+  .switchboard-1950s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #4A4A4A 0%, #2E2E2E 100%);
+    border-radius: 6px;
+    border: 2px solid #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .switchboard-1950s::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 40%;
+    background: repeating-linear-gradient(
+      90deg,
+      #666 0px,
+      #666 4px,
+      #333 4px,
+      #333 8px
+    );
+    border-radius: 2px;
+  }
+
+  /* ================================================== */
+  /* 1960s - Electronic Revolution                     */
+  /* ================================================== */
+  
+  .pushbutton-phone-1960s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #FF6B35 0%, #E55A31 100%);
+    border-radius: 12px;
+    border: 2px solid #CC4125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .pushbutton-phone-1960s::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    height: 40%;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .transistor-radio-1960s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #4682B4 0%, #2F4F4F 100%);
+    border-radius: 10px;
+    border: 2px solid #1C3A4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .transistor-radio-1960s::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+    background: #333;
+    border-radius: 4px;
+  }
+
+  .transistor-radio-1960s::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 15%;
+    height: 70%;
+    background: #C0C0C0;
+    border-radius: 2px;
+  }
+
+  .early-fax-1960s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #F5F5DC 0%, #E0E0E0 100%);
+    border-radius: 8px;
+    border: 2px solid #C0C0C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .early-fax-1960s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+    background: #FFF;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+  }
+
+  /* ================================================== */
+  /* 1970s - Digital Age Beginning                     */
+  /* ================================================== */
+  
+  .touchtone-phone-1970s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #CD853F 0%, #A0522D 100%);
+    border-radius: 15px 15px 5px 5px;
+    border: 2px solid #8B4513;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .touchtone-phone-1970s::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    background: #333;
+    border-radius: 4px;
+    background-image: 
+      radial-gradient(circle, #666 2px, transparent 2px),
+      radial-gradient(circle, #666 2px, transparent 2px),
+      radial-gradient(circle, #666 2px, transparent 2px);
+    background-size: 8px 8px;
+    background-position: 2px 2px, 10px 2px, 6px 10px;
+  }
+
+  .calculator-1970s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #708090 0%, #556B8D 100%);
+    border-radius: 8px;
+    border: 2px solid #465A75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .calculator-1970s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 25%;
+    background: #000;
+    border-radius: 2px;
+  }
+
+  .calculator-1970s::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 60%;
+    height: 35%;
+    background: 
+      repeating-linear-gradient(
+        0deg,
+        #AAA 0px,
+        #AAA 4px,
+        #777 4px,
+        #777 6px
+      );
+    border-radius: 2px;
+  }
+
+  .copier-1970s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #A9A9A9 0%, #808080 100%);
+    border-radius: 10px;
+    border: 2px solid #696969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .copier-1970s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+  }
+
+  /* ================================================== */
+  /* 1980s - Personal Computer Era                     */
+  /* ================================================== */
+  
+  .brick-phone-1980s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
+    border-radius: 25px 25px 5px 5px;
+    border: 2px solid #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFD700;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .brick-phone-1980s::before {
+    content: '';
+    position: absolute;
+    top: -15%;
+    left: 45%;
+    width: 10%;
+    height: 30%;
+    background: #FFD700;
+    border-radius: 2px;
+  }
+
+  .fax-machine-1980s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #F5F5DC 0%, #E0E0E0 100%);
+    border-radius: 6px;
+    border: 2px solid #C0C0C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .fax-machine-1980s::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: #FFF;
+    border: 1px solid #AAA;
+    border-radius: 4px;
+  }
+
+  .fax-machine-1980s::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 20%;
+    background: #000;
+    border-radius: 2px;
+  }
+
+  .early-computer-1980s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #F5F5DC 0%, #D3D3D3 100%);
+    border-radius: 8px;
+    border: 2px solid #A9A9A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .early-computer-1980s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+    background: #000;
+    border-radius: 4px;
+  }
+
+  .early-computer-1980s::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    right: 20%;
+    width: 25%;
+    height: 15%;
+    background: #32CD32;
+    border-radius: 2px;
+  }
+
+  /* ================================================== */
+  /* 1990s - PC Revolution                             */
+  /* ================================================== */
+  
+  .cordless-phone-1990s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #4682B4 0%, #2F4F4F 100%);
+    border-radius: 20px 20px 5px 5px;
+    border: 2px solid #1C3A4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .cordless-phone-1990s::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    width: 20%;
+    height: 25%;
+    background: #1C3A4F;
+    border-radius: 2px;
+  }
+
+  .pc-tower-1990s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #E6E6FA 0%, #D3D3D3 100%);
+    border-radius: 6px;
+    border: 2px solid #A9A9A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .pc-tower-1990s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: #F0F0F0;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+  }
+
+  .pc-tower-1990s::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    background: #000;
+    border-radius: 2px;
+  }
+
+  .crt-monitor-1990s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #F5F5DC 0%, #E0E0E0 100%);
+    border-radius: 15px 15px 5px 5px;
+    border: 2px solid #A9A9A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .crt-monitor-1990s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+    background: #000;
+    border-radius: 8px;
+  }
+
+  .crt-monitor-1990s::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 15%;
+    background: #CCC;
+    border-radius: 4px;
+  }
+
+  /* ================================================== */
+  /* 2000s - Mobile Revolution                         */
+  /* ================================================== */
+  
+  .flip-phone-2000s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #C0C0C0 0%, #A9A9A9 100%);
+    border-radius: 15px;
+    border: 2px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .flip-phone-2000s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 30%;
+    background: #000;
+    border-radius: 4px;
+  }
+
+  .flip-phone-2000s::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    width: 40%;
+    height: 30%;
+    background: #333;
+    border-radius: 4px;
+  }
+
+  .laptop-2000s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
+    border-radius: 10px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .laptop-2000s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: #000;
+    border-radius: 6px;
+  }
+
+  .laptop-2000s::after {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    width: 60%;
+    height: 20%;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  .lcd-monitor-2000s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #E6F3FF 0%, #CCE7FF 100%);
+    border-radius: 12px;
+    border: 2px solid #87CEEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F4F4F;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .lcd-monitor-2000s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: #000;
+    border-radius: 6px;
+  }
+
+  .lcd-monitor-2000s::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 15%;
+    background: #87CEEB;
+    border-radius: 4px;
+  }
+
+  /* ================================================== */
+  /* 2010s - Smart Device Era                          */
+  /* ================================================== */
+  
+  .smartphone-2010s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
+    border-radius: 20px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .smartphone-2010s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: #4169E1;
+    border-radius: 8px;
+  }
+
+  .smartphone-2010s::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 8%;
+    background: #333;
+    border-radius: 50%;
+  }
+
+  .tablet-2010s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%);
+    border-radius: 15px;
+    border: 2px solid #C0C0C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .tablet-2010s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: #000;
+    border-radius: 8px;
+  }
+
+  .multiple-monitors-2010s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
+    border-radius: 8px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .multiple-monitors-2010s::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 35%;
+    height: 60%;
+    background: #4169E1;
+    border-radius: 4px;
+  }
+
+  .multiple-monitors-2010s::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 35%;
+    height: 60%;
+    background: #4169E1;
+    border-radius: 4px;
+  }
+
+  /* ================================================== */
+  /* 2020s - Wireless & Remote Work Era               */
+  /* ================================================== */
+  
+  .wireless-headset-2020s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F0F0 100%);
+    border-radius: 25px;
+    border: 2px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+  .wireless-headset-2020s::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background: #2F2F2F;
+    border-radius: 50%;
+  }
+
+  .wireless-headset-2020s::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 15%;
+    background: #2F2F2F;
+    border-radius: 10px;
+  }
+
+  .smart-speaker-2020s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    border-radius: 50%;
+    border: 2px solid #2E5984;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .smart-speaker-2020s::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    background: #1C3A4F;
+    border-radius: 50%;
+  }
+
+  .smart-speaker-2020s::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: #32CD32;
+    border-radius: 50%;
+  }
+
+  .webcam-setup-2020s {
+    width: 75%;
+    height: 28%;
+    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
+    border-radius: 12px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 9px;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  }
+
+  .webcam-setup-2020s::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background: #4169E1;
+    border-radius: 8px;
+  }
+
+  .webcam-setup-2020s::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 20%;
+    background: #FF0000;
+    border-radius: 50%;
+  }
+}
