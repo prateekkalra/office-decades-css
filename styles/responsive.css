@@ -1,0 +1,87 @@
+/* Responsive Design for Office Layout */
+@layer demo {
+  @media (max-width: 768px) {
+    .office-container {
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "wall wall"
+        "storage tech"
+        "work work"
+        "social personal";
+      gap: 6px;
+      padding: 8px;
+    }
+
+    .zone {
+      min-height: 80px;
+      padding: 10px;
+    }
+
+    .wall-zone {
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 60px;
+    }
+
+    .wall-item {
+      width: 60px;
+      height: 40px;
+      margin: 2px;
+    }
+
+    .social-zone {
+      flex-direction: column;
+      min-height: 100px;
+    }
+
+    .social-item {
+      width: 80%;
+      height: 40%;
+      margin: 5px 0;
+    }
+
+    .personal-zone {
+      min-height: 80px;
+    }
+
+    .personal-item {
+      width: 30%;
+      height: 25%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .office-container {
+      width: 100vw;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas:
+        "wall"
+        "work"
+        "storage"
+        "tech"
+        "social"
+        "personal";
+      padding: 5px;
+      gap: 4px;
+    }
+
+    .zone-label {
+      font-size: 9px;
+      padding: 2px 6px;
+    }
+
+    .wall-item,
+    .storage-item,
+    .tech-item,
+    .social-item,
+    .personal-item,
+    .work-item {
+      font-size: 8px;
+    }
+  }
+}

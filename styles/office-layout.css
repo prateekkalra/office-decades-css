@@ -1,0 +1,81 @@
+/* Office Layout Container and Grid Structure */
+@layer demo {
+  /* Main office container */
+  .office-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas:
+      "wall wall wall wall wall"
+      "storage storage work tech tech"
+      "social social timeline personal personal";
+    gap: 8px;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  /* Zone base styling */
+  .zone {
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .zone:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+
+  /* Zone labels */
+  .zone-label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.9);
+    padding: 3px 8px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+
+  /* Timeline Grid Area (transparent placeholder) */
+  .timeline-grid-area {
+    grid-area: timeline;
+    background: transparent;
+    pointer-events: none;
+    border: none;
+    position: relative;
+  }
+
+  /* Ensure office zones don't interfere with timeline functionality */
+  .office-container {
+    pointer-events: auto;
+  }
+
+  .office-container * {
+    pointer-events: auto;
+  }
+
+  /* Make sure timeline area in grid doesn't block timeline interaction */
+  .timeline-grid-area {
+    pointer-events: none;
+    z-index: 0;
+  }
+}

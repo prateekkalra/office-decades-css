@@ -1,0 +1,141 @@
+/* Decade-Responsive Zone Content */
+@layer demo {
+  /* 1950s - Mad Men Era Styling */
+  body:has(#item-0:checked) .work-item::before {
+    content: "Typewriter";
+  }
+  body:has(#item-0:checked) .tech-item:nth-child(2)::before {
+    content: "Rotary Phone";
+  }
+  body:has(#item-0:checked) .wall-item:nth-child(2)::before {
+    content: "Analog Clock";
+  }
+  body:has(#item-0:checked) .storage-item:nth-child(3)::before {
+    content: "Hat Rack";
+  }
+
+  /* 1960s - Space Age Styling */
+  body:has(#item-1:checked) .work-item::before {
+    content: "Electric Typewriter";
+  }
+  body:has(#item-1:checked) .tech-item:nth-child(2)::before {
+    content: "Push Button Phone";
+  }
+  body:has(#item-1:checked) .wall-item:nth-child(2)::before {
+    content: "Space Age Clock";
+  }
+  body:has(#item-1:checked) .personal-item:nth-child(2)::before {
+    content: "Desk Calculator";
+  }
+
+  /* 1970s - Groovy Office Styling */
+  body:has(#item-2:checked) .work-item::before {
+    content: "IBM Selectric";
+  }
+  body:has(#item-2:checked) .tech-item:nth-child(2)::before {
+    content: "Touch Tone Phone";
+  }
+  body:has(#item-2:checked) .social-item:nth-child(3)::before {
+    content: "Shag Carpet Area";
+  }
+
+  /* 1980s - Power Decade Styling */
+  body:has(#item-3:checked) .work-item::before {
+    content: "Word Processor";
+  }
+  body:has(#item-3:checked) .tech-item:nth-child(2)::before {
+    content: "Brick Phone";
+  }
+  body:has(#item-3:checked) .tech-item:nth-child(3)::before {
+    content: "Fax Machine";
+  }
+  body:has(#item-3:checked) .personal-item:nth-child(2)::before {
+    content: "Rolodex";
+  }
+
+  /* 1990s - Dot-Com Boom Styling */
+  body:has(#item-4:checked) .work-item::before {
+    content: "Desktop PC";
+  }
+  body:has(#item-4:checked) .tech-item:nth-child(2)::before {
+    content: "Cordless Phone";
+  }
+  body:has(#item-4:checked) .tech-item:nth-child(3)::before {
+    content: "CRT Monitor";
+  }
+  body:has(#item-4:checked) .personal-item:nth-child(2)::before {
+    content: "Pager";
+  }
+
+  /* 2000s - Millennium Office Styling */
+  body:has(#item-5:checked) .work-item::before {
+    content: "Laptop";
+  }
+  body:has(#item-5:checked) .tech-item:nth-child(2)::before {
+    content: "Flip Phone";
+  }
+  body:has(#item-5:checked) .tech-item:nth-child(3)::before {
+    content: "LCD Monitor";
+  }
+  body:has(#item-5:checked) .personal-item:nth-child(2)::before {
+    content: "iPod";
+  }
+
+  /* 2010s - Startup Era Styling */
+  body:has(#item-6:checked) .work-item::before {
+    content: "MacBook";
+  }
+  body:has(#item-6:checked) .tech-item:nth-child(2)::before {
+    content: "iPhone";
+  }
+  body:has(#item-6:checked) .tech-item:nth-child(3)::before {
+    content: "Multiple Monitors";
+  }
+  body:has(#item-6:checked) .social-item:nth-child(3)::before {
+    content: "Ping Pong Table";
+  }
+
+  /* 2020s - Hybrid Era Styling */
+  body:has(#item-7:checked) .work-item::before {
+    content: "Standing Desk Setup";
+  }
+  body:has(#item-7:checked) .tech-item:nth-child(2)::before {
+    content: "Wireless Headset";
+  }
+  body:has(#item-7:checked) .tech-item:nth-child(3)::before {
+    content: "4K Webcam";
+  }
+  body:has(#item-7:checked) .social-item:nth-child(3)::before {
+    content: "Virtual Meeting";
+  }
+
+  /* Content replacement styling - hide original text and show decade-specific content */
+  .work-item,
+  .tech-item:nth-child(2),
+  .tech-item:nth-child(3),
+  .wall-item:nth-child(2),
+  .storage-item:nth-child(3),
+  .social-item:nth-child(3),
+  .personal-item:nth-child(2) {
+    color: transparent;
+    position: relative;
+  }
+
+  .work-item::before,
+  .tech-item:nth-child(2)::before,
+  .tech-item:nth-child(3)::before,
+  .wall-item:nth-child(2)::before,
+  .storage-item:nth-child(3)::before,
+  .social-item:nth-child(3)::before,
+  .personal-item:nth-child(2)::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555;
+    font-size: inherit;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 9px;
+  }
+}
