@@ -11,6 +11,7 @@
 - `base.css` - Base styling, variables, and radio button hiding
 - `office-layout.css` - Office container and CSS Grid layout
 - `office-zones.css` - Individual zone styling (wall, storage, work, tech, social, personal)
+- `work-zone-decades.css` - Decade-specific work zone elements with visual styling
 - `timeline.css` - Timeline navigation component
 - `decade-themes.css` - Decade-specific background colors and typography
 - `decade-content.css` - Decade-responsive zone content changes
