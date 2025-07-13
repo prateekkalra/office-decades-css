@@ -763,6 +763,8 @@
     position: relative;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     border: 3px solid #333;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .slack-header {
@@ -805,12 +807,14 @@
     position: absolute;
     top: 60px;
     left: 70px;
-    width: 120px;
+    width: 110px;
     height: 160px;
     background: #fff;
-    padding: 10px;
-    font-size: 10px;
+    padding: 8px;
+    font-size: 9px;
     color: #333;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .chat-message {
@@ -819,6 +823,11 @@
     background: #f8f8f8;
     border-radius: 5px;
     border-left: 3px solid #4a154b;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    box-sizing: border-box;
 }
 
 /* 2020s - Zoom */
