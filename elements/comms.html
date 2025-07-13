@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Devices Through the Decades</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .timeline {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .timeline-title {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .decade-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .decade-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 300px;
+            max-width: 350px;
+        }
+
+        .decade-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        .decade-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .decade-year {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .device-name {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* 1950s - Rotary Telephone */
+        .rotary-phone {
+            width: 220px;
+            height: 240px;
+            margin: 0 auto 20px;
+            position: relative;
+            background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+            border-radius: 50%;
+            box-shadow: 
+                0 0 30px rgba(0,0,0,0.5),
+                inset 0 0 20px rgba(0,0,0,0.3),
+                inset 0 5px 10px rgba(255,255,255,0.1);
+        }
+
+        .rotary-dial {
+            width: 180px;
+            height: 180px;
+            background: 
+                radial-gradient(circle at 30% 30%, #444, #222),
+                conic-gradient(from 0deg, #333, #444, #333, #444, #333);
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            box-shadow: 
+                inset 0 0 20px rgba(0,0,0,0.8),
+                inset 0 -5px 10px rgba(0,0,0,0.6),
+                0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        .dial-center {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #555, #222);
+            border-radius: 50%;
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+        }
+
+        .dial-holes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .dial-hole {
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle, #000, #111);
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 
+                inset 0 0 8px rgba(0,0,0,0.9),
+                0 1px 2px rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .dial-hole:nth-child(1) { top: 15px; left: 77px; }
+        .dial-hole:nth-child(2) { top: 28px; left: 115px; }
+        .dial-hole:nth-child(3) { top: 55px; left: 135px; }
+        .dial-hole:nth-child(4) { top: 90px; left: 140px; }
+        .dial-hole:nth-child(5) { top: 125px; left: 125px; }
+        .dial-hole:nth-child(6) { top: 150px; left: 95px; }
+        .dial-hole:nth-child(7) { top: 150px; left: 60px; }
+        .dial-hole:nth-child(8) { top: 125px; left: 30px; }
+        .dial-hole:nth-child(9) { top: 90px; left: 15px; }
+        .dial-hole:nth-child(10) { top: 55px; left: 20px; }
+
+        .phone-handset {
+            width: 140px;
+            height: 45px;
+            background: linear-gradient(145deg, #1a1a1a, #333);
+            border-radius: 25px;
+            position: absolute;
+            top: -35px;
+            left: 40px;
+            box-shadow: 
+                0 8px 20px rgba(0,0,0,0.4),
+                inset 0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        .handset-speaker {
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #000, #222);
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        .handset-speaker::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: radial-gradient(circle, #111, #000);
+            border-radius: 50%;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+        }
+
+        .handset-mic {
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle, #000, #222);
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+        }
+
+        .handset-grip {
+            width: 80px;
+            height: 8px;
+            background: linear-gradient(90deg, transparent, #555, transparent);
+            position: absolute;
+            top: 18px;
+            left: 30px;
+            border-radius: 4px;
+        }
+
+        .phone-cord {
+            width: 6px;
+            height: 40px;
+            background: linear-gradient(90deg, #333, #555, #333);
+            position: absolute;
+            top: 210px;
+            left: 107px;
+            border-radius: 3px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+        }
+
+        .cord-coil {
+            width: 8px;
+            height: 8px;
+            border: 2px solid #444;
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: -1px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+
+        .phone-base-ring {
+            width: 240px;
+            height: 20px;
+            background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            box-shadow: 
+                0 5px 15px rgba(0,0,0,0.5),
+                inset 0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        /* 1960s - Touch-Tone Phone */
+        .touch-tone-phone {
+            width: 200px;
+            height: 260px;
+            margin: 0 auto 20px;
+            background: linear-gradient(145deg, #8b4513, #654321);
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 
+                0 15px 30px rgba(0,0,0,0.4),
+                inset 0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        .touch-handset {
+            width: 160px;
+            height: 50px;
+            background: linear-gradient(145deg, #654321, #8b4513);
+            border-radius: 25px;
+            position: absolute;
+            top: -25px;
+            left: 20px;
+            box-shadow: 
+                0 10px 20px rgba(0,0,0,0.3),
+                inset 0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        .touch-handset-speaker {
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle, #000, #333);
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            box-shadow: inset 0 0 8px rgba(0,0,0,0.8);
+        }
+
+        .touch-handset-mic {
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #000, #333);
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+        }
+
+        .touch-handset-grip {
+            width: 100px;
+            height: 10px;
+            background: linear-gradient(90deg, transparent, #444, transparent);
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            border-radius: 5px;
+        }
+
+        .keypad {
+            position: absolute;
+            top: 80px;
+            left: 35px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            width: 130px;
+        }
+
+        .key {
+            width: 35px;
+            height: 30px;
+            background: linear-gradient(145deg, #f8f8f8, #e0e0e0);
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 
+                0 3px 6px rgba(0,0,0,0.2),
+                inset 0 1px 2px rgba(255,255,255,0.8);
+            cursor: pointer;
+        }
+
+        .key:hover {
+            background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+            transform: translateY(1px);
+        }
+
+        .key:active {
+            box-shadow: 
+                0 1px 3px rgba(0,0,0,0.2),
+                inset 0 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .phone-cord-touch {
+            width: 8px;
+            height: 50px;
+            background: linear-gradient(90deg, #444, #666, #444);
+            position: absolute;
+            bottom: 15px;
+            left: 25px;
+            border-radius: 4px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+        }
+
+        .cord-spiral {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #555;
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            left: -2px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+
+        .cord-spiral:nth-child(2) {
+            top: 25px;
+            left: 0px;
+            width: 8px;
+            height: 8px;
+        }
+
+        .phone-label {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f0f0f0;
+            font-size: 10px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .phone-base-touch {
+            width: 220px;
+            height: 25px;
+            background: linear-gradient(145deg, #654321, #8b4513);
+            border-radius: 50%;
+            position: absolute;
+            bottom: -12px;
+            left: -10px;
+            box-shadow: 
+                0 8px 20px rgba(0,0,0,0.4),
+                inset 0 2px 5px rgba(255,255,255,0.1);
+        }
+
+        /* 1970s - Fax Machine */
+        .fax-machine {
+            width: 280px;
+            height: 180px;
+            margin: 0 auto 20px;
+            background: linear-gradient(145deg, #f0f0f0, #d8d8d8);
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 
+                0 15px 30px rgba(0,0,0,0.3),
+                inset 0 2px 5px rgba(255,255,255,0.8);
+        }
+
+        .fax-top-panel {
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            box-shadow: 
+                0 2px 5px rgba(0,0,0,0.1),
+                inset 0 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .fax-display {
+            width: 80px;
+            height: 25px;
+            background: linear-gradient(145deg, #000, #111);
+            position: absolute;
+            top: 18px;
+            left: 25px;
+            border-radius: 3px;
+            color: #0f0;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            box-shadow: 
+                inset 0 0 10px rgba(0,0,0,0.8),
+                0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .fax-display::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+            border-radius: 3px;
+        }
+
+        .fax-buttons {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+        }
+
+        .fax-button {
+            width: 25px;
+            height: 20px;
+            background: linear-gradient(145deg, #f8f8f8, #e0e0e0);
+            border: 1px solid #999;
+            border-radius: 3px;
+            box-shadow: 
+                0 2px 4px rgba(0,0,0,0.2),
+                inset 0 1px 2px rgba(255,255,255,0.8);
+            cursor: pointer;
+        }
+
+        .fax-button:hover {
+            background: linear-gradient(145deg, #e8e8e8, #d0d0d0);
+        }
+
+        .fax-button:active {
+            box-shadow: 
+                0 1px 2px rgba(0,0,0,0.2),
+                inset 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .fax-labels {
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+            width: 112px;
+        }
+
+        .fax-label {
+            font-size: 6px;
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .paper-slot {
+            width: 220px;
+            height: 4px;
+            background: linear-gradient(90deg, #333, #555, #333);
+            position: absolute;
+            top: 70px;
+            left: 30px;
+            border-radius: 2px;
+            box-shadow: 
+                inset 0 0 3px rgba(0,0,0,0.8),
+                0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .paper-guides {
+            position: absolute;
+            top: 67px;
+            left: 25px;
+            width: 230px;
+            height: 10px;
+        }
+
+        .paper-guide {
+            width: 8px;
+            height: 10px;
+            background: linear-gradient(145deg, #ccc, #999);
+            position: absolute;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .paper-guide:first-child { left: 0; }
+        .paper-guide:last-child { right: 0; }
+
+        .paper-tray {
+            width: 200px;
+            height: 85px;
+            background: linear-gradient(145deg, #f8f8f8, #e8e8e8);
+            border: 3px solid #ccc;
+            position: absolute;
+            bottom: 15px;
+            left: 40px;
+            border-radius: 5px;
+            box-shadow: 
+                0 5px 10px rgba(0,0,0,0.2),
+                inset 0 2px 5px rgba(255,255,255,0.8);
+        }
+
+        .paper-stack {
+            width: 180px;
+            height: 60px;
+            background: linear-gradient(145deg, #fff, #f5f5f5);
+            position: absolute;
+            bottom: 8px;
+            left: 10px;
+            border-radius: 2px;
+            box-shadow: 
+                0 2px 5px rgba(0,0,0,0.1),
+                inset 0 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .paper-sheets {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .paper-sheet {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #f0f0f0, #fff, #f0f0f0);
+            position: absolute;
+            border-radius: 1px;
+        }
+
+        .paper-sheet:nth-child(1) { top: 10px; }
+        .paper-sheet:nth-child(2) { top: 20px; }
+        .paper-sheet:nth-child(3) { top: 30px; }
+        .paper-sheet:nth-child(4) { top: 40px; }
+
+        .fax-logo {
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .status-lights {
+            position: absolute;
+            top: 20px;
+            right: 160px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .status-light {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            box-shadow: 
+                0 0 5px rgba(0,0,0,0.3),
+                inset 0 1px 2px rgba(255,255,255,0.5);
+        }
+
+        .status-light.green {
+            background: radial-gradient(circle, #0f0, #080);
+            box-shadow: 
+                0 0 8px rgba(0,255,0,0.5),
+                inset 0 1px 2px rgba(255,255,255,0.5);
+        }
+
+        .status-light.red {
+            background: radial-gradient(circle, #f00, #800);
+        }
+
+        .status-light.yellow {
+            background: radial-gradient(circle, #ff0, #880);
+        }
+            width: 200px;
+            height: 3px;
+            background: #333;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+
+        .paper-tray {
+            width: 180px;
+            height: 80px;
+            background: #f5f5f5;
+            border: 2px solid #ccc;
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            border-radius: 3px;
+        }
+
+        /* 1980s - Pager */
+        .pager {
+            width: 120px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: #2c3e50;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .pager-screen {
+            width: 80px;
+            height: 20px;
+            background: #000;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            border-radius: 2px;
+            color: #0f0;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+        }
+
+        .pager-buttons {
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .pager-button {
+            width: 20px;
+            height: 15px;
+            background: #555;
+            border-radius: 2px;
+            border: 1px solid #777;
+        }
+
+        .pager-antenna {
+            width: 2px;
+            height: 15px;
+            background: #777;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+        }
+
+        /* 1990s - Desktop Computer */
+        .desktop-computer {
+            width: 200px;
+            height: 180px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .monitor {
+            width: 180px;
+            height: 130px;
+            background: #f0f0f0;
+            border: 8px solid #666;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .screen {
+            width: 160px;
+            height: 110px;
+            background: #000;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 2px;
+            color: #0f0;
+            font-size: 10px;
+            padding: 5px;
+            font-family: monospace;
+        }
+
+        .monitor-stand {
+            width: 60px;
+            height: 30px;
+            background: #666;
+            position: absolute;
+            bottom: 10px;
+            left: 60px;
+            border-radius: 5px;
+        }
+
+        .base {
+            width: 100px;
+            height: 20px;
+            background: #888;
+            position: absolute;
+            bottom: 0;
+            left: 40px;
+            border-radius: 10px;
+        }
+
+        /* 2000s - BlackBerry */
+        .blackberry {
+            width: 120px;
+            height: 180px;
+            margin: 0 auto 20px;
+            background: #333;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .bb-screen {
+            width: 100px;
+            height: 60px;
+            background: #000;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 8px;
+            padding: 5px;
+            font-family: monospace;
+        }
+
+        .bb-keyboard {
+            position: absolute;
+            top: 90px;
+            left: 10px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2px;
+            width: 100px;
+        }
+
+        .bb-key {
+            width: 16px;
+            height: 12px;
+            background: #555;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-size: 8px;
+            color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bb-trackball {
+            width: 15px;
+            height: 15px;
+            background: #888;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 52px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        /* 2010s - Slack */
+        .slack-app {
+            width: 200px;
+            height: 250px;
+            margin: 0 auto 20px;
+            background: #fff;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 3px solid #333;
+        }
+
+        .slack-header {
+            width: 100%;
+            height: 40px;
+            background: #4a154b;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .slack-sidebar {
+            width: 60px;
+            height: 200px;
+            background: #3f0e40;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border-radius: 0 0 0 12px;
+        }
+
+        .slack-channel {
+            width: 50px;
+            height: 20px;
+            background: #481349;
+            margin: 5px 5px;
+            border-radius: 3px;
+            font-size: 8px;
+            color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slack-chat {
+            position: absolute;
+            top: 60px;
+            left: 70px;
+            width: 120px;
+            height: 160px;
+            background: #fff;
+            padding: 10px;
+            font-size: 10px;
+            color: #333;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 5px;
+            background: #f8f8f8;
+            border-radius: 5px;
+            border-left: 3px solid #4a154b;
+        }
+
+        /* 2020s - Zoom */
+        .zoom-app {
+            width: 220px;
+            height: 180px;
+            margin: 0 auto 20px;
+            background: #2d8cff;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .zoom-header {
+            width: 100%;
+            height: 30px;
+            background: #1e6bb8;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+            height: 120px;
+        }
+
+        .video-participant {
+            background: #000;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .participant-name {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            color: white;
+            font-size: 8px;
+            background: rgba(0,0,0,0.5);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .zoom-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .zoom-button {
+            width: 30px;
+            height: 25px;
+            background: #333;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+        }
+
+        .zoom-button.active {
+            background: #ff4444;
+        }
+
+        @media (max-width: 768px) {
+            .decade-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .decade-card {
+                min-width: 280px;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <h1 class="timeline-title">Communication Through the Decades</h1>
+        
+        <div class="decade-container">
+            <!-- 1950s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">1950s</div>
+                    <div class="device-name">📞 Rotary Telephone</div>
+                </div>
+                                    <div class="rotary-phone">
+                    <div class="phone-handset">
+                        <div class="handset-speaker"></div>
+                        <div class="handset-mic"></div>
+                        <div class="handset-grip"></div>
+                    </div>
+                    <div class="rotary-dial">
+                        <div class="dial-center"></div>
+                        <div class="dial-holes">
+                            <div class="dial-hole">1</div>
+                            <div class="dial-hole">2</div>
+                            <div class="dial-hole">3</div>
+                            <div class="dial-hole">4</div>
+                            <div class="dial-hole">5</div>
+                            <div class="dial-hole">6</div>
+                            <div class="dial-hole">7</div>
+                            <div class="dial-hole">8</div>
+                            <div class="dial-hole">9</div>
+                            <div class="dial-hole">0</div>
+                        </div>
+                    </div>
+                    <div class="phone-cord">
+                        <div class="cord-coil"></div>
+                    </div>
+                    <div class="phone-base-ring"></div>
+                </div>
+                <p>The iconic rotary phone required dialing each number by rotating the dial clockwise. A true mechanical marvel of its time!</p>
+            </div>
+
+            <!-- 1960s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">1960s</div>
+                    <div class="device-name">📞 Touch-Tone Desk Phone</div>
+                </div>
+                <div class="touch-tone-phone">
+                    <div class="touch-handset">
+                        <div class="touch-handset-speaker"></div>
+                        <div class="touch-handset-mic"></div>
+                        <div class="touch-handset-grip"></div>
+                    </div>
+                    <div class="phone-label">TOUCH-TONE</div>
+                    <div class="keypad">
+                        <div class="key">1</div>
+                        <div class="key">2</div>
+                        <div class="key">3</div>
+                        <div class="key">4</div>
+                        <div class="key">5</div>
+                        <div class="key">6</div>
+                        <div class="key">7</div>
+                        <div class="key">8</div>
+                        <div class="key">9</div>
+                        <div class="key">*</div>
+                        <div class="key">0</div>
+                        <div class="key">#</div>
+                    </div>
+                    <div class="phone-cord-touch">
+                        <div class="cord-spiral"></div>
+                        <div class="cord-spiral"></div>
+                    </div>
+                    <div class="phone-base-touch"></div>
+                </div>
+                <p>Touch-tone technology revolutionized calling with push-button convenience, making dialing faster and more reliable.</p>
+            </div>
+
+            <!-- 1970s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">1970s</div>
+                    <div class="device-name">📠 Fax Machine</div>
+                </div>
+                <div class="fax-machine">
+                    <div class="fax-display">READY</div>
+                    <div class="fax-buttons">
+                        <div class="fax-button"></div>
+                        <div class="fax-button"></div>
+                        <div class="fax-button"></div>
+                        <div class="fax-button"></div>
+                        <div class="fax-button"></div>
+                        <div class="fax-button"></div>
+                    </div>
+                    <div class="paper-slot"></div>
+                    <div class="paper-tray"></div>
+                </div>
+                <p>Fax machines enabled instant document transmission over phone lines, transforming business communications worldwide.</p>
+            </div>
+
+            <!-- 1980s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">1980s</div>
+                    <div class="device-name">📟 Pager (Beeper)</div>
+                </div>
+                <div class="pager">
+                    <div class="pager-antenna"></div>
+                    <div class="pager-screen">555-0123</div>
+                    <div class="pager-buttons">
+                        <div class="pager-button"></div>
+                        <div class="pager-button"></div>
+                        <div class="pager-button"></div>
+                    </div>
+                </div>
+                <p>Pagers provided instant numeric messaging, keeping professionals connected on-the-go. The beep meant someone needed you!</p>
+            </div>
+
+            <!-- 1990s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">1990s</div>
+                    <div class="device-name">🖥 Desktop Computer with Email</div>
+                </div>
+                <div class="desktop-computer">
+                    <div class="monitor">
+                        <div class="screen">
+                            > Inbox (3)<br>
+                            > From: boss@company.com<br>
+                            > Subject: Meeting Today<br>
+                            > ________________<br>
+                            > You have mail!
+                        </div>
+                    </div>
+                    <div class="monitor-stand"></div>
+                    <div class="base"></div>
+                </div>
+                <p>Email on desktop computers transformed workplace communication, making instant written correspondence possible across the globe.</p>
+            </div>
+
+            <!-- 2000s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">2000s</div>
+                    <div class="device-name">📱 BlackBerry Smartphone</div>
+                </div>
+                <div class="blackberry">
+                    <div class="bb-screen">
+                        BlackBerry<br>
+                        Messages: 5<br>
+                        Emails: 12<br>
+                        Calendar
+                    </div>
+                    <div class="bb-keyboard">
+                        <div class="bb-key">Q</div>
+                        <div class="bb-key">W</div>
+                        <div class="bb-key">E</div>
+                        <div class="bb-key">R</div>
+                        <div class="bb-key">T</div>
+                        <div class="bb-key">A</div>
+                        <div class="bb-key">S</div>
+                        <div class="bb-key">D</div>
+                        <div class="bb-key">F</div>
+                        <div class="bb-key">G</div>
+                        <div class="bb-key">Z</div>
+                        <div class="bb-key">X</div>
+                        <div class="bb-key">C</div>
+                        <div class="bb-key">V</div>
+                        <div class="bb-key">B</div>
+                    </div>
+                    <div class="bb-trackball"></div>
+                </div>
+                <p>BlackBerry devices brought mobile email and messaging to professionals, earning the nickname "CrackBerry" for their addictive nature.</p>
+            </div>
+
+            <!-- 2010s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">2010s</div>
+                    <div class="device-name">💬 Slack (Team Chat)</div>
+                </div>
+                <div class="slack-app">
+                    <div class="slack-header">
+                        #general - Team Chat
+                    </div>
+                    <div class="slack-sidebar">
+                        <div class="slack-channel">#gen</div>
+                        <div class="slack-channel">#dev</div>
+                        <div class="slack-channel">#mkt</div>
+                        <div class="slack-channel">#fun</div>
+                    </div>
+                    <div class="slack-chat">
+                        <div class="chat-message">
+                            <strong>John:</strong> Hey team! 👋
+                        </div>
+                        <div class="chat-message">
+                            <strong>Sarah:</strong> Morning! Ready for standup?
+                        </div>
+                        <div class="chat-message">
+                            <strong>Mike:</strong> Let's discuss the new feature
+                        </div>
+                    </div>
+                </div>
+                <p>Slack revolutionized team communication with organized channels, real-time messaging, and seamless file sharing for modern workplaces.</p>
+            </div>
+
+            <!-- 2020s -->
+            <div class="decade-card">
+                <div class="decade-header">
+                    <div class="decade-year">2020s</div>
+                    <div class="device-name">🎥 Zoom (Video Conferencing)</div>
+                </div>
+                <div class="zoom-app">
+                    <div class="zoom-header">
+                        Team Meeting - 4 participants
+                    </div>
+                    <div class="video-grid">
+                        <div class="video-participant">
+                            <div class="participant-name">You</div>
+                        </div>
+                        <div class="video-participant">
+                            <div class="participant-name">Sarah M.</div>
+                        </div>
+                        <div class="video-participant">
+                            <div class="participant-name">John D.</div>
+                        </div>
+                        <div class="video-participant">
+                            <div class="participant-name">Lisa K.</div>
+                        </div>
+                    </div>
+                    <div class="zoom-controls">
+                        <div class="zoom-button">🎤</div>
+                        <div class="zoom-button">📹</div>
+                        <div class="zoom-button active">📞</div>
+                    </div>
+                </div>
+                <p>Zoom and video conferencing became essential for remote work and virtual meetings, connecting people face-to-face across distances.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
