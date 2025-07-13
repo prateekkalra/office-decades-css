@@ -2264,7 +2264,7 @@
     transform: rotatex(-45deg);
     width: 500px;
     height: 300px;
-    background: no-repeat bottom linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: no-repeat center url('../../images/Color-Splash-Purple.jpg');
     background-size: cover;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
