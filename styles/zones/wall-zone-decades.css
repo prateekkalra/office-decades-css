@@ -31,14 +31,14 @@
   
   /* 1950s Office Clock */
   .office-clock {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     background: 
       radial-gradient(circle at 30% 30%, #ffffff 0%, #f8f8f8 40%, #e8e8e8 70%, #d0d0d0 100%);
     border-radius: 50%;
-    border: 3px solid #8B4513;
+    border: 6px solid #8B4513;
     box-shadow: 
       0 0 15px rgba(0,0,0,0.5),
       inset 0 0 10px rgba(0,0,0,0.1),
@@ -48,8 +48,8 @@
   .office-clock::before {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 18px;
+    height: 18px;
     background: 
       radial-gradient(circle, #8B4513 0%, #654321 100%);
     border-radius: 50%;
@@ -63,8 +63,8 @@
   .office-clock::after {
     content: '';
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
     border: 1px solid rgba(139, 69, 19, 0.3);
     border-radius: 50%;
     top: 50%;
@@ -76,7 +76,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 8px;
+    font-size: 18px;
     font-weight: bold;
     color: #333;
     font-family: 'Georgia', serif;
@@ -84,10 +84,10 @@
 
   .office-number {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 22px;
     text-align: center;
-    line-height: 10px;
+    line-height: 22px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   }
 
@@ -101,25 +101,25 @@
   }
 
   .office-hour {
-    width: 2px;
-    height: 20px;
-    margin-left: -1px;
+    width: 4px;
+    height: 45px;
+    margin-left: -2px;
     bottom: 50%;
     animation: clockwise-12h 43200s linear infinite;
   }
 
   .office-minute {
-    width: 1px;
-    height: 28px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 63px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-1h 3600s linear infinite;
   }
 
   .office-second {
-    width: 1px;
-    height: 32px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 72px;
+    margin-left: -1px;
     bottom: 50%;
     background: linear-gradient(to top, #c41e3a 0%, #ff4444 100%);
     animation: clockwise-1m 60s linear infinite;
@@ -199,14 +199,14 @@
   
   /* 1960s Atomic Clock */
   .atomic-clock {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     background: 
       radial-gradient(circle at 40% 40%, #ff6b35 0%, #ff8c00 50%, #ff4500 100%);
     border-radius: 50%;
-    border: 2px solid #2c3e50;
+    border: 4px solid #2c3e50;
     box-shadow: 
       0 0 20px rgba(255,107,53,0.6),
       inset 0 0 10px rgba(0,0,0,0.2);
@@ -220,8 +220,8 @@
 
   .atomic-center {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 27px;
+    height: 27px;
     background: 
       radial-gradient(circle, #2c3e50 0%, #1a1a1a 100%);
     border-radius: 50%;
@@ -251,18 +251,18 @@
   }
 
   .atomic-ring:nth-child(1) { 
-    width: 60px; 
-    height: 60px; 
+    width: 135px; 
+    height: 135px; 
     animation: atomic-rotate 20s linear infinite reverse;
   }
   .atomic-ring:nth-child(2) { 
-    width: 48px; 
-    height: 48px; 
+    width: 108px; 
+    height: 108px; 
     animation: atomic-rotate 15s linear infinite;
   }
   .atomic-ring:nth-child(3) { 
-    width: 36px; 
-    height: 36px; 
+    width: 81px; 
+    height: 81px; 
     animation: atomic-rotate 10s linear infinite reverse;
   }
 
@@ -279,8 +279,8 @@
 
   .atomic-dot {
     position: absolute;
-    width: 3px;
-    height: 3px;
+    width: 7px;
+    height: 7px;
     background: 
       radial-gradient(circle, #2c3e50 0%, #1a1a1a 100%);
     border-radius: 50%;
@@ -298,25 +298,25 @@
   }
 
   .atomic-hour {
-    width: 2px;
-    height: 18px;
-    margin-left: -1px;
+    width: 4px;
+    height: 40px;
+    margin-left: -2px;
     bottom: 50%;
     animation: clockwise-12h 43200s linear infinite;
   }
 
   .atomic-minute {
-    width: 1px;
-    height: 25px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 56px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-1h 3600s linear infinite;
   }
 
   .atomic-second {
-    width: 1px;
-    height: 28px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 63px;
+    margin-left: -1px;
     bottom: 50%;
     background: linear-gradient(to top, #fff 0%, #f0f0f0 100%);
     animation: clockwise-1m 60s linear infinite;
@@ -400,14 +400,14 @@
   
   /* 1970s Harvest Gold Clock */
   .harvest-clock {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     background: 
       radial-gradient(circle at 30% 30%, #F4A460 0%, #DAA520 40%, #B8860B 70%, #8B6914 100%);
     border-radius: 50%;
-    border: 2px solid #8B4513;
+    border: 4px solid #8B4513;
     box-shadow: 
       0 0 15px rgba(218,165,32,0.5),
       inset 0 0 15px rgba(0,0,0,0.1),
@@ -429,7 +429,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 7px;
+    font-size: 16px;
     font-weight: bold;
     color: #4a4a4a;
     font-family: 'Georgia', serif;
@@ -437,17 +437,17 @@
 
   .harvest-number {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 22px;
     text-align: center;
-    line-height: 10px;
+    line-height: 22px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   }
 
   .harvest-center {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 22px;
     background: 
       radial-gradient(circle, #8B4513 0%, #654321 100%);
     border-radius: 50%;
@@ -468,25 +468,25 @@
   }
 
   .harvest-hour {
-    width: 2px;
-    height: 19px;
-    margin-left: -1px;
+    width: 4px;
+    height: 43px;
+    margin-left: -2px;
     bottom: 50%;
     animation: clockwise-12h 43200s linear infinite;
   }
 
   .harvest-minute {
-    width: 1px;
-    height: 27px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 61px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-1h 3600s linear infinite;
   }
 
   .harvest-second {
-    width: 1px;
-    height: 30px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 68px;
+    margin-left: -1px;
     bottom: 50%;
     background: linear-gradient(to top, #8B4513 0%, #A0522D 100%);
     animation: clockwise-1m 60s linear infinite;
@@ -996,12 +996,12 @@
 
   /* 1980s Digital LED Clock */
   .digital-led {
-    width: 90px;
-    height: 35px;
+    width: 200px;
+    height: 80px;
     margin: 0 auto;
     background: 
       linear-gradient(145deg, #0a0a0a 0%, #1a1a1a 100%);
-    border: 2px solid #333;
+    border: 4px solid #333;
     border-radius: 4px;
     position: relative;
     box-shadow: 
@@ -1013,10 +1013,10 @@
   .digital-led::before {
     content: '';
     position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
     background: #000;
     border-radius: 2px;
     border: 1px solid #444;
@@ -1028,7 +1028,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Orbitron', monospace;
-    font-size: 12px;
+    font-size: 28px;
     font-weight: 900;
     color: #ff0000;
     text-shadow: 
@@ -1048,54 +1048,67 @@
     51%, 100% { opacity: 0.2; }
   }
 
-  /* 1990s Digital Clock with Date */
+  /* 1990s Digital Clock - Similar to 1980s LED but with 90s style */
   .digital-90s {
-    width: 100px;
-    height: 40px;
+    width: 280px;
+    height: 100px;
     margin: 0 auto;
     background: 
-      linear-gradient(145deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
-    border: 1px solid #7f8c8d;
-    border-radius: 5px;
+      linear-gradient(145deg, #0a0a0a 0%, #1a1a1a 100%);
+    border: 4px solid #333;
+    border-radius: 8px;
     position: relative;
     box-shadow: 
-      0 4px 12px rgba(0,0,0,0.4),
-      inset 0 1px 2px rgba(255,255,255,0.1),
-      inset 0 -1px 2px rgba(0,0,0,0.2);
+      0 0 30px rgba(0,255,0,0.3),
+      inset 0 0 15px rgba(0,0,0,0.8),
+      inset 0 2px 5px rgba(255,255,255,0.05);
   }
 
-  .lcd-screen {
+  .digital-90s::before {
+    content: '';
     position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background: 
-      linear-gradient(145deg, #1a252f 0%, #2c3e50 100%);
-    border: 1px inset #7f8c8d;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #00ff00;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background: #000;
+    border-radius: 4px;
+    border: 1px solid #222;
+  }
+
+  .led-display-90s {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Orbitron', monospace;
+    font-size: 28px;
+    font-weight: 900;
+    color: #00ff00;
     text-shadow: 
-      0 0 4px #00ff00,
-      0 0 8px #00ff00;
+      0 0 15px #00ff00,
+      0 0 30px #00ff00,
+      0 0 45px #00ff00;
+    letter-spacing: 2px;
+    z-index: 2;
+    text-align: center;
   }
 
-  .time-90s {
-    font-size: 9px;
-    font-weight: 700;
-    margin-bottom: 2px;
-    animation: lcd-flicker 0.1s infinite alternate;
+  .led-dots-90s {
+    animation: led-blink-90s 1s infinite;
   }
 
-  .date-90s {
-    font-size: 5px;
-    opacity: 0.9;
-    font-weight: 400;
+  .date-display-90s {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+  }
+
+  @keyframes led-blink-90s {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
   }
 
   @keyframes lcd-flicker {
@@ -1105,8 +1118,8 @@
 
   /* 2000s Minimalist Clock */
   .minimalist-clock {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     background: 
@@ -1120,8 +1133,8 @@
 
   .minimalist-center {
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 11px;
+    height: 11px;
     background: 
       radial-gradient(circle, #333 0%, #555 100%);
     border-radius: 50%;
@@ -1146,17 +1159,17 @@
   }
 
   .minimalist-marker.hour-marker {
-    width: 1px;
-    height: 8px;
-    top: 5px;
+    width: 2px;
+    height: 18px;
+    top: 11px;
     left: 50%;
     margin-left: -0.5px;
   }
 
   .minimalist-marker.minute-marker {
-    width: 1px;
-    height: 5px;
-    top: 7px;
+    width: 2px;
+    height: 11px;
+    top: 16px;
     left: 50%;
     margin-left: -0.5px;
   }
@@ -1171,25 +1184,25 @@
   }
 
   .minimalist-hour {
-    width: 1px;
-    height: 20px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 45px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-12h 43200s linear infinite;
   }
 
   .minimalist-minute {
-    width: 1px;
-    height: 28px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 63px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-1h 3600s linear infinite;
   }
 
   .minimalist-second {
-    width: 1px;
-    height: 32px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 72px;
+    margin-left: -1px;
     bottom: 50%;
     background: linear-gradient(to top, #e74c3c 0%, #ff5555 100%);
     animation: clockwise-1m 60s linear infinite;
@@ -1197,8 +1210,8 @@
 
   /* 2010s Design Clock */
   .design-2010 {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     background: 
@@ -1213,19 +1226,19 @@
   .design-2010::before {
     content: '';
     position: absolute;
-    width: 65px;
-    height: 65px;
+    width: 146px;
+    height: 146px;
     background: 
       radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 60%);
     border-radius: 50%;
-    top: 8px;
-    left: 8px;
+    top: 17px;
+    left: 17px;
   }
 
   .design-center {
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 18px;
+    height: 18px;
     background: 
       radial-gradient(circle, #2c3e50 0%, #1a1a1a 100%);
     border-radius: 50%;
@@ -1242,7 +1255,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 6px;
+    font-size: 14px;
     font-weight: 600;
     color: #fff;
     font-family: 'Inter', sans-serif;
@@ -1250,10 +1263,10 @@
 
   .design-number {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 22px;
     text-align: center;
-    line-height: 10px;
+    line-height: 22px;
     background: 
       radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 100%);
     border-radius: 50%;
@@ -1272,25 +1285,25 @@
   }
 
   .design-hour {
-    width: 2px;
-    height: 20px;
-    margin-left: -1px;
+    width: 4px;
+    height: 45px;
+    margin-left: -2px;
     bottom: 50%;
     animation: clockwise-12h 43200s linear infinite;
   }
 
   .design-minute {
-    width: 1px;
-    height: 28px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 63px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-1h 3600s linear infinite;
   }
 
   .design-second {
-    width: 1px;
-    height: 32px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 72px;
+    margin-left: -1px;
     bottom: 50%;
     background: linear-gradient(to top, #e74c3c 0%, #ff5555 100%);
     animation: clockwise-1m 60s linear infinite;
@@ -1298,8 +1311,8 @@
 
   /* 2020s Futuristic Clock */
   .futuristic-clock {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     position: relative;
     background: 
@@ -1344,8 +1357,8 @@
 
   .futuristic-center {
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 14px;
+    height: 14px;
     background: 
       radial-gradient(circle, #00ffff 0%, #0099cc 100%);
     border-radius: 50%;
@@ -1381,18 +1394,18 @@
   }
 
   .futuristic-ring:nth-child(1) { 
-    width: 60px; 
-    height: 60px; 
+    width: 135px; 
+    height: 135px; 
     animation: futuristic-ring-rotate 30s linear infinite;
   }
   .futuristic-ring:nth-child(2) { 
-    width: 48px; 
-    height: 48px; 
+    width: 108px; 
+    height: 108px; 
     animation: futuristic-ring-rotate 20s linear infinite reverse;
   }
   .futuristic-ring:nth-child(3) { 
-    width: 36px; 
-    height: 36px; 
+    width: 81px; 
+    height: 81px; 
     animation: futuristic-ring-rotate 15s linear infinite;
   }
 
@@ -1423,8 +1436,8 @@
 
   .futuristic-dot {
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 5px;
+    height: 5px;
     background: 
       radial-gradient(circle, #00ffff 0%, #0099cc 100%);
     border-radius: 50%;
@@ -1458,25 +1471,25 @@
   }
 
   .futuristic-hour {
-    width: 2px;
-    height: 20px;
-    margin-left: -1px;
+    width: 4px;
+    height: 45px;
+    margin-left: -2px;
     bottom: 50%;
     animation: clockwise-12h 43200s linear infinite;
   }
 
   .futuristic-minute {
-    width: 1px;
-    height: 28px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 63px;
+    margin-left: -1px;
     bottom: 50%;
     animation: clockwise-1h 3600s linear infinite;
   }
 
   .futuristic-second {
-    width: 1px;
-    height: 32px;
-    margin-left: -0.5px;
+    width: 2px;
+    height: 72px;
+    margin-left: -1px;
     bottom: 50%;
     background: 
       linear-gradient(to top, #ff00ff 0%, #ff44ff 100%);
@@ -1503,30 +1516,30 @@
   }
 
   /* Number Positioning */
-  .office-number:nth-child(1) { top: 5px; left: 50%; margin-left: -5px; }
-  .office-number:nth-child(2) { top: 50%; right: 5px; margin-top: -5px; }
-  .office-number:nth-child(3) { bottom: 5px; left: 50%; margin-left: -5px; }
-  .office-number:nth-child(4) { top: 50%; left: 5px; margin-top: -5px; }
+  .office-number:nth-child(1) { top: 11px; left: 50%; margin-left: -11px; }
+  .office-number:nth-child(2) { top: 50%; right: 11px; margin-top: -11px; }
+  .office-number:nth-child(3) { bottom: 11px; left: 50%; margin-left: -11px; }
+  .office-number:nth-child(4) { top: 50%; left: 11px; margin-top: -11px; }
 
-  .atomic-dot:nth-child(1) { top: 8px; left: 50%; margin-left: -1.5px; }
-  .atomic-dot:nth-child(2) { top: 50%; right: 8px; margin-top: -1.5px; }
-  .atomic-dot:nth-child(3) { bottom: 8px; left: 50%; margin-left: -1.5px; }
-  .atomic-dot:nth-child(4) { top: 50%; left: 8px; margin-top: -1.5px; }
+  .atomic-dot:nth-child(1) { top: 18px; left: 50%; margin-left: -3.5px; }
+  .atomic-dot:nth-child(2) { top: 50%; right: 18px; margin-top: -3.5px; }
+  .atomic-dot:nth-child(3) { bottom: 18px; left: 50%; margin-left: -3.5px; }
+  .atomic-dot:nth-child(4) { top: 50%; left: 18px; margin-top: -3.5px; }
 
-  .harvest-number:nth-child(1) { top: 8px; left: 50%; margin-left: -5px; }
-  .harvest-number:nth-child(2) { top: 50%; right: 8px; margin-top: -5px; }
-  .harvest-number:nth-child(3) { bottom: 8px; left: 50%; margin-left: -5px; }
-  .harvest-number:nth-child(4) { top: 50%; left: 8px; margin-top: -5px; }
+  .harvest-number:nth-child(1) { top: 18px; left: 50%; margin-left: -11px; }
+  .harvest-number:nth-child(2) { top: 50%; right: 18px; margin-top: -11px; }
+  .harvest-number:nth-child(3) { bottom: 18px; left: 50%; margin-left: -11px; }
+  .harvest-number:nth-child(4) { top: 50%; left: 18px; margin-top: -11px; }
 
-  .design-number:nth-child(1) { top: 10px; left: 50%; margin-left: -5px; }
-  .design-number:nth-child(2) { top: 50%; right: 10px; margin-top: -5px; }
-  .design-number:nth-child(3) { bottom: 10px; left: 50%; margin-left: -5px; }
-  .design-number:nth-child(4) { top: 50%; left: 10px; margin-top: -5px; }
+  .design-number:nth-child(1) { top: 22px; left: 50%; margin-left: -11px; }
+  .design-number:nth-child(2) { top: 50%; right: 22px; margin-top: -11px; }
+  .design-number:nth-child(3) { bottom: 22px; left: 50%; margin-left: -11px; }
+  .design-number:nth-child(4) { top: 50%; left: 22px; margin-top: -11px; }
 
-  .futuristic-dot:nth-child(1) { top: 10px; left: 50%; margin-left: -1px; }
-  .futuristic-dot:nth-child(2) { top: 50%; right: 10px; margin-top: -1px; }
-  .futuristic-dot:nth-child(3) { bottom: 10px; left: 50%; margin-left: -1px; }
-  .futuristic-dot:nth-child(4) { top: 50%; left: 10px; margin-top: -1px; }
+  .futuristic-dot:nth-child(1) { top: 22px; left: 50%; margin-left: -2.5px; }
+  .futuristic-dot:nth-child(2) { top: 50%; right: 22px; margin-top: -2.5px; }
+  .futuristic-dot:nth-child(3) { bottom: 22px; left: 50%; margin-left: -2.5px; }
+  .futuristic-dot:nth-child(4) { top: 50%; left: 22px; margin-top: -2.5px; }
 
   /* Minimalist markers positioning */
   .minimalist-marker:nth-child(1) { transform: rotate(0deg); }
