@@ -1226,6 +1226,8 @@
     animation: floatSetup 8s ease-in-out infinite;
     transform: scale(0.3);
     transform-origin: center;
+    overflow: visible;
+    z-index: 1;
   }
 
   @keyframes floatSetup {
@@ -1246,6 +1248,7 @@
       inset 0 5px 20px rgba(255,255,255,0.3),
       inset 0 -5px 20px rgba(0,0,0,0.2);
     transform-style: preserve-3d;
+    z-index: 3;
   }
 
   .crt-monitor::before {
@@ -1444,10 +1447,10 @@
     100% { box-shadow: 0 2px 4px rgba(0,0,0,0.3), inset 0 1px 2px rgba(255,255,255,0.5); }
   }
 
-  .tower-pc {
+  .setup-1990 .tower-pc {
     position: absolute;
-    top: 320px;
-    left: 280px;
+    top: 100px;
+    left: 450px;
     width: 120px;
     height: 280px;
     background: linear-gradient(145deg, #f5f5dc 0%, #d0d0b8 50%, #b8b8a0 100%);
@@ -1458,6 +1461,7 @@
       inset 0 -3px 10px rgba(0,0,0,0.2);
     transform: rotateY(-15deg) rotateX(5deg);
     animation: towerHum 6s ease-in-out infinite;
+    z-index: 2;
   }
 
   @keyframes towerHum {
@@ -1599,6 +1603,8 @@
     animation-delay: 4s;
     transform: scale(0.35);
     transform-origin: center;
+    overflow: visible;
+    z-index: 1;
   }
 
   @keyframes floatSetup2 {
@@ -1619,6 +1625,7 @@
       inset 0 3px 15px rgba(255,255,255,0.1),
       0 0 30px rgba(100,200,255,0.2);
     transform-style: preserve-3d;
+    z-index: 3;
   }
 
   .lcd-screen {
@@ -1807,10 +1814,10 @@
       inset 0 2px 8px rgba(255,255,255,0.1);
   }
 
-  .wireless-keyboard {
+  .setup-2000 .wireless-keyboard {
     position: absolute;
-    top: 360px;
-    left: 80px;
+    top: 400px;
+    left: 50px;
     width: 280px;
     height: 100px;
     background: linear-gradient(145deg, #f8f8f8 0%, #e0e0e0 100%);
@@ -1821,6 +1828,7 @@
       inset 0 -3px 12px rgba(0,0,0,0.1);
     transform: rotateX(10deg) rotateY(-5deg);
     animation: keyboardFloat 7s ease-in-out infinite;
+    z-index: 2;
   }
 
   @keyframes keyboardFloat {
@@ -1864,10 +1872,10 @@
     99%, 100% { transform: translateY(0px); }
   }
 
-  .wireless-mouse {
+  .setup-2000 .wireless-mouse {
     position: absolute;
-    top: 380px;
-    right: 60px;
+    top: 420px;
+    right: 30px;
     width: 60px;
     height: 90px;
     background: linear-gradient(145deg, #f8f8f8 0%, #e0e0e0 100%);
@@ -1877,6 +1885,7 @@
       inset 0 3px 10px rgba(255,255,255,0.4),
       inset 0 -3px 10px rgba(0,0,0,0.1);
     transform: rotateX(15deg) rotateY(10deg);
+    z-index: 2;
     animation: mouseMove 5s ease-in-out infinite;
   }
 
