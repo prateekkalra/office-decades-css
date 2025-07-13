@@ -2233,40 +2233,201 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
 
-  .computer-2020s {
-    width: 70%;
-    height: 25%;
-    background: linear-gradient(135deg, #2F2F2F 0%, #1C1C1C 100%);
-    border-radius: 10px;
-    border: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFF;
-    font-size: 9px;
+  /* 2020s MacBook Pro Setup */
+  .work-set-2020s {
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+    transform-origin: center;
+    z-index: 1;
   }
 
-  .computer-2020s::before {
-    content: '';
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    width: 35%;
-    height: 70%;
-    background: #444;
-    border-radius: 4px;
+  .macbook-wrapper-2020s {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    perspective: 1600px;
   }
 
-  .computer-2020s::after {
-    content: '';
+  .display-2020s {
+    box-shadow: 0 0 0 2px silver, 0 0 0 2px #ccc;
+    transform-style: preserve-3d;
+    transform: rotatex(-45deg);
+    width: 500px;
+    height: 300px;
+    background: no-repeat bottom linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-sizing: border-box;
+    border-top: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    position: relative;
+    z-index: 3;
+  }
+
+  .display-2020s:before {
     position: absolute;
-    top: 15%;
-    right: 10%;
-    width: 35%;
-    height: 70%;
-    background: #444;
-    border-radius: 4px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    content: '';
+    bottom: -48px;
+    left: -12px;
+    width: 500px;
+    height: 36px;
+    background: #111;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-left: 2px solid silver;
+    border-right: 2px solid silver;
+    border-bottom: 2px solid silver;
+  }
+
+  .display-2020s:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    content: 'MacBook Pro';
+    position: absolute;
+    font-size: 14px;
+    color: #555;
+    bottom: -34px;
+    left: 42%;
+  }
+
+  .kbd-2020s {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    padding: 30px 5px 0em 5px;
+    margin-top: -18px;
+    width: 460px;
+    height: 295px;
+    background: #666;
+    border-radius: 16px;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 0 3px rgba(255, 255, 255, .5) inset;
+  }
+
+  .kbd-2020s:before, .kbd-2020s:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    content: '';
+  }
+
+  .kbd-2020s::before {
+    top: 0;
+    width: 340px;
+    height: 9px;
+    background: #222;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .7) inset;
+  }
+
+  .kbd-2020s::after {
+    bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    width: 200px;
+    height: 110px;
+    background: #616161;
+  }
+
+  .grill-2020s {
+    margin-top: 6px;
+    width: 22px;
+    height: 158px;
+    background: radial-gradient(#555 26%, transparent 0);
+    background-size: 3px 3px;
+  }
+
+  .keys-2020s {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0 5px;
+    width: 400px;
+    height: 168px;
+    box-shadow: 0 0 9px rgba(0,0,0,.3) inset;
+    border-radius: 3px;
+  }
+
+  .row-2020s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px 5px 0 5px;
+    list-style: none;
+    margin: 0;
+  }
+
+  .row-2020s * {
+    color: white;
+    background: #111;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .one-2020s * {
+    height: 10px;
+    width: 22px;
+    font-size: 5px;
+  }
+
+  .rest-2020s * {
+    height: 22px;
+    width: 22px;
+    font-size: 7px;
+  }
+
+  .last-2020s * {
+    height: 22px;
+    width: 22px;
+    font-size: 5px;
+  }
+
+  .arw-2020s {
+    width: 18px !important;
+  }
+
+  .cmd-2020s {
+    width: 28px !important;
+  }
+
+  .esc-2020s, .back-2020s, .tab-2020s {
+    width: 36px !important;
+  }
+
+  .caps-2020s, .return-2020s {
+    width: 45px !important;
+  }
+
+  .shift-2020s {
+    width: 55px !important;
+  }
+
+  .space-2020s {
+    width: 140px !important;
   }
 }
