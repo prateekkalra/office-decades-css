@@ -1,59 +1,50 @@
-/* Communication Devices Styling - Extracted from comms.html */
+/* Communication Devices Styling - Exact copy from comms.html with tech zone adaptations */
 
 /* Tech Zone Specific Scaling and Layout for Office Layout */
-.tech-zone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.tech-zone .tech-set {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Remove conflicting layout rules - let existing decade system handle visibility */
 
 .tech-zone .comm-device {
-    transform: scale(0.4);
     transform-origin: center;
     margin: 0;
 }
 
-/* Specific device scaling adjustments */
-.tech-zone .rotary-phone {
-    transform: scale(0.35);
+/* Specific device scaling adjustments - Made significantly bigger */
+/* Target devices within their specific decade containers */
+.tech-set-1950s .rotary-phone {
+    transform: scale(0.8);
 }
 
-.tech-zone .touch-tone-phone {
-    transform: scale(0.4);
+.tech-set-1960s .touch-tone-phone {
+    transform: scale(0.85);
 }
 
-.tech-zone .fax-machine {
-    transform: scale(0.3);
+.tech-set-1970s .fax-machine {
+    transform: scale(0.7);
 }
 
-.tech-zone .pager {
-    transform: scale(0.6);
+.tech-set-1980s .pager {
+    transform: scale(1.0);
 }
 
-.tech-zone .desktop-computer {
-    transform: scale(0.4);
+.tech-set-1990s .desktop-computer {
+    transform: scale(0.8);
 }
 
-.tech-zone .blackberry {
-    transform: scale(0.5);
+.tech-set-2000s .blackberry {
+    transform: scale(0.9);
 }
 
-.tech-zone .slack-app {
-    transform: scale(0.35);
+.tech-set-2010s .slack-app {
+    transform: scale(0.75);
 }
 
-.tech-zone .zoom-app {
-    transform: scale(0.35);
+.tech-set-2020s .zoom-app {
+    transform: scale(0.75);
+}
+
+/* Font family for all communication devices */
+.comm-device {
+    font-family: 'Arial', sans-serif;
 }
 
 /* 1950s - Rotary Telephone */
@@ -458,6 +449,23 @@
         inset 0 1px 3px rgba(0,0,0,0.2);
 }
 
+.fax-labels {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    width: 112px;
+}
+
+.fax-label {
+    font-size: 6px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
 .paper-slot {
     width: 220px;
     height: 4px;
@@ -471,6 +479,26 @@
         0 1px 2px rgba(0,0,0,0.3);
 }
 
+.paper-guides {
+    position: absolute;
+    top: 67px;
+    left: 25px;
+    width: 230px;
+    height: 10px;
+}
+
+.paper-guide {
+    width: 8px;
+    height: 10px;
+    background: linear-gradient(145deg, #ccc, #999);
+    position: absolute;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.paper-guide:first-child { left: 0; }
+.paper-guide:last-child { right: 0; }
+
 .paper-tray {
     width: 200px;
     height: 85px;
@@ -483,6 +511,83 @@
     box-shadow: 
         0 5px 10px rgba(0,0,0,0.2),
         inset 0 2px 5px rgba(255,255,255,0.8);
+}
+
+.paper-stack {
+    width: 180px;
+    height: 60px;
+    background: linear-gradient(145deg, #fff, #f5f5f5);
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    border-radius: 2px;
+    box-shadow: 
+        0 2px 5px rgba(0,0,0,0.1),
+        inset 0 1px 2px rgba(255,255,255,0.8);
+}
+
+.paper-sheets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.paper-sheet {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #f0f0f0, #fff, #f0f0f0);
+    position: absolute;
+    border-radius: 1px;
+}
+
+.paper-sheet:nth-child(1) { top: 10px; }
+.paper-sheet:nth-child(2) { top: 20px; }
+.paper-sheet:nth-child(3) { top: 30px; }
+.paper-sheet:nth-child(4) { top: 40px; }
+
+.fax-logo {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.status-lights {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+    display: flex;
+    gap: 8px;
+}
+
+.status-light {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 5px rgba(0,0,0,0.3),
+        inset 0 1px 2px rgba(255,255,255,0.5);
+}
+
+.status-light.green {
+    background: radial-gradient(circle, #0f0, #080);
+    box-shadow: 
+        0 0 8px rgba(0,255,0,0.5),
+        inset 0 1px 2px rgba(255,255,255,0.5);
+}
+
+.status-light.red {
+    background: radial-gradient(circle, #f00, #800);
+}
+
+.status-light.yellow {
+    background: radial-gradient(circle, #ff0, #880);
 }
 
 /* 1980s - Pager */
@@ -789,4 +894,39 @@
 
 .zoom-button.active {
     background: #ff4444;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .tech-set-1950s .rotary-phone {
+        transform: scale(0.6);
+    }
+    
+    .tech-set-1960s .touch-tone-phone {
+        transform: scale(0.65);
+    }
+    
+    .tech-set-1970s .fax-machine {
+        transform: scale(0.5);
+    }
+    
+    .tech-set-1980s .pager {
+        transform: scale(0.8);
+    }
+    
+    .tech-set-1990s .desktop-computer {
+        transform: scale(0.6);
+    }
+    
+    .tech-set-2000s .blackberry {
+        transform: scale(0.7);
+    }
+    
+    .tech-set-2010s .slack-app {
+        transform: scale(0.55);
+    }
+    
+    .tech-set-2020s .zoom-app {
+        transform: scale(0.55);
+    }
 }
