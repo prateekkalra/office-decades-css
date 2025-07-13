@@ -1,5 +1,8 @@
 /* Main CSS Import File - Office Culture Through the Decades */
 
+/* Import Google Fonts for Era-Specific Typography */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&family=Courier+Prime:wght@400;700&family=Permanent+Marker&family=Righteous&family=Russo+One&family=Fredoka:wght@400;600&family=Inter:wght@300;400;600;700&display=swap');
+
 /* Import modules in proper order for cascade */
 @import "base.css";
 @import "office-layout.css";

@@ -8,9 +8,9 @@
     inset: 0;
     display: none;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
@@ -166,7 +166,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   }
 
-  .poster-1950s::before {
+  /* .poster-1950s::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -175,7 +175,7 @@
     height: 50%;
     background: #2F2F2F;
     border-radius: 50%;
-  }
+  } */
 
   .sign-1950s {
     width: 70px;
@@ -363,7 +363,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
   }
 
-  .poster-1960s::before {
+  /* .poster-1960s::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -376,7 +376,7 @@
       #4682B4 45deg 90deg
     );
     border-radius: 50%;
-  }
+  } */
 
   .sign-1960s {
     width: 70px;
@@ -541,7 +541,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
   }
 
-  .poster-1970s::before {
+  /* .poster-1970s::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -550,7 +550,7 @@
     height: 50%;
     background: #228B22;
     clip-path: polygon(50% 0%, 80% 35%, 100% 70%, 75% 100%, 25% 100%, 0% 70%, 20% 35%);
-  }
+  } */
 
   .sign-1970s {
     width: 70px;
@@ -616,7 +616,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.4);
   }
 
-  .poster-1980s::before {
+  /* .poster-1980s::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -625,7 +625,7 @@
     height: 50%;
     background: #FFD700;
     clip-path: polygon(50% 0%, 100% 25%, 82% 90%, 18% 90%, 0% 25%);
-  }
+  } */
 
   .sign-1980s {
     width: 70px;
@@ -696,7 +696,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   }
 
-  .poster-1990s::before {
+  /* .poster-1990s::before {
     content: '';
     position: absolute;
     top: 20%;
@@ -705,9 +705,9 @@
     height: 60%;
     background: #4682B4;
     border-radius: 50%;
-  }
+  } */
 
-  .poster-1990s::after {
+  /* .poster-1990s::after {
     content: '';
     position: absolute;
     top: 30%;
@@ -716,7 +716,7 @@
     height: 40%;
     background: #FFF;
     border-radius: 50%;
-  }
+  } */
 
   .sign-1990s {
     width: 70px;
@@ -781,7 +781,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   }
 
-  .poster-2000s::before {
+  /* .poster-2000s::before {
     content: '';
     position: absolute;
     top: 20%;
@@ -790,7 +790,7 @@
     height: 60%;
     background: #4169E1;
     border-radius: 4px;
-  }
+  } */
 
   .sign-2000s {
     width: 70px;
@@ -855,7 +855,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   }
 
-  .poster-2010s::before {
+  /* .poster-2010s::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -864,9 +864,9 @@
     height: 50%;
     background: #FFF;
     border-radius: 50%;
-  }
+  } */
 
-  .poster-2010s::after {
+  /* .poster-2010s::after {
     content: '';
     position: absolute;
     top: 35%;
@@ -875,7 +875,7 @@
     height: 30%;
     background: #FF6B35;
     border-radius: 50%;
-  }
+  } */
 
   .sign-2010s {
     width: 70px;
@@ -940,7 +940,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   }
 
-  .poster-2020s::before {
+  /* .poster-2020s::before {
     content: '';
     position: absolute;
     top: 25%;
@@ -949,9 +949,9 @@
     height: 50%;
     background: #FFF;
     border-radius: 25%;
-  }
+  } */
 
-  .poster-2020s::after {
+  /* .poster-2020s::after {
     content: '';
     position: absolute;
     top: 35%;
@@ -960,7 +960,7 @@
     height: 30%;
     background: #32CD32;
     border-radius: 50%;
-  }
+  } */
 
   .sign-2020s {
     width: 70px;
@@ -1554,4 +1554,410 @@
   .minimalist-marker:nth-child(10) { transform: rotate(240deg); }
   .minimalist-marker:nth-child(11) { transform: rotate(300deg); }
   .minimalist-marker:nth-child(12) { transform: rotate(330deg); }
+
+  /* ================================================== */
+  /* ERA-SPECIFIC FRAMED POSTERS                       */
+  /* ================================================== */
+
+  /* Wall poster styling - scaled for wall zone */
+  .framed-poster {
+    position: relative;
+    transform: perspective(800px) rotateY(2deg) rotateX(1deg);
+    transition: transform 0.4s ease;
+    margin: 0;
+    /* Wave animation */
+    animation: wall-poster-wave ease-in-out 3s infinite alternate;
+    transform-origin: center -15px;
+    width: 280px;
+    height: auto;
+  }
+
+  .framed-poster:hover {
+    transform: perspective(800px) rotateY(0deg) rotateX(0deg) scale(1.02);
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
+  .framed-poster:nth-child(even) {
+    transform: perspective(800px) rotateY(-2deg) rotateX(-1deg);
+    animation: wall-poster-wave-reverse ease-in-out 3.5s infinite alternate;
+  }
+
+  .framed-poster:nth-child(even):hover {
+    transform: perspective(800px) rotateY(0deg) rotateX(0deg) scale(1.02);
+    animation-play-state: paused;
+  }
+
+  /* Wave animation keyframes for wall posters */
+  @keyframes wall-poster-wave {
+    0% { transform: perspective(800px) rotateY(2deg) rotateX(1deg) rotate(2deg); }
+    100% { transform: perspective(800px) rotateY(2deg) rotateX(1deg) rotate(-2deg); }
+  }
+
+  @keyframes wall-poster-wave-reverse {
+    0% { transform: perspective(800px) rotateY(-2deg) rotateX(-1deg) rotate(-2deg); }
+    100% { transform: perspective(800px) rotateY(-2deg) rotateX(-1deg) rotate(2deg); }
+  }
+
+  /* Staggered animation delays */
+  .wall-poster-1950s { animation-delay: 0s; }
+  .wall-poster-1960s { animation-delay: 0.5s; }
+  .wall-poster-1970s { animation-delay: 1s; }
+  .wall-poster-1980s { animation-delay: 1.5s; }
+  .wall-poster-1990s { animation-delay: 2s; }
+  .wall-poster-2000s { animation-delay: 2.5s; }
+  .wall-poster-2010s { animation-delay: 3s; }
+  .wall-poster-2020s { animation-delay: 3.5s; }
+
+  /* Base frame styles - scaled for wall zone */
+  .frame {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+    position: relative;
+  }
+
+  .hanging-wire {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 10px;
+    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .hanging-wire::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 3px;
+    background: #444;
+    border-radius: 50%;
+  }
+
+  .matting {
+    background: #f8f8f8;
+    padding: 20px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  .poster-content {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+
+  .decade-plaque {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #DAA520, #FFD700);
+    color: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    border: 2px solid #B8860B;
+  }
+
+  /* 1950s - Ornate Gold Frame */
+  .frame-1950s {
+    background: linear-gradient(45deg, #DAA520, #FFD700, #DAA520);
+    border: 2px solid #B8860B;
+  }
+
+  .frame-1950s::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    background: #8B4513;
+    border-radius: 50%;
+  }
+
+  .frame-1950s::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    background: #8B4513;
+    border-radius: 50%;
+  }
+
+  .poster-1950s {
+    background: radial-gradient(circle, #FFD700, #DAA520);
+    color: #2c3e50;
+  }
+
+  .poster-1950s .quote {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .poster-1950s .accent {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: 2.5rem;
+  }
+
+  /* 1960s - Psychedelic Frame */
+  .frame-1960s {
+    background: linear-gradient(45deg, #FF1493, #FF69B4, #FF6347);
+    border: 2px solid #FF1493;
+    border-radius: 12px;
+  }
+
+  .poster-1960s {
+    background: radial-gradient(circle, #FF6B6B, #FF8E53, #FF6B9D);
+    color: white;
+  }
+
+  .poster-1960s .quote {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+    line-height: 1.3;
+  }
+
+  /* 1970s - Wood Frame */
+  .frame-1970s {
+    background: linear-gradient(45deg, #8B4513, #A0522D, #8B4513);
+    border: 2px solid #654321;
+  }
+
+  .poster-1970s {
+    background: linear-gradient(135deg, #8b4513, #cd853f, #daa520);
+    color: #f5f5dc;
+  }
+
+  .poster-1970s .quote {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  .poster-1970s .accent {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+  }
+
+  /* 1980s - Neon Frame */
+  .frame-1980s {
+    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 12px #00FFFF, 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .poster-1980s {
+    background: linear-gradient(135deg, #2c3e50, #3498db, #9b59b6);
+    color: #00ffff;
+  }
+
+  .poster-1980s .quote {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px #00ffff;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .poster-1980s .accent {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #00ffff;
+  }
+
+  /* 1990s - Metal Frame */
+  .frame-1990s {
+    background: linear-gradient(45deg, #2C3E50, #34495E, #7F8C8D);
+    border: 2px solid #34495E;
+  }
+
+  .poster-1990s {
+    background: linear-gradient(45deg, #2c3e50, #34495e, #7f8c8d);
+    color: #ecf0f1;
+  }
+
+  .poster-1990s .quote {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  .poster-1990s .accent {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    transform: rotate(45deg);
+  }
+
+  /* 2000s - Silver Frame */
+  .frame-2000s {
+    background: linear-gradient(135deg, #E8E8E8, #C0C0C0, #A8A8A8);
+    border: 2px solid #A8A8A8;
+    border-radius: 8px;
+  }
+
+  .poster-2000s {
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    color: white;
+  }
+
+  .poster-2000s .quote {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+
+  /* 2010s - Minimal Frame */
+  .frame-2010s {
+    background: linear-gradient(45deg, #1A1A1A, #2C2C2C);
+    border: 2px solid #2C2C2C;
+    border-radius: 6px;
+  }
+
+  .poster-2010s {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+  }
+
+  .poster-2010s .quote {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+
+  .poster-2010s .accent {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+  }
+
+  /* 2020s - Glass Frame */
+  .frame-2020s {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  .poster-2020s {
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #f5576c);
+    color: white;
+  }
+
+  .poster-2020s .quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+
+  .poster-2020s .accent {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+  }
+
+  /* Plaque colors per era */
+  .plaque-1960s {
+    background: linear-gradient(45deg, #FF1493, #FF69B4);
+    color: white;
+    border-color: #FF1493;
+  }
+
+  .plaque-1970s {
+    background: linear-gradient(45deg, #8B4513, #A0522D);
+    color: #F5F5DC;
+    border-color: #654321;
+  }
+
+  .plaque-1980s {
+    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
+    color: #2c3e50;
+    border-color: #00FFFF;
+    box-shadow: 0 0 6px #00FFFF;
+  }
+
+  .plaque-1990s {
+    background: linear-gradient(45deg, #2C3E50, #34495E);
+    color: #ECF0F1;
+    border-color: #7F8C8D;
+  }
+
+  .plaque-2000s {
+    background: linear-gradient(45deg, #C0C0C0, #E8E8E8);
+    color: #2c3e50;
+    border-color: #A8A8A8;
+  }
+
+  .plaque-2010s {
+    background: linear-gradient(45deg, #1A1A1A, #2C2C2C);
+    color: white;
+    border-color: #2C2C2C;
+  }
+
+  .plaque-2020s {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+  }
 }
