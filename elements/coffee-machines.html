@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machines Through the Decades</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <style>
+        /* General Page Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .decade-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .decade-container h2 {
+            margin-top: 0;
+            color: #34495e;
+            font-size: 2em;
+        }
+
+        /* Common wrapper for centering the machines */
+        .machine-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+            min-height: 450px;
+        }
+
+        /* --- 1950 Coffee Machine Styles --- */
+        .container-1950 { background: #34495c; }
+        .machine-1950 { position: relative; width: 191px; height: 311px; -webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255,255,255,0.4) 0%, transparent 50%, transparent 100%); transform: scale(.75); }
+        .machine-1950 .machine-top { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); width: 119px; height: 164px; background: linear-gradient(#00bc9e, #00bc9e 20%, #008e77 20%, #008e77 22%, #00bc9e 22%, #00bc9e 62%, #008e77 62%, #008e77 64%, #00bc9e 64%); border-top-right-radius: 20px; border-top-left-radius: 20px; }
+        .machine-1950 .machine-top:before { content: ""; position: absolute; left: 50%; top: -10px; transform: translateX(-50%); width: 45px; height: 10px; background: linear-gradient(to right, #008e77 15%, #40aa99 15%, #40aa99 45%, #008e77 45%, #008e77 85%, #00806b 85%, #00806b); border-top-right-radius: 2px; border-top-left-radius: 2px; }
+        .machine-1950 .machine-top:after { content: ""; position: absolute; width: 100%; height: 100%; border-top-right-radius: 20px; border-top-left-radius: 20px; background: linear-gradient(to right, transparent, transparent 8%, rgba(255,255,255,.2) 8%, rgba(255,255,255,.2) 22%, transparent 22%, transparent 88%, rgba(0, 142, 119, 0.5) 88%); }
+        .machine-1950 .machine-middle { position: absolute; bottom: -8px; width: 100%; height: 8px; background: #202e3a; border-bottom-right-radius: 35px; border-bottom-left-radius: 35px; }
+        .machine-1950 .machine-middle:after { content: ""; position: absolute; left: 10px; bottom: -18px; width: 142px; height: 18px; background: linear-gradient(to right, #202e3a, #202e3a 3%, #414d57 3%, #414d57 15%, #202e3a 15%, #202e3a); border-top-right-radius: 6px; }
+        .machine-1950 .machine-middle:before { content: ""; position: absolute; left: 52%; transform: translateX(-50%); bottom: -35px; width: 98px; height: 10px; background: linear-gradient(to right, #202e3a, #202e3a 3%, #414d57 3%, #414d57 15%, #202e3a 15%, #202e3a); }
+        .machine-1950 .machine-bottom { position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; z-index: 10; width: 121px; height: 78px; border-radius: 15px; border: 5px solid #d5d5d5; border-top-color: transparent; }
+        .machine-1950 .machine-bottom:before { content: ""; position: absolute; left: 50%; transform: translateX(-50%); top: -1px; width: 110%; height: 10px; background: linear-gradient(to right, #202e3a, #202e3a 3%, #414d57 3%, #414d57 15%, #202e3a 15%, #202e3a); }
+        .machine-1950 .machine-bottom:after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 59px; background: linear-gradient(to right, transparent, transparent 10%, rgba(255,255,255,.3) 10%, rgba(255,255,255,.3) 25%, rgba(255,255,255,.1) 25%, rgba(255,255,255,.1) 85%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.1)); border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; }
+        .machine-1950 .hand { position: absolute; right: 7px; bottom: 25px; z-index: -1; width: 38px; height: 69px; border-radius: 18px; border: 10px solid #202e3a; border-left-color: transparent; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+        .machine-1950 .hand:after { content: ""; position: absolute; left: -95px; top: 22px; width: 17px; height: 1px; background: rgba(179, 179, 179, 0.7); color: #b3b3b3; box-shadow: 0 5px 0 0 currentColor, 0 10px 0 0 currentColor, 0 15px 0 0 currentColor, 0 20px 0 0 currentColor; }
+        .machine-1950 .hand:before { content: ""; position: absolute; left: -105px; bottom: -20px; width: 93px; height: 7px; background: linear-gradient(to right, #202e3a, #202e3a 3%, #414d57 3%, #414d57 15%, #202e3a 15%, #202e3a); }
+        .machine-1950 .left-hand { position: absolute; top: 125px; z-index: -1; width: 45px; height: 184px; border-radius: 22px; border: 8px solid #d5d5d5; border-right-color: transparent; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+        .machine-1950 .left-hand:after { content: ""; position: absolute; top: -14px; left: 21px; width: 7px; height: 23px; background: #008e77; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+        .machine-1950 .left-hand:before { content: ""; position: absolute; top: -11px; left: 13px; width: 8px; height: 15px; background: linear-gradient(#00bc9e, #00bc9e 60%, #40cdb6 60%, #40cdb6); border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+        .machine-1950 .coffee { position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; z-index: 1; width: 121px; height: 20px; border-radius: 0 0 15px 15px; background: #393434; }
+        .machine-1950 .coffee:after { content: ""; position: absolute; left: -11px; bottom: -22px; width: 144px; height: 16px; background: linear-gradient(to right, #00bc9e, #00bc9e 3%, #40cdb6 3%, #40cdb6 15%, #00bc9e 15%, #00bc9e); border-top-right-radius: 4px; border-top-left-radius: 4px; border-bottom: 2px solid #00a98e; }
+        .machine-1950 .coffee:before { content: ""; position: absolute; left: 54px; top: -41px; width: 5px; height: 4px; background: #393434; border-radius: 50%; box-shadow: 3px 10px 0 1px #393434; animation: animatecoffee-1950 2s linear infinite; }
+        @keyframes animatecoffee-1950 { to { top: 0; } }
+
+        /* --- 1960 Coffee Machine Styles --- */
+        .container-1960 { background: linear-gradient(to right bottom, sandybrown, darkred); }
+        .coffee-machine-1960 { width: 15em; height: 15em; background-color: white; font-size: 20px; border-radius: 50%; border: 2em solid white; position: relative; display: flex; justify-content: center; z-index: 1; }
+        .coffee-machine-1960::before, .coffee-machine-1960::after { content: ''; position: absolute; width: 2em; height: 2em; border: 0.3em solid transparent; z-index: 2; border-radius: 50%; border-left-color: white; left: 3.8em; }
+        .coffee-machine-1960::before { top: 1.8em; transform: rotate(40deg); }
+        .coffee-machine-1960::after { bottom: 1.8em; transform: rotate(-40deg); }
+        .coffee-machine-1960 .body { position: absolute; width: 8em; height: 12em; background-color: sandybrown; border-radius: 1.2em; top: 1.5em; border-right: 0.6em solid peru; }
+        .coffee-machine-1960 .body::after { content: ''; position: absolute; width: 8em; height: 8em; background-color: darkslategray; top: 2em; border-right: 0.6em solid black; }
+        .coffee-machine-1960 .spout { position: absolute; width: 3em; height: 1em; background-color: white; top: 3.5em; border-radius: 0.5em; border-right: 0.5em solid silver; }
+        .coffee-machine-1960 .cup { position: absolute; width: 3em; height: 2em; background-color: white; bottom: 3.5em; border-radius: 0 0 1.4em 1.4em; border-right: 0.5em solid silver; }
+        .coffee-machine-1960 .cup::after { content: ''; position: absolute; width: 0.6em; height: 0.6em; border: 0.3em solid silver; border-radius: 50%; right: -1.2em; top: 0.2em; }
+        .coffee-machine-1960 .button { position: absolute; width: 1.2em; height: 1.2em; background-color: tomato; border-radius: 50%; bottom: 2em; right: 4.5em; }
+        .coffee-machine-1960 .coffee::before, .coffee-machine-1960 .coffee::after { content: ''; position: absolute; width: 0.7em; height: 5em; background-color: chocolate; top: 4.5em; left: calc((15em - 0.7em) / 2); animation: 2s linear infinite; }
+        .coffee-machine-1960 .coffee::before { animation-name: pouring-before-1960; transform-origin: top; }
+        .coffee-machine-1960 .coffee::after { animation-name: pouring-after-1960; transform-origin: bottom; }
+        @keyframes pouring-before-1960 { 0%, 20% { transform: scaleY(0); } 30%, 100% { transform: scaleY(1); } 70%, 100% { visibility: hidden; } }
+        @keyframes pouring-after-1960 { 0%, 70% { visibility: hidden; transform: scaleY(1); } 80%, 100% { transform: scaleY(0); } }
+
+        /* --- 1970 Coffee Machine Styles --- */
+        .container-1970 { background-color: #cd6155; perspective: 600px; }
+        .machine-1970-wrapper { transform: scale(0.8); }
+        .machine-1970-container { width: 450px; margin: 0 auto; }
+        .controller-1970 { text-align: center; color: #FFF; margin-bottom: 20px; }
+        .controller-1970 .button { display: inline-block; background-color: #691515; color: #FFF; border: 0; outline: 0; padding: 8px 16px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s; }
+        .controller-1970 .button.disabled { color: #CCC; background-color: #691515AA; cursor: not-allowed; }
+        .controller-1970 .button:not(.disabled):hover { background-color: #8e2424; }
+        .machine-1970-container .above-base { width: 83%; height: 8px; background-color: #a22c20; margin: 0 auto; border-radius: 7px 7px 0 0; }
+        .machine-1970-container .base { position: relative; width: 90%; height: 60px; margin: 0 auto; border-radius: 18px 18px 10px 10px; background-color: #e84c3d; overflow: hidden; padding: 15px 0; box-shadow: inset 10px -27px 4px #d54837; }
+        .machine-1970-container .base div:not(.spans) { position: absolute; left: 0; bottom: 0; width: 100%; height: 20%; background-color: #000; }
+        .machine-1970-container .base .spans { position: absolute; top: 42%; left: 50%; transform: translate(-50%,-50%); }
+        .machine-1970-container .base span { display: inline-block; margin: 0 10px; width: 12px; height: 12px; border: 4px solid #FFF; border-radius: 50%; }
+        .machine-1970-container .content { position: relative; width: 80%; height: 200px; margin: 0 auto; background-color: #b2b2b2; box-shadow: inset 7px 0px 0px #a5a5a5; }
+        .machine-1970-container .content .back { width: 77%; height: 100%; position: absolute; bottom: 0; left: 50%; background-color: #949494; transform: translateX(-50%); box-shadow: inset 6px 0px 0px #8a8a8a; }
+        .machine-1970-container .content .mugg { position: absolute; bottom: 5px; left: 50%; background-color: #2776ab; width: 70px; height: 50px; border-radius: 10px 10px 100% 100%; transition: opacity .3s , left 1s; transform: translateX(-50%); box-shadow: inset 7px -3px 3px #256c9a; }
+        .machine-1970-container .content .mugg .mugg-arm { position: absolute; width: 20px; height: 11px; border-radius: 50%; border: 8px solid #2776ab; right: -19px; top: 4px; transform: rotate(9deg); }
+        .machine-1970-container .content .mugg .bubble { position: absolute; top: 0; left: 20px; width: 20px; height: 20px; background-color: #CCC; border-radius: 50%; opacity: 0; transition: .7s; }
+        .machine-1970-container .content .mugg .b1 { animation-delay: 3.6s !important; }
+        .machine-1970-container .content .mugg .b2 { animation-delay: 5.5s !important; }
+        .machine-1970-container .content .mugg .b3 { animation-delay: 7.8s !important; }
+        .machine-1970-container .content .mugg.active .bubble { animation: bubblesAnimation-1970 8s infinite linear; }
+        .machine-1970-container .content .mugg-base { position: absolute; bottom: 0; left: 50%; width: 100px; height: 5px; background-color: #333; border-radius: 10px 10px 0 0; transform: translateX(-50%); }
+        .machine-1970-container .content .press { position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+        .machine-1970-container .content .press .one { width: 120px; height: 20px; background-color: #d7d7d7; border-radius: 0 0 60px 60px; box-shadow: inset 6px -7px 3px #c8c8c8; }
+        .machine-1970-container .content .press .two { width: 70px; height: 18px; margin: 0 auto -5px; background-color: #000; border-radius: 0 0 50% 50%; }
+        .machine-1970-container .content .press .three { width: 10px; height: 14px; margin: 0 auto; background-color: #000; border-radius: 0 0 3px 3px; }
+        .machine-1970-container .content .press .arm-container { position: absolute; top: 0; right: 7px; z-index: -1; transform-origin: left; }
+        .machine-1970-container .content .press .arm-container.active { animation: pressArmAnimation-1970 1s 2 alternate; }
+        .machine-1970-container .content .press .arm-container .five { position: absolute; top: 23px; right: -20px; width: 46px; height: 6px; background-color: #585858; }
+        .machine-1970-container .content .press .arm-container .six { position: absolute; top: 17px; right: -68px; width: 51px; height: 17px; background-color: #000; border-radius: 40px; }
+        .machine-1970-container .content .press .coffee { width: 6px; height: 0; margin: 0 auto; background-color: #73372c; }
+        .machine-1970-container .content .press .coffee.active { animation: coffeeAnimation-1970 3s 1.8s; }
+        .machine-1970-container .head { width: 88%; height: 100px; margin: 0 auto; background-color: #e4e8e9; border-radius: 10px; position: relative; box-shadow: inset 10px 0px 2px #d4d4d4, inset -10px 0px 2px #d4d8d9; }
+        .machine-1970-container .head .aside { position: absolute; top: 50%; right: 8px; padding: 15px; transform: translateY(-50%); }
+        .machine-1970-container .head .aside div { position: relative; width: 11px; height: 30px; background-color: #c1c1c1; display: inline-block; overflow: hidden; }
+        .machine-1970-container .head .aside div::before { content: ''; position: absolute; top: -70%; left: 0; width: 100%; height: 70%; background-color: #999; }
+        .machine-1970-container .head .aside div:first-of-type::before { animation-delay: .2s !important; }
+        .machine-1970-container .head .aside div:last-of-type::before { animation-delay: .5s !important; }
+        .machine-1970-container .head .aside.active div::before { animation: asideAnimation-1970 .4s infinite linear; }
+        .machine-1970-container .head .circle { position: absolute; top: 50%; left: 50%; width: 40px; height: 40px; border-radius: 50%; border: 7px solid #333; background-color: #a9cce2; transform: translate(-50%,-50%) rotate(-45deg); box-shadow: inset 14px 0px 2px 1px #9ebed3; }
+        .machine-1970-container .head .circle.active { animation: circleAnimation-1970 2s infinite linear; }
+        .machine-1970-container .head .choise { position: absolute; top: 50%; width: 20px; height: 20px; background-color: #c1c1c1; border-radius: 50%; transform: translateY(-50%); box-shadow: 0px 0px 5px #555; }
+        .machine-1970-container .head .choise1 { left: 30px; }
+        .machine-1970-container .head .choise2 { left: 60px; }
+        .machine-1970-container .head .choise1.active { background-color: #ce1b1b; }
+        .machine-1970-container .head .choise2.active { background-color: #00ad00; }
+        @keyframes asideAnimation-1970 { from { top: -35%; } to { top: 100%; } }
+        @keyframes pressArmAnimation-1970 { from { transform: rotateY(0); } to { transform: rotateY(45deg); } }
+        @keyframes coffeeAnimation-1970 { 0% , 100% { height: 0; } 10% , 94% { height: 100px; } }
+        @keyframes bubblesAnimation-1970 { 0% { transform: translate(0,0); opacity: 0; } 100% { transform: translate(-15px, -40px); opacity: .3; } }
+        @keyframes circleAnimation-1970 { from { transform: translate(-50%,-50%) rotate(-45deg); } to { transform: translate(-50%,-50%) rotate(315deg); } }
+
+        /* --- 1980 Coffee Machine Styles --- */
+        .container-1980 { background-color: #efb54a; }
+        .machine-1980 { height: 0px; width: 160px; border-top: 70px solid #735123; border-left: 10px solid transparent; border-right: 10px solid transparent; position:absolute; transform: scale(1.2); }
+        .machine-1980 .lower{ height:30px; width:160px; background-color: #735123; border-radius:5px 5px 0px 0px; position: relative; left:3px; bottom:87px; }
+        .machine-1980 .bottom{ height:8px; width:170px; background-color: #3B240E; position: relative; top:4px; right:5px; }
+        .machine-1980 .btnn{ height:15px; width:9px; background-color: #3B240E ; position: relative; left:13px; top:8px; }
+        .machine-1980 .light{ position: relative; height:8px; width: 8px; border-radius: 50%; background-color: #E06526; bottom:2.2px; left:28px; }
+        .machine-1980 .upper{ background-color: #3B240E ; height:5px; width:185px; position: relative; bottom:70px; right:12.5px; }
+        .machine-1980 .middle{ height:65px; width:60px; position: relative; background-color: #E06526 ; bottom:70px; left:50px; }
+        .machine-1980 .back{ width:145px; background-color: #3B240E; height:140px; position: relative; left:8px; bottom:86px; }
+        .machine-1980 .cup{ height: 0px; width: 30px; border-top: 70px solid #EDE9D7; border-left: 10px solid transparent; border-right: 10px solid transparent; position:relative; top:47px; left:48px; z-index:5; }
+        .machine-1980 .coff{ height:30px; width: 8px; border-radius:0px 0px 15px 15px; background-color:#E06526; position: relative; bottom: 23px; left:18px; visibility: hidden; }
+        .machine-1980:hover .coff{ animation:coffee-1980 6s 4s ; }
+        @keyframes coffee-1980{ 0%{ visibility: visible; } 100%{ transform: translateY(30px); } }
+        .machine-1980 .shadow{ height: 0px; width: 6px; border-top: 70px solid #DAD1B7; border-left: 0px solid transparent; border-right: 10px solid transparent; position:relative; bottom:70px; left:24px; }
+        .machine-1980 .u{ height:4px; width:55px; background-color: white; border-radius:5px 5px 5px 5px; position: relative; bottom:143px; right:12px; }
+        .machine-1980 .brdr{ height:12px; width:155px; background-color: #E06526; position: relative; top:128px; right:3px; }
+        .machine-1980 .d1,.machine-1980 .d2,.machine-1980 .d3,.machine-1980 .d4,.machine-1980 .d5,.machine-1980 .d6,.machine-1980 .d7,.machine-1980 .d8,.machine-1980 .d9,.machine-1980 .d10{ background-color:#3B240E; height:10px; width: 10px; border-radius:50%; position: relative; }
+        .machine-1980 .d1{ bottom:3px; left:3px; } .machine-1980 .d2{ bottom:13px; left:18px; } .machine-1980 .d3{ bottom:23px; left:33px; } .machine-1980 .d4{ bottom:33px; left:48px; } .machine-1980 .d5{ bottom:43px; left:63px; } .machine-1980 .d6{ bottom:53px; left:78px; } .machine-1980 .d7{ bottom:63px; left:93px; } .machine-1980 .d8{ bottom:73px; left:108px; } .machine-1980 .d9{ bottom:83px; left:123px; } .machine-1980 .d10{ bottom:93px; left:138px; }
+        .machine-1980 .b1{ width:45px; height:16px; background-color:#EDE9D7; position: relative; bottom:70px; left:58px; z-index: 5; }
+        .machine-1980 .b2{ background-color: #DAD1B7; height: 16px; width:12px; position: relative; left:33px; }
+        .machine-1980 .b3{ background-color: white; height:13px; border-radius: 0px 0px 5px 5px; width:45px; position: relative; }
+        .machine-1980 .handle{ height:7px; border-right: 70px solid #E06526; border-top: 8px solid transparent; border-bottom: 8px solid transparent; position: relative; left:44px; bottom:24px; }
+        .machine-1980:hover .handle{ animation:hndle-1980 6s; }
+        @keyframes hndle-1980{ 50%{ transform: translateX(-110px) rotateY(-180deg); } }
+        .machine-1980 .h1{ height:7px; width:7px; border-radius:3.5px; background-color: #E06526; position: relative; right:3.5px; }
+        .machine-1980 .h2{ height:22.5px; width:22.5px; border-radius:50%; background-color: #c9561d; position: relative; left:58px; bottom:14.5px; transform: rotateY(70deg); }
+        .machine-1980 .b4{ background-color:white; position: relative; height:6px; width:12px; left:16px; }
+        .machine-1980 .timer{ height:32px; width: 32px; border-radius: 50%; background-color: white; position: relative; top:18px; left:15px; }
+        .machine-1980 .dot1,.machine-1980 .dot2,.machine-1980 .dot3,.machine-1980 .dot4,.machine-1980 .dot5,.machine-1980 .dot6,.machine-1980 .dot7,.machine-1980 .dot8{ position: relative; height:5px; width:5px; border-radius:2.5px ; background-color:#663C16; }
+        .machine-1980 .dot1{ top:2px; left:13px; } .machine-1980 .dot2{ top:8px; left:2px; } .machine-1980 .dot3{ left:24px; top:3px; } .machine-1980 .dot4{ top:10px; left:13.5px; } .machine-1980 .dot5{ left:4.4px; bottom:14px; } .machine-1980 .dot6{ left:21.5px; bottom:19px; } .machine-1980 .dot7{ left:5px; bottom:9px; } .machine-1980 .dot8{ bottom:14px; left:22px; }
+        .machine-1980 .hand{ background-color: #E06526; position: relative; height:8px; width: 3px; border-radius:4px 4px 4px 4px; left:15px; bottom:30px; }
+        .machine-1980 .btn1{ background-color: white; height:8px; width:8px; position: relative; border-radius: 50%; right:28px; bottom:10px; }
+        .machine-1980 .btn2{ background-color: #E06526; height:12px; width: 12px; border-radius: 50%; position: relative; right:30px; }
+        .machine-1980 .btn0{ background-color: white; height:6px; width:6px; position: relative; border-radius: 50%; left:2.6px; top:2.7px; }
+        .machine-1980 .steam{ background-color: rgba(204, 204, 204,0.2); height:10px; width:10px; border-radius: 50%; position: relative; left:22px; }
+        .machine-1980:hover .steam{ animation:stm-1980 4s 4s; }
+        @keyframes stm-1980{ 100%{ bottom:45px; } }
+        .machine-1980 .s1{ background-color: rgba(230, 230, 230,0.3); height:6px; width:6px; position: relative; bottom:2px; border-radius: 50%; }
+        .machine-1980 .drop{ background-color: #E06526; height:10px; width:10px; border-radius:50%; position: relative; bottom:62.5px; left:16.7px; visibility: hidden; }
+        .machine-1980:hover .drop{ animation: drop-1980 2s 6.1s; }
+        @keyframes drop-1980{ 100%{ visibility: visible; transform: translateY(20px); } }
+
+        /* --- 1990 Coffee Machine Styles --- */
+        .container-1990 { background-color:#b3cfdd; }
+        .machine-1990-container{ width: 300px; height: 350px; position: relative; transform: scale(1.1); }
+        .machine-1990-container .coffee-beans{ height:30px; width:70px; background-color:transparent; position:absolute; top:10px; left:40px; border: 1px solid black; }
+        .machine-1990-container .coffee-beans::after{ content: ""; width: 77px; height: 12px; position: absolute; background-color: #615e5e; top:0; left:-3px; border-radius:3px; }
+        .machine-1990-container .coffee-beans::before{ content: ""; width: 74px; height: 30px; position: absolute; background-color: #74372b; top:30px; left:-2px; }
+        .machine-1990-container .coffee-header{ width:100%; height:70px; background-color:#ddcfcc; position:absolute; top:70px; border-radius:25px; }
+        .machine-1990-container .coffee-header:before{ content: ""; width: 15px; height: 40px; position: absolute; background-color: #ddcfcc; top:15px; left:-12px; border-radius:10px 0 0 10px; }
+        .machine-1990-container .buttons{ height:20px; width:20px; background-color:#282323; border-radius:100%; position:absolute; top:10px; }
+        .machine-1990-container .btn-1{ left:10px; } .machine-1990-container .btn-2{ left:35px; } .machine-1990-container .btn-3{ left:60px; }
+        .machine-1990-container .display{ height:50px; width:50px; background-color:#9acfc5; border-radius:100%; position:absolute; top:8px; left:calc(50% - 25px); border: 3px solid #43beae; }
+        .machine-1990-container .display:before{ content: ""; width: 5px; height: 33px; position: absolute; background-color: #615e5e; top:5px; left:21px; border-radius:10px; transform:rotate(-25deg); animation: move-1990 1s infinite; }
+        @keyframes move-1990{ 0%{ transform:rotate(-25deg); } 50%{ transform:rotate(25deg); } 100%{ transform:rotate(-25deg); } }
+        .machine-1990-container .display:after{ content: ""; width: 12px; height: 12px; position: absolute; background-color: #282323; top:16px; left:18px; border-radius:100%; }
+        .machine-1990-container .bar{ height:15px; width:50px; background-color:#615e5e; position:absolute; top: 10px; border-radius:8px; right:10px; }
+        .machine-1990-container .coffee-body{ width:85%; position:absolute; top:140px; left:calc(50% - 42.5%); height:180px; background-color:#bcb0af; }
+        .machine-1990-container .coffee-body:before { content: ""; width: 90%; height: 100px; background-color: #776f6e; position: absolute; bottom: 0; left: calc(50% - 45%); border-radius: 20px 20px 0 0; }
+        .machine-1990-container .mid-top{ width:30%; height:35px; background-color:#282323; position:absolute; top:0; left:calc(50% - 15%); border-radius:0 0 5px 5px; }
+        .machine-1990-container .mid-top:after{ content:''; width:70%; height:25px; background-color:#282323; position:absolute; top:35px; left:calc(50% - 35%); border-radius:0 0 6px 6px; }
+        .machine-1990-container .mid-top:before{ content:''; width:20%; height:15px; background-color:#282323; position:absolute; top:60px; left:calc(50% - 10%); border-radius:0 0 3px 3px; }
+        .machine-1990-container .handle{ width:15%; height:6px; background-color:#615e5e; position:absolute; top:45px; left:calc(50% - 25.5%); }
+        .machine-1990-container .handle:after{ content:''; width:90%; height:15px; background-color:#282323; position:absolute; top:-4px; left:-30px; }
+        .machine-1990-container .mid-side{ width:5%; height:40px; background-color:#615e5e; position:absolute; top:0; right: 20px; }
+        .machine-1990-container .mid-side:after{ content:''; width:100%; height:10px; background-color:transparent; position:absolute; top:30px; right:-15px; border-bottom:15px solid #615e5e; border-left:15px solid transparent; border-right:15px solid transparent; border-radius:35%; }
+        .machine-1990-container .coffee-medium__cup { width: 80px; height: 47px; position: absolute; bottom: 0; left: calc(50% - 40px); background-color: #FFF; border-radius: 0 0 70px 70px / 0 0 110px 110px; animation: moving-1990 2s ease-in; }
+        .machine-1990-container .coffee-medium__cup::after { content: ""; width: 20px; height: 20px; position: absolute; top: 6px; right: -13px; border: 5px solid #FFF; border-radius: 50%; }
+        @keyframes moving-1990{ 0%{ transform: translateX(-500px); } 100%{ transform:translateX(0px); } }
+        .machine-1990-container .liquid{ width:2%; height:0; background-color:#74372b; position:absolute; top:75px; left:calc(50% - 1%); opacity:0; animation:liquid-1990 2s 2s linear infinite; }
+        @keyframes liquid-1990 { 0% { height: 0px; opacity: 1; } 5% { height: 0px; opacity: 1; } 40% { height: 35px; opacity: 1; } 95% { height: 57px; opacity: 1; } 100% { height: 62px; opacity: 0; } }
+        .machine-1990-container .coffee-footer{ width:100%; height:15px; position:absolute; top:320px; background-color: #41bdad; border-radius: 10px; }
+        .machine-1990-container .coffee-footer::after { content: ""; width: 106%; height: 26px; position: absolute; bottom: -25px; left: -8px; background-color: #000; }
+
+        /* --- 2000 Coffee Machine Styles --- */
+        .container-2000 { background-color: #a3d5d3; }
+        .machine-2000-container { width: 300px; height: 350px; position: relative; }
+        .machine-2000-container .coffee-header { width: 100%; height: 80px; position: absolute; top: 0; left: 0; background-color: #7b7f81; border-radius: 10px; }
+        .machine-2000-container .coffe-header-button { width: 25px; height: 25px; position: absolute; top: 25px; background-color: #252525; border-radius: 50%; }
+        .machine-2000-container .coffe-header-button::after { content: ""; width: 10px; height: 10px; position: absolute; bottom: -10px; left: calc(50% - 5px); background-color: #353535; }
+        .machine-2000-container .coffee-header-btn1 { left: 15px; }
+        .machine-2000-container .coffee-header-btn2 { left: 50px; }
+        .machine-2000-container .coffe-header-display { width: 50px; height: 50px; position: absolute; top: calc(50% - 25px); left: calc(50% - 25px); border-radius: 50%; background-color: #353535; border: 5px solid #1c1c1c; }
+        .machine-2000-container .coffe-header-details { width: 10px; height: 25px; position: absolute; top: 10px; right: 10px; background-color: #252525; box-shadow: -12px 0 0 #252525, -24px 0 0 #252525; animation: pisk-2000 5s 5s linear infinite; }
+        .machine-2000-container .coffee-medium { width: 90%; height: 150px; position: absolute; top: 80px; left: calc(50% - 45%); background-color: #abb8be; }
+        .machine-2000-container .coffee-medium::before { content: ""; width: 90%; height: 100px; background-color: #697880; position: absolute; bottom: 0; left: calc(50% - 45%); border-radius: 20px 20px 0 0; }
+        .machine-2000-container .coffee-medium-exit { width: 50px; height: 20px; position: absolute; top: 0; left: calc(50% - 25px); background-color: #231f20; }
+        .machine-2000-container .coffee-medium-exit::before { content: ""; width: 50px; height: 20px; border-radius: 0 0 50% 50%; position: absolute; bottom: -20px; left: calc(50% - 25px); background-color: #231f20; }
+        .machine-2000-container .coffee-medium-exit::after { content: ""; width: 10px; height: 10px; position: absolute; bottom: -30px; left: calc(50% - 5px); background-color: #231f20; }
+        .machine-2000-container .coffee-medium-arm { width: 70px; height: 20px; position: absolute; top: 15px; right: 25px; background-color: #231f20; }
+        .machine-2000-container .coffee-medium-arm::before { content: ""; width: 15px; height: 5px; position: absolute; top: 7px; left: -15px; background-color: #252525; }
+        .machine-2000-container .coffee-medium-liquid { width: 5px; height: 65px; opacity: 0; position: absolute; top: 50px; left: calc(50% - 2px); background-color: #7a5656; animation: liquid-2000 5s 5s linear infinite; }
+        .machine-2000-container .coffee-medium-cup { width: 80px; height: 50px; position: absolute; bottom: 0; left: calc(50% - 37px); background-color: #fff; border-radius: 0 0 70px 70px / 0 0 110px 110px; }
+        .machine-2000-container .coffee-medium-cup::after { content: ""; width: 20px; height: 20px; position: absolute; top: 5px; right: -13px; border: 5px solid #fff; border-radius: 50%; }
+        .machine-2000-container .coffee-medium-smoke { width: 8px; height: 20px; position: absolute; border-radius: 5px; background-color: #b3aeae; }
+        .machine-2000-container .coffee-medium-smoke-1 { opacity: 0; bottom: 50px; left: 100px; animation: smokeffect-one-2000 3s 5s linear infinite; }
+        .machine-2000-container .coffee-medium-smoke-2 { opacity: 0; bottom: 50px; left: 110px; animation: smokeffect-two-2000 3s 5s linear infinite; }
+        .machine-2000-container .coffee-medium-smoke-3 { opacity: 0; bottom: 70px; left: 120px; animation: smokeffect-one-2000 3s 5s linear infinite; }
+        .machine-2000-container .coffee-medium-smoke-4 { opacity: 0; bottom: 50px; left: 135px; animation: smokeffect-two-2000 3s 5s linear infinite; }
+        .machine-2000-container .coffee-medium-smoke-5 { opacity: 0; bottom: 50px; left: 150px; animation: smokeffect-one-2000 3s 5s linear infinite; }
+        .machine-2000-container .footer { width: 95%; height: 25px; position: absolute; bottom: 25px; left: calc(50% - 47.5%); background-color: #313336; border-radius: 10px; }
+        .machine-2000-container .footer::after { content: ""; width: 105%; height: 25px; position: absolute; bottom: -25px; left: -8px; background-color: #252525; }
+        @keyframes liquid-2000 { 0% { height: 0px; opacity: 1; } 5% { height: 0px; opacity: 1; } 20% { height: 60px; opacity: 1; } 95% { height: 62px; opacity: 1; } 100% { height: 62px; opacity: 0; } }
+        @keyframes pisk-2000 { 0% { background-color: #6e1b1b; opacity: 0.8; } 5% { background-color: #6e1b1b; opacity: 1; } 50% { background-color: #6e1b1b; opacity: 1; } 95% { background-color: #901414; opacity: 1; } 100% { background-color: #da1414; opacity: 0; } }
+        @keyframes smokeffect-one-2000 { 0% { bottom: 20px; opacity: 0; } 40% { bottom: 50px; opacity: 0.5; } 80% { bottom: 80px; opacity: 0.3; } 100% { bottom: 90px; opacity: 0; } }
+        @keyframes smokeffect-two-2000 { 0% { bottom: 40px; opacity: 0; } 40% { bottom: 70px; opacity: 0.5; } 80% { bottom: 90px; opacity: 0.3; } 100% { bottom: 95px; opacity: 0; } }
+
+        /* --- 2010 Coffee Machine Styles --- */
+        .container-2010 { background:#F2F9FB; }
+        .machine-2010-box { display:block; width:700px; height:500px; position:relative; z-index:10; }
+        .machine-2010-box .top-section-upper { position:absolute; width:70%; height:25%; top:5%; left:15%; background:#6BD6EC; border:solid 7px #004D7F; border-radius:12px 12px 40px 40px; overflow:hidden; z-index:10; }
+        .machine-2010-box .left-light { position:absolute; width:5%; height:100%; left:0; top:0; background:rgba(255,255,255,0.15); }
+        .machine-2010-box .right-shadow { position:absolute; width:5%; height:100%; right:0; top:0; background:rgba(0,0,0,0.1); }
+        .machine-2010-box .dial { position:absolute; width:12%; height:48%; left:44%; top:25%; border-radius:50%; background:#004D7F; }
+        .machine-2010-box .dial-inner { background:#fff; border-radius:50%; position:absolute; left:10%; top:10%; width:80%; height:80%; -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%); clip-path: polygon(0 0, 100% 0, 100% 75%, 0 75%); }
+        .machine-2010-box .indicator { position:absolute; width:20%; height:20%; background:#004D7F; border-radius:50%; left:40%; top:40%; transform:rotate(-50deg); transition:transform 0.3s ease-out; }
+        .machine-2010-box .indicator::after { content: ""; position:absolute; background:#004D7F; height:180%; width:50%; border-radius:50px; bottom:20%; left:25%; }
+        .machine-2010-box .button { position:absolute; height:10%; width:5%; right:10%; top:11%; z-index:8; background:#F65E12; border:solid 7px #004D7F; border-radius:12px; cursor:pointer; transition:all ease 0.3s; }
+        .machine-2010-box .top-section-lower { position:absolute; width:60%; height:5%; background:#CCEEF6; border:solid 7px #004D7F; border-radius:0 0 20px 20px; z-index:8; top:30%; left:20%; }
+        .machine-2010-box .middle-section { position:absolute; width:50%; height:41%; background:#00B0D3; border:solid 7px #004D7F; z-index:6; left:25%; top:35%; }
+        .machine-2010-box .dispenser { position:absolute; left:10%; width:20%; height:25%; background:#CCEEF6; border:solid 7px #004D7F; border-radius: 0 0 20px 20px; }
+        .machine-2010-box .dispenser::after { content:""; position:absolute; top:0; left:0; width:100%; height:15%; border-bottom:solid 7px #004D7F; background:#00B0D3; }
+        .machine-2010-box .dispenser .handle { position:absolute; width:100%; height:20%; background:#00B0D3; border:solid 7px #004D7F; z-index:10; right:100%; top:20%; border-radius:50px 0 0 50px; z-index:1px; }
+        .machine-2010-box .dispenser .left-light, .machine-2010-box .dispenser .right-shadow { width:20%; }
+        .machine-2010-box .dispenser .left-light { border-radius:0 0 0 12px; background:rgba(255,255,255,0.4); }
+        .machine-2010-box .dispenser .right-shadow { border-radius:0 0 12px 0; }
+        .machine-2010-box .spout { position:absolute; width:50%; left:14%; height:10%; top:100%; background:#CCEEF6; border:solid 7px #004D7F; border-radius:0 0 5px 5px; z-index:10; }
+        .machine-2010-box .spout::after { content: ""; position:absolute; width:20%; height:100%; top:100%; left:20%; background:#CCEEF6; border:solid 7px #004D7F; border-radius:0 0 5px 5px; z-index:10; }
+        .machine-2010-box .dispenser-right { right:10%; left:auto; }
+        .machine-2010-box .dispenser-right .handle { right:auto; left:100%; border-radius:0 50px 50px 0; }
+        .machine-2010-box .coffee-cup { position:absolute; left:10%; width:20%; height:35%; bottom:-3%; background:#FFA315; border:solid 7px #004D7F; border-radius:10px 10px 20px 20px; z-index:10; }
+        .machine-2010-box .coffee-cup::before { content:""; position:absolute; width:100%; height:20%; top:0; left:0; background:#F65E12; border-bottom:solid 7px #004D7F; }
+        .machine-2010-box .coffee-cup::after { content:""; position:absolute; right:-40%; width:20%; height:45%; top:20%; border: solid 7px #004D7F; border-radius: 0 10px 10px 0; }
+        .machine-2010-box .coffee-cup .left-light, .machine-2010-box .coffee-cup .right-shadow { width:15%; }
+        .machine-2010-box .coffee-cup .left-light { border-radius:0 0 0 12px; }
+        .machine-2010-box .coffee-cup .right-shadow { border-radius:0 0 12px 0; }
+        .machine-2010-box .coffee-cup.coffee-cup-right { left:auto; right:10%; }
+        .machine-2010-box .steam-left { width: 11%; height: 30%; position: absolute; left: 15%; background: #004D7F; top: -45%; border-radius: 50px; opacity:0; transition: all ease 0.3s; animation-delay:0.6s!important; }
+        .machine-2010-box .steam-right { width: 10%; height: 30%; position: absolute; right: 20%; background: #004D7F; top: -35%; border-radius: 50px; transition: all ease 0.3s; opacity:0; animation-delay:0.8s!important; }
+        .machine-2010-box .base { position:absolute; width:70%; height:15%; bottom:5%; left:15%; background:#6BD6EC; border:solid 7px #004D7F; border-radius:12px 12px 0px 0px; overflow:hidden; z-index:10; }
+        .machine-2010-box .base::before { content:""; position:absolute; width:100%; height:10%; top:0; left:0; background:#CCEEF6; border-bottom:solid 7px #004D7F; }
+        .machine-2010-box .counter { position:absolute; width:100%; height:0; bottom:5%; left:0; background:#6BD6EC; border-bottom:solid 7px #004D7F; border-radius:50px; overflow:hidden; z-index:10; }
+        .machine-2010-box .coffee { width:11%; position:absolute; left:44%; background:#004D7F; top:100%; bottom:0%; border-radius:50px; z-index:1; transition:all ease 0.3s; }
+        .button-2010 { background:#F65E12; display:inline-block; padding:18px 35px; text-transform:uppercase; color:#fff; font-size:13px; letter-spacing:2px; font-weight:700; border-radius:3px; cursor:pointer; margin-top: 20px; }
+        .machine-2010-box.active .button { right:11%; }
+        .machine-2010-box.active .indicator { animation: heatUp-2010 5.3s ease 1 forwards; }
+        .machine-2010-box.active .steam-left, .machine-2010-box.active .steam-right { animation: steam-2010 1s linear 4 forwards; }
+        .machine-2010-box.active .coffee { animation: pourCoffee-2010 5s linear 1 forwards; }
+        .machine-2010-box.active .make-coffee { cursor:not-allowed; }
+        @keyframes heatUp-2010 { 0% {transform:rotate(-50deg);} 10% {transform:rotate(50deg);} 30% {transform:rotate(20deg);} 40% {transform:rotate(50deg);} 60% {transform:rotate(10deg);} 70% {transform:rotate(50deg);} 100% {transform:rotate(-50deg);} }
+        @keyframes steam-2010 { 0%, 10% {opacity:0; transform:translateY(0);} 50% {opacity:1; transform:translateY(-10px);} 90%, 100% {opacity:0; transform:translateY(-20px);} }
+        @keyframes pourCoffee-2010 { 0% {top:100%; bottom:0%;} 6%, 94% {top:100%; bottom:-200%;} 100% {top:300%; bottom:-200%;} }
+
+        /* --- 2020 Coffee Machine Styles --- */
+        .container-2020 { background:grey; }
+        .machine-2020 { position:relative; text-align:center; padding:5%; transform: scale(0.9); }
+        .machine-2020 .coffee-machine-upperpart { display:inline-block; background:linear-gradient(to right, #1b1a1a,#6f6a6a, rgba(140, 140, 136, 0.26)); box-shadow:inset 0px 0px 50px 20px black; width:350px; height:160px; border-radius:10px; }
+        .machine-2020 .panel { margin:0 auto; margin-top:8px; width:300px; height:140px; border: 3px solid #131212; border-radius:10px; background:linear-gradient(to right,#171616,#d0d0d0); box-shadow:inset 2px 2px 40px 5px black, inset 0px 0px 2px 3px rgba(255, 255, 255, 0.57),inset 0px 0px 0px 3px black,inset 0px 0px 30px 10px black; }
+        .machine-2020 .options { list-style:none; float:right; text-align:justify; margin: 20px 20px 0px 0px; font-size:10px; color: #484545; font-family: monospace,sans-serif; }
+        .machine-2020 .options li{ margin:5px auto; border:1px solid black; border-radius:2px; padding:3px; background-color:#d0d0d0; box-shadow:inset 0px 0px 5px 3px black; cursor: pointer; transition: all 0.2s; }
+        .machine-2020 .options li.options-selected { color: #fff; background-color: #a5a5a5; box-shadow:inset 0px 0px 8px 4px #333; }
+        .machine-2020 .coffee-machine-middlepart { position:relative; margin:0 auto; margin-top:-5px; width:300px; height:250px; background:linear-gradient(to right,#171616,#d0d0d0); box-shadow:inset 3px 2px 5px 5px black, inset -3px 0px 2px 5px white; border-radius:4px; text-align:right; }
+        .machine-2020 .pourer { display:inline-block; width:80px; height:40px; margin-left:36px; float:left; border:1px solid #0e0e0e; border-radius:2px 2px 30px 30px/ 40% 40%; box-shadow:inset 0px 0px 5px 2px black; background:linear-gradient(to right,#0e0e0e,#333232, white,#333030, #5a5252,white,white, #636262, #292727,white,grey); z-index:1; }
+        .machine-2020 .pourer::after{ content:""; display:inline-block; margin-top:39px; margin-right:20px; width:35px; height:30px; border:1px solid #1f1e1e; border-radius:2px 2px 30px 30px/ 40% 40%; box-shadow:inset 0px 0px 5px 2px black; background:linear-gradient(to right,#0e0e0e,#fff, #464343,#333030, #484141,#5a5858, #fff,#524a4a,#5a5454, #fff,#fff,#333030); z-index:-900; }
+        .machine-2020 .milk-container { display:inline-block; margin:40px 10px auto auto; width:140px; height:170px; background-color:transparent; border-radius:2px 2px 40px 40px; box-shadow:inset 0px 0px 20px 3px #403e3e, inset -15px 0px 20px 4px white; }
+        .machine-2020 .milk-container::before { margin-top:-30px; content:""; width:140px; height:40px; background:#696666; display:inline-block; border-radius:2px 2px 10px 10px; box-shadow: inset 0px 0px 20px 5px #0c0b0b, inset -15px 0px 20px 4px white; z-index:-900; }
+        .machine-2020 .milk-container::after { margin-top: 48px; margin-right: 5px; content:""; width:130px; height:100px; background:#fff; border-radius: 2px 2px 35px 35px; display:inline-block; }
+        .machine-2020 .milk-pipe { width:10px; height:200px; padding:3px; background-color:transparent; z-index:-999; margin-top:-220px; margin-left:210px; border:1px solid #403e3e; box-shadow:inset 0px 0px 5px 3px #403e3e,inset -2px 0px 2px 3px white; }
+        .machine-2020 .milk-container-stand{ width:140px; margin:13px 10px auto auto; height:85px; background:linear-gradient(to right,#1d1c1c,#d0d0d0); box-shadow:inset 3px 2px 5px 5px #171616, inset -3px 0px 2px 5px white, 3px -7px 3px 3px #171616; border-radius:4px; }
+        .machine-2020 .coffee-machine-bottom { width: 400px; border-bottom: 75px solid #2b2929; border-left: 70px solid transparent; border-right: 70px solid transparent; margin: 0 auto; margin-top: -15px; z-index: -1000; position: relative; display: inline-block; }
+        .machine-2020 .coffee-machine-bottom::after { width:540px; height:50px; background-color:black; content:""; display:block; margin-left:-70px; top:75px; position:absolute; background:linear-gradient(to right,#1d1c1c,#d0d0d0); box-shadow:inset 3px 2px 5px 5px black, inset -3px 0px 2px 5px white; }
+        .machine-2020 .cup-mat { position:absolute; display:inline-block; width:130px; height:70px; border: 2px solid black; box-shadow: inset 0px 0px 20px 10px black; background: radial-gradient(#000,#1f1d1d, #000); border-radius:50%; transform:rotateX(50deg); left: 120px; top: 430px; }
+        .machine-2020 .cup { display: inline-block; position: absolute; width: 100px; height: 100px; background-color: white; border: 2px solid black; border-radius: 0px 0px 50px 50px; padding: 0px 2px 4px 2px; left: 135px; top: 360px; z-index: 100; border-top-color: transparent; box-shadow: inset -1px -3px 2px 2px #a79d9d; }
+        .machine-2020 .cup::before { padding:2px; width:100px; height:30px; border-radius:50%; content:""; display:inline-block; background-color:transparent; margin-top:-20px; margin-left:-4px; border:2px solid black; box-shadow:inset 0px 0px 2px 2px #777272; }
+        .machine-2020 .coffee { margin-left:5px; width:90px; height:0px; background-color:#c19156; margin-bottom:20px; border-radius: 0px 0px 45px 45px; z-index:-100; position:absolute; transition: height 1s ease-in-out; }
+        .machine-2020 .coffee.pouring { height: 70px; }
+        .machine-2020 .coffee::before { border-radius:50%; content:""; display:inline-block; background-color:#c19156; width:90px; height:30px; margin-top:-20px; box-shadow: inset 0px 0px 20px 2px #af6b18; z-index:-100; }
+        .machine-2020 .coffee-pipe { position: absolute; width: 10px; height: 0px; background-color: #c19156; margin-top: -132px; margin-left: 47px; transition: height 0.5s ease-in; }
+        .machine-2020 .coffee-pipe.pouring { height: 124px; }
+    </style>
+</head>
+<body>
+
+    <h1>Coffee Machines: A Journey Through Time (1950-2020)</h1>
+
+    <!-- 1950s Machine -->
+    <div class="decade-container container-1950">
+        <h2>1950s</h2>
+        <div class="machine-wrapper"><div class="machine-1950"><div class="machine-top"><div class="machine-middle"></div></div><div class="machine-bottom"></div><div class="hand"></div><div class="left-hand"></div><div class="coffee"></div></div></div>
+    </div>
+
+    <!-- 1960s Machine -->
+    <div class="decade-container container-1960">
+        <h2>1960s</h2>
+        <div class="machine-wrapper"><div class="coffee-machine-1960"><span class="body"></span><span class="spout"></span><span class="cup"></span><span class="button"></span><span class="coffee"></span></div></div>
+    </div>
+
+    <!-- 1970s Machine -->
+    <div class="decade-container container-1970">
+        <div class="machine-1970-wrapper">
+            <section class="controller-1970"><h2>1970s</h2><button class="button make-coffee">Make Coffee</button><button class="button stop disabled" disabled>Turn Off</button></section>
+            <div class="machine-1970-container"><div class="head"><div class="aside"><div></div><div></div><div></div></div><div class="circle"></div><div class="choise choise1 active"></div><div class="choise choise2"></div></div><div class="content"><div class="back"></div><div class="press"><div class="one"></div><div class="two"></div><div class="three"></div><div class="arm-container"><div class="five"></div><div class="six"></div></div><div class="coffee"></div></div><div class="mugg"><div class="mugg-arm"></div><div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div></div><div class="mugg-base"></div></div><div class="above-base"></div><div class="base"><div></div><div class="spans"><span></span><span></span><span></span></div></div></div>
+        </div>
+    </div>
+
+    <!-- 1980s Machine -->
+    <div class="decade-container container-1980">
+        <h2>1980s</h2>
+        <div class="machine-wrapper"><div class="machine-1980"><div class="upper"></div><div class="middle"><div class="timer"><div class="dot1"></div><div class="dot2"></div><div class="dot3"></div><div class="dot4"></div><div class="dot5"></div><div class="dot6"></div><div class="dot7"></div><div class="dot8"></div><div class="hand"></div></div><div class="btn1"></div><div class="btn2"><div class="btn0"></div></div></div><div class="b1"><div class="b2"></div><div class="b3"></div><div class="b4"></div><div class="handle"><div class="h1"></div><div class="h2"></div></div><div class="coff"></div><div class="steam"><div class="s1"></div></div><div class="drop"></div></div><div class="back"><div class="brdr"><div class="d1"></div><div class="d2"></div><div class="d3"></div><div class="d4"></div><div class="d5"></div><div class="d6"></div><div class="d7"></div><div class="d8"></div><div class="d9"></div><div class="d10"></div></div><div class="cup"><div class="shadow"></div><div class="u"></div></div></div><div class="lower"><div class="btnn"></div><div class="light"></div><div class="bottom"></div></div></div></div>
+    </div>
+
+    <!-- 1990s Machine -->
+    <div class="decade-container container-1990">
+        <h2>1990s</h2>
+        <div class="machine-wrapper"><div class="machine-1990-container"><div class="coffee-beans"></div><div class="coffee-header"><div class="buttons btn-1"></div><div class="buttons btn-2"></div><div class="buttons btn-3"></div><div class="display"></div><div class="bar"></div></div><div class="coffee-body"><div class="mid-top"></div><div class="handle"></div><div class="mid-side"></div><div class="coffee-medium__cup"></div><div class="liquid"></div></div><div class="coffee-footer"></div></div></div>
+    </div>
+
+    <!-- 2000s Machine -->
+    <div class="decade-container container-2000">
+        <h2>2000s</h2>
+        <div class="machine-wrapper"><div class="machine-2000-container"><div class="coffee-header"><div class="coffe-header-button coffee-header-btn1"></div><div class="coffe-header-button coffee-header-btn2"></div><div class="coffe-header-display"></div><div class="coffe-header-details"></div></div><div class="coffee-medium"><div class="coffee-medium-exit"></div><div class="coffee-medium-arm"></div><div class="coffee-medium-liquid"></div><div class="coffee-medium-smoke coffee-medium-smoke-1"></div><div class="coffee-medium-smoke coffee-medium-smoke-2"></div><div class="coffee-medium-smoke coffee-medium-smoke-3"></div><div class="coffee-medium-smoke coffee-medium-smoke-4"></div><div class="coffee-medium-smoke coffee-medium-smoke-5"></div><div class="coffee-medium-cup"></div></div><div class="footer"></div></div></div>
+    </div>
+
+    <!-- 2010s Machine -->
+    <div class="decade-container container-2010">
+        <div class="machine-2010-wrapper" style="text-align: center;">
+            <h2>2010s</h2>
+            <div class="machine-wrapper">
+                <div class="machine-2010-box">
+                    <div class="machine">
+                        <div class="top-section-upper"><div class="dial"><div class="dial-inner"><div class="indicator"></div></div></div><div class="left-light"></div><div class="right-shadow"></div></div>
+                        <div class="button make-coffee"></div>
+                        <div class="top-section-lower"><div class="left-light"></div><div class="right-shadow"></div></div>
+                        <div class="middle-section">
+                            <div class="dispenser dispenser-left"><div class="handle"><div class="left-light"></div><div class="right-shadow"></div></div><div class="spout"><div class="left-light"></div><div class="right-shadow"></div><div class="coffee"></div></div><div class="left-light"></div><div class="right-shadow"></div></div>
+                            <div class="dispenser dispenser-right"><div class="handle"><div class="left-light"></div><div class="right-shadow"></div></div><div class="spout"><div class="left-light"></div><div class="right-shadow"></div><div class="coffee"></div></div><div class="left-light"></div><div class="right-shadow"></div></div>
+                            <div class="coffee-cup coffee-cup-left"><div class="left-light"></div><div class="right-shadow"></div><div class="steam-left"></div><div class="steam-right"></div></div>
+                            <div class="coffee-cup coffee-cup-right"><div class="left-light"></div><div class="right-shadow"></div><div class="steam-left"></div><div class="steam-right"></div></div>
+                        </div>
+                        <div class="base"><div class="left-light"></div><div class="right-shadow"></div></div>
+                        <div class="counter"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-2010 make-coffee">Make Coffee</div>
+        </div>
+    </div>
+
+    <!-- 2020s Machine -->
+    <div class="decade-container container-2020">
+        <h2>2020s</h2>
+        <div class="machine-wrapper">
+            <div class="machine-2020">
+                <div class="coffee-machine-upperpart"><div class="panel"><ul class="options"><li><i class="fa fa-coffee" aria-hidden="true"></i> Espresso</li><li><i class="fa fa-coffee" aria-hidden="true"></i> Latte</li><li><i class="fa fa-coffee" aria-hidden="true"></i> Hot Water</li></ul></div></div>
+                <div class="coffee-machine-middlepart"><div class="pourer"></div><div class="milk-container"></div><div class="milk-pipe"></div><div class="milk-container-stand"></div></div>
+                <div class="coffee-machine-bottom"></div>
+                <div class="cup"><div class="coffee-pipe"></div><div class="coffee"></div></div>
+                <div class="cup-mat"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- 1970s Machine ---
+            const makeCoffeeBtn70s = document.querySelector('.container-1970 .make-coffee');
+            const stopBtn70s = document.querySelector('.container-1970 .stop');
+            const machineContainer70s = document.querySelector('.machine-1970-container');
+
+            if (makeCoffeeBtn70s && stopBtn70s && machineContainer70s) {
+                const elementsToAnimate = [
+                    machineContainer70s.querySelector('.aside'), machineContainer70s.querySelector('.circle'),
+                    machineContainer70s.querySelector('.arm-container'), machineContainer70s.querySelector('.coffee'),
+                    machineContainer70s.querySelector('.mugg'), machineContainer70s.querySelector('.choise2')
+                ];
+                makeCoffeeBtn70s.addEventListener('click', () => {
+                    if (!makeCoffeeBtn70s.disabled) {
+                        makeCoffeeBtn70s.classList.add('disabled'); makeCoffeeBtn70s.disabled = true;
+                        stopBtn70s.classList.remove('disabled'); stopBtn70s.disabled = false;
+                        elementsToAnimate.forEach(el => el.classList.add('active'));
+                    }
+                });
+                stopBtn70s.addEventListener('click', () => {
+                    if (!stopBtn70s.disabled) {
+                        makeCoffeeBtn70s.classList.remove('disabled'); makeCoffeeBtn70s.disabled = false;
+                        stopBtn70s.classList.add('disabled'); stopBtn70s.disabled = true;
+                        elementsToAnimate.forEach(el => el.classList.remove('active'));
+                    }
+                });
+            }
+
+            // --- 2010s Machine ---
+            const makeCoffeeBtn10s = document.querySelector('.container-2010 .make-coffee');
+            const machine10s = document.querySelector('.container-2010 .machine');
+            if(makeCoffeeBtn10s && machine10s) {
+                makeCoffeeBtn10s.addEventListener('click', function() {
+                    if (!machine10s.classList.contains('active')) {
+                        machine10s.classList.add('active');
+                        setTimeout(() => machine10s.classList.remove('active'), 5300); // Animation duration
+                    }
+                });
+            }
+            
+            // --- 2020s Machine ---
+            const options20s = document.querySelectorAll('.container-2020 .options li');
+            const coffeePipe20s = document.querySelector('.container-2020 .coffee-pipe');
+            const coffee20s = document.querySelector('.container-2020 .coffee');
+
+            if (options20s.length > 0 && coffeePipe20s && coffee20s) {
+                options20s.forEach(option => {
+                    option.addEventListener('click', function() {
+                        if (coffee20s.classList.contains('pouring')) return; // Prevent multiple clicks
+
+                        options20s.forEach(opt => opt.classList.remove('options-selected'));
+                        this.classList.add('options-selected');
+
+                        coffeePipe20s.classList.add('pouring');
+                        
+                        setTimeout(() => {
+                            coffee20s.classList.add('pouring');
+                        }, 500); // Start filling the cup after pipe animation
+
+                        setTimeout(() => {
+                            coffeePipe20s.classList.remove('pouring');
+                            coffee20s.classList.remove('pouring');
+                            this.classList.remove('options-selected');
+                        }, 2000); // Total animation time
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
