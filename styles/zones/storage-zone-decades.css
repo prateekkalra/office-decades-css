@@ -68,7 +68,7 @@
   }
   .drawer-1960s {
     height: 33.3%; border-bottom: 2px solid #5a2d0c; box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
-    display: flex; align-items: center; padding-left: 20px; position: relative;
+    display: flex; align-items: center; padding-left: 20px; position: relative;width: 100%;
   }
   .knob-1960s {
     width: 14px; height: 14px; background: radial-gradient(circle at 4px 4px, #f0e68c, #c9a449);
