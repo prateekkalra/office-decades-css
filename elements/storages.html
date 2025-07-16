@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolution of Office Storage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Global Styles & UI Enhancements (No Changes Here) --- */
+        :root {
+            --bg-color: #eef0f2;
+            --card-bg: #ffffff;
+            --text-primary: #2c3e50;
+            --text-secondary: #5a6a7a;
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Lato', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-family: var(--heading-font);
+            color: var(--text-primary);
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .decade-container {
+            display: flex;
+            align-items: center;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .decade-container:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .decade-container:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .decade-container:nth-child(even) .description {
+            padding-left: 50px;
+            padding-right: 0;
+        }
+
+        .description {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .description h2 {
+            font-family: var(--heading-font);
+            font-weight: 700;
+            font-size: 2.2em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .description p {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+        }
+
+        .storage-visual {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1200px;
+        }
+        
+        /* --- STYLES FOR 1950s to 2010s (UNCHANGED) --- */
+
+        /* --- 1950s: Tall Metal Filing Cabinet --- */
+        .cabinet-1950s {
+            width: 90px; height: 200px; background: linear-gradient(to top, #6a7c6a, #8a9c8a);
+            border: 1px solid #4a5928; border-radius: 4px; position: relative;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.2), inset 0 -2px 2px rgba(0,0,0,0.2);
+            display: flex; flex-direction: column; gap: 4px; padding: 4px;
+        }
+        .cabinet-1950s::after { content: ''; position: absolute; bottom: 5px; left: 5px; width: 20px; height: 5px;
+            background: rgba(0,0,0,0.2); border-radius: 50%; transform: rotate(-10deg);
+        }
+        .drawer-1950s {
+            height: 24%; background: linear-gradient(to top, #7d8d7d, #8a9c8a);
+            border-radius: 2px; border-top: 1px solid #9aab9a;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+        }
+        .label-slot-1950s {
+            width: 30px; height: 15px; background: #faf3dd; border: 1px solid #888;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.4);
+            background-image: linear-gradient(to right, transparent 50%, rgba(0,0,0,0.1) 50%), linear-gradient(to right, rgba(0,0,0,0.1) 50%, transparent 50%);
+            background-size: 4px 1px;
+        }
+        .handle-1950s {
+            width: 60px; height: 12px; background: linear-gradient(#b0b0b0, #8c8c8c);
+            border: 1px solid #555; border-radius: 3px; box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+        }
+
+        /* --- 1960s: Wooden Desk Drawers --- */
+        .desk-1960s {
+            width: 180px; height: 120px; background-color: #8B4513;
+            background-image: linear-gradient(170deg, #65320e, #a05a2c 20%, #8b4513 30%, #65320e 40%, #a05a2c 65%, #8b4513 80%, #65320e);
+            border-radius: 6px; box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border: 1px solid #5a2d0c; transform: rotateY(-20deg) rotateX(10deg);
+            display: flex; flex-direction: column; position: relative;
+        }
+        .desk-1960s::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(150deg, rgba(255,255,255,0.25), transparent 40%); border-radius: 6px;
+        }
+        .drawer-1960s {
+            height: 33.3%; border-bottom: 2px solid #5a2d0c; box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
+            display: flex; align-items: center; padding-left: 20px; position: relative;
+        }
+        .knob-1960s {
+            width: 14px; height: 14px; background: radial-gradient(circle at 4px 4px, #f0e68c, #c9a449);
+            border-radius: 50%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .keyhole { width: 8px; height: 12px; background: #333; border: 1px solid #888;
+            border-radius: 4px 4px 50% 50%; position: absolute; right: 20px;
+            box-shadow: inset 0 0 2px #000;
+        }
+
+        /* --- 1970s: Rolling File Cart --- */
+        .cart-1970s {
+            width: 120px; height: 140px; background-color: #f7f1e3;
+            border: 5px solid #d99058; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); position: relative;
+        }
+        .files-1970s { display: flex; gap: 2px; padding: 5px; overflow: hidden; height: 90%; }
+        .hanging-file {
+            min-width: 18px; height: 80px; background-color: #92b06a; border-top: 5px solid #bdc3c7; position: relative;
+        }
+        .hanging-file:nth-child(odd)::before {
+            content: ''; position: absolute; top: -12px; left: 1px; width: 12px; height: 7px;
+            background: #e74c3c; border-radius: 2px 2px 0 0;
+        }
+        .hanging-file:nth-child(even)::before {
+            content: ''; position: absolute; top: -12px; left: 3px; width: 12px; height: 7px;
+            background: #3498db; border-radius: 2px 2px 0 0;
+        }
+        .caster-assembly { position: absolute; bottom: -15px; width: 20px; height: 25px; display: flex; flex-direction: column; align-items: center; }
+        .caster-assembly.left { left: 5px; } .caster-assembly.right { right: 5px; }
+        .caster-bracket { width: 10px; height: 5px; background: #bdc3c7; }
+        .wheel { width: 20px; height: 20px; background: #34495e; border-radius: 50%; border: 2px solid #bdc3c7; }
+
+        /* --- 1980s: Lateral Filing Cabinet --- */
+        .cabinet-1980s {
+            width: 210px; height: 120px; background-color: #EAE0D5; border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2), inset 0 0 10px rgba(0,0,0,0.1);
+            display: flex; flex-direction: column; border: 1px solid #c8bba8; position: relative;
+        }
+        .lock-1980s {
+            position: absolute; top: 50%; right: 15px; transform: translateY(-50%);
+            width: 15px; height: 15px; background: #bdc3c7; border-radius: 50%;
+            border: 1px solid #7f8c8d; box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+        }
+        .lock-1980s::after { content: ''; width: 2px; height: 5px; background: #333; position: absolute; top: 5px; left: 6px; }
+        .drawer-lateral-1980s {
+            height: 50%; box-shadow: 0 1px 0 #fff, 0 2px 0 #c8bba8;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .handle-1980s {
+            width: 160px; height: 18px; background: #d4c8b8; border-radius: 3px;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.4);
+        }
+
+        /* --- 1990s: Modular Cubicle Shelves --- */
+        .cubicle-1990s {
+            width: 200px; height: 200px; background-color: #c9ccd1;
+            background-image: 
+                linear-gradient(45deg, #b8bbc1 25%, transparent 25%), linear-gradient(-45deg, #b8bbc1 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #b8bbc1 75%), linear-gradient(-45deg, transparent 75%, #b8bbc1 75%);
+            background-size: 8px 8px; padding: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative;
+        }
+        .coffee-stain { position: absolute; width: 30px; height: 30px; border: 3px solid #b9937d55;
+            border-radius: 50%; right: 20px; top: 110px;
+        }
+        .shelf-1990s {
+            width: 100%; height: 10px; background: #e0e0e0;
+            border-bottom: 3px solid #b5b5b5; margin-bottom: 50px; box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+            display: flex; align-items: flex-end; gap: 5px; padding-left: 10px;
+        }
+        .binder { width: 25px; height: 50px; background: linear-gradient(to right, #2c4e6e, #355C7D);
+            border-radius: 0 3px 3px 0; box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .binder-2 { background: linear-gradient(to right, #b05c74, #C06C84); }
+        .rolodex { width: 40px; height: 30px; background: #444; border-radius: 5px 5px 0 0;
+            background-image: linear-gradient(to bottom, #fff3 1px, transparent 1px); background-size: 100% 3px;
+        }
+        .floppy-disk { width: 30px; height: 30px; background: #555; border-radius: 2px; position: relative; }
+        .floppy-disk::before { content:''; position: absolute; top:2px; right:2px; width: 10px; height: 10px; background: #ccc;}
+        .post-it { position: absolute; width: 30px; height: 30px; background: #f7e758;
+            transform: rotate(-10deg); left: 150px; top: 60px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* --- 2000s: Under-desk Pedestal Drawers --- */
+        .pedestal-2000s {
+            width: 100px; height: 150px;
+            background-image: repeating-linear-gradient(90deg, #e0e0e0, #e0e0e0 2px, #efefef 2px, #efefef 4px);
+            border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            padding: 8px; display: flex; flex-direction: column; gap: 8px;
+        }
+        .drawer-2000s {
+            background-color: #ddd; border-radius: 4px; display: flex; align-items: center; justify-content: center;
+            box-shadow: inset 0 2px 1px rgba(255,255,255,0.7), inset 0 -1px 1px rgba(0,0,0,0.1); position: relative;
+        }
+        .drawer-small { height: 40px; } .drawer-file { flex-grow: 1; }
+        .drawer-small::after {
+            content: ''; position: absolute; left: 5px; width: 10px; height: 2px; background: #f1c40f;
+            box-shadow: 0 4px 0 #e74c3c, 0 8px 0 #3498db;
+        }
+        .handle-2000s { width: 60%; height: 12px; border-radius: 6px; background: #c0c0c0;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* --- 2010s: Minimalist Open Shelving --- */
+        .shelving-2010s {
+            width: 160px; height: 160px; border: 10px solid #ffffff;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15); display: grid;
+            grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+            gap: 10px; padding: 10px; background: #e9e9e9;
+        }
+        .cube {
+            background: #f9f9f9; box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+            display: flex; align-items: flex-end; justify-content: center; padding-bottom: 5px; gap: 3px;
+        }
+        .minimal-book { width: 10px; height: 45px; background: #45b39d; border-radius: 1px; }
+        .minimal-book.b2 { background: #f1c40f; height: 40px;}
+        .minimal-book::after { content: '||'; font-size: 8px; writing-mode: vertical-rl; color: #fff5; }
+        .succulent .pot { width: 25px; height: 20px; background: #e0e0e0; position: relative; border-radius: 0 0 5px 5px;}
+        .succulent .leaf { position: absolute; width: 12px; height: 12px; background: #27ae60; border-radius: 50% 0; }
+        .succulent .leaf1 { top: -8px; left: 5px; } .succulent .leaf2 { top: -5px; left: -2px; transform: rotate(70deg);}
+        .picture-frame { width: 35px; height: 45px; background: linear-gradient(45deg, #3498db, #9b59b6);
+            border: 4px solid #444; padding: 2px;
+        }
+
+
+        /* --- 2020s: IMPROVED Mobile Smart Locker --- */
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 4px #0abde3, 0 0 8px #0abde3; }
+            70% { box-shadow: 0 0 12px #0abde3, 0 0 20px #0abde3; }
+            100% { box-shadow: 0 0 4px #0abde3, 0 0 8px #0abde3; }
+        }
+
+        .box-2020s {
+            width: 140px; height: 180px;
+            background-color: #353b48; /* Dark charcoal body */
+            /* Subtle noise texture */
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="10" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%" height="100%" filter="url(%23n)" opacity=".07"/%3E%3C/svg%3E');
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3), inset 0 2px 2px rgba(255,255,255,0.1);
+            position: relative;
+            display: flex; flex-direction: column;
+        }
+
+        .cushion-top {
+            height: 30px;
+            background-color: #485460; /* Darker fabric color */
+            margin: 8px 8px 0 8px;
+            border-radius: 12px 12px 5px 5px;
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
+            /* Fabric texture */
+            background-image: 
+                linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%), 
+                linear-gradient(-45deg, rgba(255,255,255,0.05) 25%, transparent 25%);
+            background-size: 5px 5px;
+        }
+
+        .handle-strap { /* Leather strap handle */
+            position: absolute;
+            top: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 20px;
+            border: 2px solid #795548;
+            border-top: none;
+            background-color: #8D6E63;
+            border-radius: 0 0 15px 15px;
+            cursor: pointer;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+        }
+        .handle-strap::before, .handle-strap::after { /* Rivets */
+            content: '';
+            position: absolute;
+            top: -1px;
+            width: 6px;
+            height: 6px;
+            background: #444;
+            border-radius: 50%;
+        }
+        .handle-strap::before { left: 8px; }
+        .handle-strap::after { right: 8px; }
+        
+        .front-panel {
+            flex-grow: 1;
+            background: #2f3640;
+            margin: 15px 8px 8px 8px;
+            border-radius: 5px 5px 15px 15px;
+            padding: 10px;
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.2);
+        }
+
+        .smart-panel {
+            background: #1e272e;
+            border-radius: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .digital-display {
+            width: 70%;
+            height: 25px;
+            background: #000;
+            border-radius: 4px;
+            color: #0abde3;
+            font-family: monospace;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 5px #0abde366;
+        }
+        .digital-display::before {
+            content: 'LOCKED';
+            letter-spacing: 1px;
+        }
+
+        .fingerprint-scanner {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #0abde388;
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+        .fingerprint-scanner::after { /* Fingerprint icon */
+             content: ''; width: 12px; height: 12px;
+             border: 2px solid #0abde3;
+             border-radius: 50%;
+             border-top-color: transparent;
+             border-bottom-color: transparent;
+        }
+
+        .modern-caster-assembly {
+            position: absolute;
+            bottom: -5px;
+            width: 25px;
+            height: 30px;
+        }
+        .modern-caster-assembly.left { left: 10px; }
+        .modern-caster-assembly.right { right: 10px; }
+
+        .caster-bracket-2020s {
+            width: 100%;
+            height: 15px;
+            background: #2f3640;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+        }
+        .caster-wheel-2020s {
+            width: 25px;
+            height: 25px;
+            background: #222;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border: 2px solid #444;
+        }
+        .caster-wheel-2020s::after { /* Axle pin */
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 6px;
+            height: 6px;
+            background: #555;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>The Evolution of Office Storage 🗄️</h1>
+        <p>A visual history of how we organized the workplace, from the 1950s to today.</p>
+    </div>
+
+    <div class="timeline">
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>1950s: Tall Metal Filing Cabinet</h2>
+                <p>The post-war boom meant paperwork. Heavy-duty, steel filing cabinets, often in olive drab or grey, were essential. Built to last, they were the backbone of records management.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="cabinet-1950s">
+                    <div class="drawer-1950s"><div class="label-slot-1950s"></div><div class="handle-1950s"></div></div>
+                    <div class="drawer-1950s"><div class="label-slot-1950s"></div><div class="handle-1950s"></div></div>
+                    <div class="drawer-1950s"><div class="label-slot-1950s"></div><div class="handle-1950s"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>1960s: Wooden Desk Drawers</h2>
+                <p>Mid-century modern design influenced the office. Sleek wooden desks, often made of teak or walnut, integrated storage. Design was prioritized, featuring clean lines and minimalist hardware.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="desk-1960s">
+                    <div class="drawer-1960s"><div class="knob-1960s"></div><div class="keyhole"></div></div>
+                    <div class="drawer-1960s"><div class="knob-1960s"></div></div>
+                    <div class="drawer-1960s" style="border-bottom: none;"><div class="knob-1960s"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>1970s: Rolling File Cart</h2>
+                <p>Flexibility entered the office in bold colors. Rolling carts in harvest gold or burnt orange allowed files to move easily. Open designs for hanging folders were common and celebrated function.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="cart-1970s">
+                    <div class="files-1970s">
+                        <div class="hanging-file"></div><div class="hanging-file"></div><div class="hanging-file"></div>
+                        <div class="hanging-file"></div><div class="hanging-file"></div><div class="hanging-file"></div>
+                    </div>
+                    <div class="caster-assembly left"><div class="caster-bracket"></div><div class="wheel"></div></div>
+                    <div class="caster-assembly right"><div class="caster-bracket"></div><div class="wheel"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>1980s: Lateral Filing Cabinet</h2>
+                <p>As office space expanded, efficiency became key. Wide lateral cabinets replaced vertical ones, allowing for more files in less space. The standard color palette shifted to corporate beige and putty.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="cabinet-1980s">
+                    <div class="lock-1980s"></div>
+                    <div class="drawer-lateral-1980s"><div class="handle-1980s"></div></div>
+                    <div class="drawer-lateral-1980s" style="box-shadow: none;"><div class="handle-1980s"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>1990s: Modular Cubicle Shelves</h2>
+                <p>The era of the "cubicle farm." Storage became integrated into modular partition systems. Overhead shelves and binder bins, usually in drab grey or mauve, maximized space within the cubicle walls.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="cubicle-1990s">
+                    <div class="shelf-1990s">
+                        <div class="binder binder-1"></div><div class="binder binder-2"></div>
+                    </div>
+                    <div class="shelf-1990s" style="margin-bottom:0;">
+                         <div class="rolodex"></div><div class="floppy-disk"></div>
+                    </div>
+                    <div class="post-it"></div>
+                    <div class="coffee-stain"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>2000s: Under-desk Pedestal</h2>
+                <p>With computers dominating desks, storage shifted downward. Mobile pedestals (often in brushed silver or light maple) provided personal filing that could easily roll under a workstation.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="pedestal-2000s">
+                    <div class="drawer-2000s drawer-small"><div class="handle-2000s"></div></div>
+                    <div class="drawer-2000s drawer-file"><div class="handle-2000s"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>2010s: Minimalist Open Shelving</h2>
+                <p>The digital shift reduced paper needs. Open-plan offices favored minimalist, often white or light wood, open shelving used more for displaying plants and books than heavy filing.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="shelving-2010s">
+                    <div class="cube"><div class="succulent"><div class="pot"><div class="leaf leaf1"></div><div class="leaf leaf2"></div></div></div></div>
+                    <div class="cube"><div class="minimal-book"></div><div class="minimal-book b2"></div></div>
+                    <div class="cube"><div class="picture-frame"></div></div>
+                    <div class="cube"><div class="minimal-book b2"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decade-container">
+            <div class="description">
+                <h2>2020s: Mobile Smart Caddy</h2>
+                <p>Hybrid work and agile offices require personal, portable, and secure storage. Today's smart caddies are multi-functional, acting as a seat, a locker, and a charging station with high-end finishes.</p>
+            </div>
+            <div class="storage-visual">
+                <div class="box-2020s">
+                    <div class="cushion-top">
+                        <div class="handle-strap"></div>
+                    </div>
+                    <div class="front-panel">
+                        <div class="smart-panel">
+                            <div class="digital-display"></div>
+                            <div class="fingerprint-scanner"></div>
+                        </div>
+                    </div>
+                    <div class="modern-caster-assembly left">
+                        <div class="caster-bracket-2020s"></div>
+                        <div class="caster-wheel-2020s"></div>
+                    </div>
+                    <div class="modern-caster-assembly right">
+                        <div class="caster-bracket-2020s"></div>
+                        <div class="caster-wheel-2020s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
