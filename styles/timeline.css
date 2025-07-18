@@ -3,54 +3,54 @@
   .cards-container {
     --base-rotation: 0deg;
     --full-circle: 360deg;
-    --radius: 15vw;
+    --radius: 12vw;
     --duration: 200ms;
 
     --cards-container-size: calc(var(--radius) * 2);
-    --cards-container-padding: 2rem;
+    --cards-container-padding: 1.5rem;
 
-    --border-color: transparent;
+    --border-color: rgba(102, 102, 102, 0.4);
 
-    --label-offset: calc(var(--radius) * -1 - 1rem);
-    --label-size: 30px;
+    --label-offset: calc(var(--radius) * -1 - 0.8rem);
+    --label-size: 28px;
     --label-color: #666;
     --label-color-hover: steelblue;
     --label-line-h: 0;
-    --label-line-h-current: 2rem;
-    --label-dot-size: 10px;
+    --label-line-h-current: 1.5rem;
+    --label-dot-size: 8px;
 
-    --title-top: 1.5rem;
-    --title-offset-y: 30px;
+    --title-top: 1.2rem;
+    --title-offset-y: 25px;
 
-    --info-top: 5rem;
-    --info-width: min(70%, 500px);
-    --info-offset-y: 30px;
+    --info-top: 4rem;
+    --info-width: min(70%, 400px);
+    --info-offset-y: 25px;
 
     box-sizing: content-box;
     position: fixed;
-    bottom: calc(var(--cards-container-size) / -1.4 + var(--cards-container-padding));
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: var(--cards-container-size);
     height: var(--cards-container-size);
     padding: var(--cards-container-padding);
-    z-index: 10;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
 
-    @media (width > 600px){
-       clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-    }
     @media (min-width: 800px) {
-        --radius: 12vw;
-        --label-size: 40px;
-        --label-dot-size: 15px;
-        --label-line-h-current: 4rem;
-        --title-top: 4rem;
-        --info-top: 8rem;
+        --radius: 10vw;
+        --label-size: 32px;
+        --label-dot-size: 10px;
+        --label-line-h-current: 2rem;
+        --title-top: 2rem;
+        --info-top: 5rem;
       }
       @media (min-width: 1200px) {
-        --label-size: 50px;
-        --border-color: var(--label-color);
+        --radius: 8vw;
+        --label-size: 36px;
+        --border-color: rgba(102, 102, 102, 0.6);
       }
     }
   

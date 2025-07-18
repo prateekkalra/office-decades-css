@@ -9,22 +9,13 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
-    grid-template-rows: 1fr 1.5fr 1fr;
-    grid-template-areas:
-      "wall wall wall wall wall"
-      "storage storage work work tech"
-      "social social timeline personal personal";
-    gap: 8px;
-    padding: 10px;
     z-index: 1;
   }
 
-  /* Zone base styling */
+  /* Zone base styling - Bento Grid */
   .zone {
-    border-radius: 12px;
-    position: relative;
+    border-radius: 8px;
+    position: absolute;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border: 2px solid rgba(0,0,0,0.1);
@@ -33,12 +24,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .zone:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transform: scale(1.005);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-color: rgba(0,0,0,0.2);
   }
 
   /* Zone labels */
@@ -57,25 +50,199 @@
 
   /* Timeline Grid Area (transparent placeholder) */
   .timeline-grid-area {
-    grid-area: timeline;
-    background: transparent;
-    pointer-events: none;
-    border: none;
-    position: relative;
+    display: none;
   }
 
-  /* Ensure office zones don't interfere with timeline functionality */
-  .office-container {
-    pointer-events: auto;
+  /* Bento Grid Layout - Full Screen Coverage */
+  
+  /* Wall Zone - Top strip spanning full width */
+  .wall-zone {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    height: 22vh;
+    width: calc(100vw - 16px);
+    flex-direction: row;
   }
 
-  .office-container * {
-    pointer-events: auto;
+  /* Storage Zone - Top-left quadrant */
+  .storage-zone {
+    top: calc(22vh + 16px);
+    left: 8px;
+    width: calc(33vw - 16px);
+    height: calc(50vh - 12px);
   }
 
-  /* Make sure timeline area in grid doesn't block timeline interaction */
-  .timeline-grid-area {
-    pointer-events: none;
-    z-index: 0;
+  /* Tech Zone - Top-right quadrant */
+  .tech-zone {
+    top: calc(22vh + 16px);
+    right: 8px;
+    width: calc(33vw - 16px);
+    height: calc(50vh - 12px);
+  }
+
+  /* Work Zone - Right section, spanning vertically */
+  .work-zone {
+    top: calc(72vh + 24px);
+    right: 8px;
+    width: calc(33vw - 16px);
+    height: calc(28vh - 32px);
+  }
+
+  /* Social Zone - Bottom-left section */
+  .social-zone {
+    bottom: 8px;
+    left: 8px;
+    width: calc(50vw - 16px);
+    height: calc(28vh - 32px);
+    flex-direction: row;
+  }
+
+  /* Personal Zone - Bottom-right section */
+  .personal-zone {
+    bottom: 8px;
+    left: calc(50vw + 8px);
+    right: calc(33vw + 16px);
+    height: calc(28vh - 32px);
+    flex-wrap: wrap;
+  }
+
+  /* Responsive adjustments for Bento Grid */
+  @media (max-width: 1200px) {
+    .zone {
+      padding: 15px;
+    }
+    
+    .wall-zone {
+      height: 20vh;
+      top: 6px;
+      left: 6px;
+      right: 6px;
+      width: calc(100vw - 12px);
+    }
+    
+    .storage-zone,
+    .tech-zone {
+      top: calc(20vh + 12px);
+      height: calc(52vh - 8px);
+    }
+    
+    .storage-zone {
+      left: 6px;
+      width: calc(33vw - 12px);
+    }
+    
+    .tech-zone {
+      right: 6px;
+      width: calc(33vw - 12px);
+    }
+    
+    .work-zone {
+      top: calc(72vh + 18px);
+      right: 6px;
+      width: calc(33vw - 12px);
+      height: calc(28vh - 24px);
+    }
+    
+    .social-zone {
+      bottom: 6px;
+      left: 6px;
+      width: calc(50vw - 12px);
+      height: calc(28vh - 24px);
+    }
+    
+    .personal-zone {
+      bottom: 6px;
+      left: calc(50vw + 6px);
+      right: calc(33vw + 12px);
+      height: calc(28vh - 24px);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .zone {
+      padding: 12px;
+      border-radius: 6px;
+    }
+    
+    .wall-zone {
+      height: 18vh;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      width: calc(100vw - 8px);
+    }
+    
+    .storage-zone,
+    .tech-zone {
+      top: calc(18vh + 8px);
+      height: calc(54vh - 4px);
+      width: calc(50vw - 8px);
+    }
+    
+    .storage-zone {
+      left: 4px;
+    }
+    
+    .tech-zone {
+      right: 4px;
+    }
+    
+    .work-zone {
+      top: calc(72vh + 12px);
+      right: 4px;
+      width: calc(50vw - 8px);
+      height: calc(28vh - 16px);
+    }
+    
+    .social-zone {
+      bottom: 4px;
+      left: 4px;
+      width: calc(50vw - 8px);
+      height: calc(28vh - 16px);
+    }
+    
+    .personal-zone {
+      bottom: 4px;
+      left: calc(50vw + 4px);
+      right: 4px;
+      height: calc(28vh - 16px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .zone {
+      padding: 10px;
+      border-radius: 4px;
+    }
+    
+    .wall-zone {
+      height: 15vh;
+    }
+    
+    .storage-zone {
+      top: calc(15vh + 4px);
+      width: calc(100vw - 4px);
+      height: calc(25vh - 2px);
+    }
+    
+    .tech-zone {
+      top: calc(40vh + 6px);
+      left: 2px;
+      width: calc(100vw - 4px);
+      height: calc(25vh - 2px);
+    }
+    
+    .work-zone {
+      top: calc(65vh + 8px);
+      left: 2px;
+      width: calc(100vw - 4px);
+      height: calc(35vh - 10px);
+    }
+    
+    .social-zone,
+    .personal-zone {
+      display: none; /* Hide on mobile for simplicity */
+    }
   }
 }

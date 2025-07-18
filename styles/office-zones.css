@@ -2,12 +2,10 @@
 @layer demo {
   /* Wall Zone */
   .wall-zone {
-    grid-area: wall;
     background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(240,240,240,0.4) 100%);
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
-    position: relative;
   }
 
   .wall-item {
@@ -31,12 +29,9 @@
 
   /* Work Zone */
   .work-zone {
-    grid-area: work;
     background: linear-gradient(135deg, rgba(250,250,250,0.4) 0%, rgba(239,239,239,0.4) 100%);
     justify-content: center;
     align-items: center;
-    position: relative;
-    display: flex;
   }
 
   .desk-area {
@@ -83,16 +78,12 @@
 
   /* Storage Zone */
   .storage-zone {
-    grid-area: storage;
     background: linear-gradient(135deg, rgba(248,248,248,0.4) 0%, rgba(232,232,232,0.4) 100%);
-    position: relative;
   }
 
   /* Tech Zone */
   .tech-zone {
-    grid-area: tech;
     background: linear-gradient(135deg, rgba(240,248,255,0.4) 0%, rgba(230,243,255,0.4) 100%);
-    position: relative;
   }
 
   .storage-item {
@@ -116,11 +107,9 @@
 
   /* Social Zone */
   .social-zone {
-    grid-area: social;
     background: linear-gradient(135deg, rgba(255,248,240,0.4) 0%, rgba(255,230,217,0.4) 100%);
     flex-direction: row;
     justify-content: space-around;
-    position: relative;
   }
 
   .social-item {
@@ -144,11 +133,9 @@
 
   /* Personal Zone */
   .personal-zone {
-    grid-area: personal;
     background: linear-gradient(135deg, rgba(240,255,240,0.4) 0%, rgba(230,255,230,0.4) 100%);
     flex-wrap: wrap;
     justify-content: space-around;
-    position: relative;
   }
 
   .personal-item {
