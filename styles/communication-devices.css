@@ -19,27 +19,27 @@
 }
 
 .tech-set-1970s .fax-machine {
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
 }
 
 .tech-set-1980s .pager {
-    transform: scale(1.0);
+    transform: scale(1.7);
 }
 
 .tech-set-1990s .desktop-computer {
-    transform: scale(0.8);
+    /* transform: scale(0.8); */
 }
 
 .tech-set-2000s .blackberry {
-    transform: scale(0.9);
+    /* transform: scale(0.9); */
 }
 
 .tech-set-2010s .slack-app {
-    transform: scale(0.75);
+    /* transform: scale(0.75); */
 }
 
 .tech-set-2020s .zoom-app {
-    transform: scale(0.75);
+    /* transform: scale(0.75); */
 }
 
 /* Font family for all communication devices */
