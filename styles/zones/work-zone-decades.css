@@ -46,11 +46,17 @@
   body:has(#item-4:checked) .work-set-1990s {
     display: flex;
     opacity: 1;
+    justify-content: center;
+    align-items: center;
+    zoom: 1.6;
   }
 
   body:has(#item-5:checked) .work-set-2000s {
     display: flex;
     opacity: 1;
+    justify-content: center;
+    align-items: center;
+
   }
 
   body:has(#item-6:checked) .work-set-2010s {
@@ -1396,11 +1402,7 @@
   /* 1990s CRT Monitor Setup */
   .setup-1990 {
     position: relative;
-    width: 70%;
-    height: 25%;
     animation: floatSetup 8s ease-in-out infinite;
-    transform: scale(0.3);
-    transform-origin: center;
     overflow: visible;
     z-index: 1;
   }
@@ -1892,33 +1894,31 @@
   /* 2000s LCD Monitor Setup */
   .setup-2000 {
     position: relative;
-    width: 70%;
-    height: 25%;
     animation: floatSetup2 8s ease-in-out infinite;
     animation-delay: 4s;
-    transform: scale(0.35);
-    transform-origin: center;
     overflow: visible;
     z-index: 1;
+    zoom: 0.4;
+    margin-bottom: 15%;
   }
 
   @keyframes floatSetup2 {
 
     0%,
     100% {
-      transform: scale(0.35) translateY(0px) rotateX(0deg) rotateY(0deg);
+      transform: translateY(0px) rotateX(0deg) rotateY(0deg);
     }
 
     25% {
-      transform: scale(0.35) translateY(-10px) rotateX(1deg) rotateY(-2deg);
+      transform: translateY(-10px) rotateX(1deg) rotateY(-2deg);
     }
 
     50% {
-      transform: scale(0.35) translateY(-20px) rotateX(0deg) rotateY(0deg);
+      transform: translateY(-20px) rotateX(0deg) rotateY(0deg);
     }
 
     75% {
-      transform: scale(0.35) translateY(-5px) rotateX(-1deg) rotateY(2deg);
+      transform: translateY(-5px) rotateX(-1deg) rotateY(2deg);
     }
   }
 
@@ -2173,9 +2173,8 @@
   .setup-2000 .wireless-keyboard {
     position: absolute;
     top: 400px;
-    left: 50px;
     width: 280px;
-    height: 100px;
+    height: 140px;
     background: linear-gradient(145deg, #f8f8f8 0%, #e0e0e0 100%);
     border-radius: 12px;
     box-shadow:
@@ -2255,7 +2254,7 @@
   .setup-2000 .wireless-mouse {
     position: absolute;
     top: 420px;
-    right: 30px;
+    right: 0;
     width: 60px;
     height: 90px;
     background: linear-gradient(145deg, #f8f8f8 0%, #e0e0e0 100%);
