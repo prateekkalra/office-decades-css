@@ -12,40 +12,30 @@
     z-index: 1;
   }
 
-  /* Zone base styling - Bento Grid */
+  /* Zone base styling - Seamless Grid */
   .zone {
-    border-radius: 8px;
     position: absolute;
     overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
   }
 
-  .zone:hover {
-    transform: scale(1.005);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    border-color: rgba(0,0,0,0.2);
-  }
-
-  /* Zone labels */
+  /* Zone labels - Subtle */
   .zone-label {
     position: absolute;
     top: 8px;
     left: 12px;
-    font-size: 11px;
-    font-weight: bold;
-    color: rgba(0,0,0,0.7);
-    background: rgba(255,255,255,0.9);
-    padding: 3px 8px;
-    border-radius: 4px;
+    font-size: 9px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.3);
+    background: transparent;
+    padding: 0;
     z-index: 2;
+    opacity: 0.5;
   }
 
   /* Timeline Grid Area (transparent placeholder) */
@@ -57,187 +47,174 @@
   
   /* Wall Zone - Top strip spanning full width */
   .wall-zone {
-    top: 8px;
-    left: 8px;
-    right: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 22vh;
-    width: calc(100vw - 16px);
+    width: 100vw;
     flex-direction: row;
   }
 
   /* Storage Zone - Top-left quadrant */
   .storage-zone {
-    top: calc(22vh + 16px);
-    left: 8px;
-    width: calc(33vw - 16px);
-    height: calc(50vh - 12px);
+    top: 22vh;
+    left: 0;
+    width: 33vw;
+    height: 50vh;
   }
 
   /* Tech Zone - Top-right quadrant */
   .tech-zone {
-    top: calc(22vh + 16px);
-    right: 8px;
-    width: calc(33vw - 16px);
-    height: calc(50vh - 12px);
+    top: 22vh;
+    right: 0;
+    width: 33vw;
+    height: 50vh;
   }
 
   /* Work Zone - Right section, spanning vertically */
   .work-zone {
-    top: calc(72vh + 24px);
-    right: 8px;
-    width: calc(33vw - 16px);
-    height: calc(28vh - 32px);
+    top: 72vh;
+    right: 0;
+    width: 33vw;
+    height: 28vh;
   }
 
   /* Social Zone - Bottom-left section */
   .social-zone {
-    bottom: 8px;
-    left: 8px;
-    width: calc(50vw - 16px);
-    height: calc(28vh - 32px);
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    height: 28vh;
     flex-direction: row;
   }
 
   /* Personal Zone - Bottom-right section */
   .personal-zone {
-    bottom: 8px;
-    left: calc(50vw + 8px);
-    right: calc(33vw + 16px);
-    height: calc(28vh - 32px);
+    bottom: 0;
+    left: 50vw;
+    right: 33vw;
+    height: 28vh;
     flex-wrap: wrap;
   }
 
-  /* Responsive adjustments for Bento Grid */
+  /* Responsive adjustments for Seamless Grid */
   @media (max-width: 1200px) {
-    .zone {
-      padding: 15px;
-    }
-    
     .wall-zone {
       height: 20vh;
-      top: 6px;
-      left: 6px;
-      right: 6px;
-      width: calc(100vw - 12px);
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
     }
     
     .storage-zone,
     .tech-zone {
-      top: calc(20vh + 12px);
-      height: calc(52vh - 8px);
+      top: 20vh;
+      height: 52vh;
     }
     
     .storage-zone {
-      left: 6px;
-      width: calc(33vw - 12px);
+      left: 0;
+      width: 33vw;
     }
     
     .tech-zone {
-      right: 6px;
-      width: calc(33vw - 12px);
+      right: 0;
+      width: 33vw;
     }
     
     .work-zone {
-      top: calc(72vh + 18px);
-      right: 6px;
-      width: calc(33vw - 12px);
-      height: calc(28vh - 24px);
+      top: 72vh;
+      right: 0;
+      width: 33vw;
+      height: 28vh;
     }
     
     .social-zone {
-      bottom: 6px;
-      left: 6px;
-      width: calc(50vw - 12px);
-      height: calc(28vh - 24px);
+      bottom: 0;
+      left: 0;
+      width: 50vw;
+      height: 28vh;
     }
     
     .personal-zone {
-      bottom: 6px;
-      left: calc(50vw + 6px);
-      right: calc(33vw + 12px);
-      height: calc(28vh - 24px);
+      bottom: 0;
+      left: 50vw;
+      right: 33vw;
+      height: 28vh;
     }
   }
 
   @media (max-width: 900px) {
-    .zone {
-      padding: 12px;
-      border-radius: 6px;
-    }
-    
     .wall-zone {
       height: 18vh;
-      top: 4px;
-      left: 4px;
-      right: 4px;
-      width: calc(100vw - 8px);
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
     }
     
     .storage-zone,
     .tech-zone {
-      top: calc(18vh + 8px);
-      height: calc(54vh - 4px);
-      width: calc(50vw - 8px);
+      top: 18vh;
+      height: 54vh;
+      width: 50vw;
     }
     
     .storage-zone {
-      left: 4px;
+      left: 0;
     }
     
     .tech-zone {
-      right: 4px;
+      right: 0;
     }
     
     .work-zone {
-      top: calc(72vh + 12px);
-      right: 4px;
-      width: calc(50vw - 8px);
-      height: calc(28vh - 16px);
+      top: 72vh;
+      right: 0;
+      width: 50vw;
+      height: 28vh;
     }
     
     .social-zone {
-      bottom: 4px;
-      left: 4px;
-      width: calc(50vw - 8px);
-      height: calc(28vh - 16px);
+      bottom: 0;
+      left: 0;
+      width: 50vw;
+      height: 28vh;
     }
     
     .personal-zone {
-      bottom: 4px;
-      left: calc(50vw + 4px);
-      right: 4px;
-      height: calc(28vh - 16px);
+      bottom: 0;
+      left: 50vw;
+      right: 0;
+      height: 28vh;
     }
   }
 
   @media (max-width: 600px) {
-    .zone {
-      padding: 10px;
-      border-radius: 4px;
-    }
-    
     .wall-zone {
       height: 15vh;
     }
     
     .storage-zone {
-      top: calc(15vh + 4px);
-      width: calc(100vw - 4px);
-      height: calc(25vh - 2px);
+      top: 15vh;
+      left: 0;
+      width: 100vw;
+      height: 25vh;
     }
     
     .tech-zone {
-      top: calc(40vh + 6px);
-      left: 2px;
-      width: calc(100vw - 4px);
-      height: calc(25vh - 2px);
+      top: 40vh;
+      left: 0;
+      width: 100vw;
+      height: 25vh;
     }
     
     .work-zone {
-      top: calc(65vh + 8px);
-      left: 2px;
-      width: calc(100vw - 4px);
-      height: calc(35vh - 10px);
+      top: 65vh;
+      left: 0;
+      width: 100vw;
+      height: 35vh;
     }
     
     .social-zone,

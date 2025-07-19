@@ -2,7 +2,7 @@
 @layer demo {
   /* Wall Zone */
   .wall-zone {
-    background: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(240,240,240,0.4) 100%);
+    background: transparent;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
@@ -11,25 +11,17 @@
   .wall-item {
     width: 70px;
     height: 50px;
-    background: rgba(100,100,100,0.2);
-    border-radius: 6px;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10px;
     color: #555;
-    transition: all 0.3s ease;
-  }
-
-  .wall-item:hover {
-    background: rgba(100,100,100,0.3);
-    transform: scale(1.1);
   }
 
   /* Work Zone */
   .work-zone {
-    background: linear-gradient(135deg, rgba(250,250,250,0.4) 0%, rgba(239,239,239,0.4) 100%);
+    background: transparent;
     justify-content: center;
     align-items: center;
   }
@@ -37,77 +29,60 @@
   .desk-area {
     width: 85%;
     height: 35%;
-    background: rgba(139, 69, 19, 0.3);
-    border-radius: 12px;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #555;
     font-weight: bold;
-    transition: all 0.3s ease;
   }
 
   .chair-area {
     width: 55%;
     height: 20%;
-    background: rgba(100, 100, 100, 0.3);
-    border-radius: 50%;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #555;
     font-size: 12px;
-    transition: all 0.3s ease;
   }
 
   .work-item {
     width: 70%;
     height: 25%;
-    background: rgba(50, 50, 50, 0.2);
-    border-radius: 8px;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #555;
     font-size: 11px;
-    transition: all 0.3s ease;
   }
 
   /* Storage Zone */
   .storage-zone {
-    background: linear-gradient(135deg, rgba(248,248,248,0.4) 0%, rgba(232,232,232,0.4) 100%);
+    background: transparent;
   }
 
   /* Tech Zone */
   .tech-zone {
-    background: linear-gradient(135deg, rgba(240,248,255,0.4) 0%, rgba(230,243,255,0.4) 100%);
+    background: transparent;
   }
 
   .storage-item {
     width: 85%;
     height: 28%;
-    background: rgba(70, 70, 70, 0.25);
-    border-radius: 8px;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10px;
     color: #555;
-    transition: all 0.3s ease;
-  }
-
-  .storage-item:hover {
-    background: rgba(70, 70, 70, 0.35);
-    transform: scale(1.05);
   }
 
   /* Social Zone */
   .social-zone {
-    background: linear-gradient(135deg, rgba(255,248,240,0.4) 0%, rgba(255,230,217,0.4) 100%);
+    background: transparent;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -115,25 +90,17 @@
   .social-item {
     width: 45%;
     height: 70%;
-    background: rgba(255, 165, 0, 0.25);
-    border-radius: 12px;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 10px;
     color: #555;
-    transition: all 0.3s ease;
-  }
-
-  .social-item:hover {
-    background: rgba(255, 165, 0, 0.35);
-    transform: scale(1.05);
   }
 
   /* Personal Zone */
   .personal-zone {
-    background: linear-gradient(135deg, rgba(240,255,240,0.4) 0%, rgba(230,255,230,0.4) 100%);
+    background: transparent;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -141,20 +108,12 @@
   .personal-item {
     width: 40%;
     height: 30%;
-    background: rgba(0, 150, 0, 0.25);
-    border-radius: 50%;
-    border: 2px dashed rgba(0,0,0,0.3);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 9px;
     color: #555;
     margin: 2px;
-    transition: all 0.3s ease;
-  }
-
-  .personal-item:hover {
-    background: rgba(0, 150, 0, 0.35);
-    transform: scale(1.1);
   }
 }
