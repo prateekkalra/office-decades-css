@@ -58,12 +58,12 @@
     flex-direction: row;
   }
 
-  /* Storage Zone - Top-left quadrant */
+  /* Storage Zone - Bottom-right section */
   .storage-zone {
-    top: 30vh;
-    left: 0;
+    top: 72vh;
+    right: 0;
     width: 33vw;
-    height: 42vh;
+    height: 28vh;
   }
 
   /* Tech Zone - Top-right quadrant */
@@ -74,12 +74,12 @@
     height: 42vh;
   }
 
-  /* Work Zone - Right section, spanning vertically */
+  /* Work Zone - Top-left quadrant */
   .work-zone {
-    top: 72vh;
-    right: 0;
+    top: 30vh;
+    left: 0;
     width: 33vw;
-    height: 28vh;
+    height: 42vh;
   }
 
   /* Social Zone - Bottom-left section */
@@ -117,8 +117,10 @@
     }
     
     .storage-zone {
-      left: 0;
+      top: 72vh;
+      right: 0;
       width: 33vw;
+      height: 28vh;
     }
     
     .tech-zone {
@@ -127,10 +129,10 @@
     }
     
     .work-zone {
-      top: 72vh;
-      right: 0;
+      top: 28vh;
+      left: 0;
       width: 33vw;
-      height: 28vh;
+      height: 44vh;
     }
     
     .social-zone {
@@ -165,7 +167,10 @@
     }
     
     .storage-zone {
-      left: 0;
+      top: 72vh;
+      right: 0;
+      width: 50vw;
+      height: 28vh;
     }
     
     .tech-zone {
@@ -173,10 +178,10 @@
     }
     
     .work-zone {
-      top: 72vh;
-      right: 0;
+      top: 25vh;
+      left: 0;
       width: 50vw;
-      height: 28vh;
+      height: 47vh;
     }
     
     .social-zone {
@@ -200,10 +205,10 @@
     }
     
     .storage-zone {
-      top: 20vh;
+      top: 65vh;
       left: 0;
       width: 100vw;
-      height: 25vh;
+      height: 35vh;
     }
     
     .tech-zone {
@@ -214,10 +219,10 @@
     }
     
     .work-zone {
-      top: 65vh;
+      top: 20vh;
       left: 0;
       width: 100vw;
-      height: 35vh;
+      height: 25vh;
     }
     
     .social-zone,
