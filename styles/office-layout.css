@@ -53,25 +53,25 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 22vh;
+    height: 30vh;
     width: 100vw;
     flex-direction: row;
   }
 
   /* Storage Zone - Top-left quadrant */
   .storage-zone {
-    top: 22vh;
+    top: 30vh;
     left: 0;
     width: 33vw;
-    height: 50vh;
+    height: 42vh;
   }
 
   /* Tech Zone - Top-right quadrant */
   .tech-zone {
-    top: 22vh;
+    top: 30vh;
     right: 0;
     width: 33vw;
-    height: 50vh;
+    height: 42vh;
   }
 
   /* Work Zone - Right section, spanning vertically */
@@ -103,7 +103,7 @@
   /* Responsive adjustments for Seamless Grid */
   @media (max-width: 1200px) {
     .wall-zone {
-      height: 20vh;
+      height: 28vh;
       top: 0;
       left: 0;
       right: 0;
@@ -112,8 +112,8 @@
     
     .storage-zone,
     .tech-zone {
-      top: 20vh;
-      height: 52vh;
+      top: 28vh;
+      height: 44vh;
     }
     
     .storage-zone {
@@ -150,7 +150,7 @@
 
   @media (max-width: 900px) {
     .wall-zone {
-      height: 18vh;
+      height: 25vh;
       top: 0;
       left: 0;
       right: 0;
@@ -159,8 +159,8 @@
     
     .storage-zone,
     .tech-zone {
-      top: 18vh;
-      height: 54vh;
+      top: 25vh;
+      height: 47vh;
       width: 50vw;
     }
     
@@ -196,21 +196,21 @@
 
   @media (max-width: 600px) {
     .wall-zone {
-      height: 15vh;
+      height: 20vh;
     }
     
     .storage-zone {
-      top: 15vh;
+      top: 20vh;
       left: 0;
       width: 100vw;
       height: 25vh;
     }
     
     .tech-zone {
-      top: 40vh;
+      top: 45vh;
       left: 0;
       width: 100vw;
-      height: 25vh;
+      height: 20vh;
     }
     
     .work-zone {
