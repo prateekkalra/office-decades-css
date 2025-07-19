@@ -1570,10 +1570,11 @@
     transform-origin: center -15px;
     width: 280px;
     height: auto;
+    zoom: 0.4;
   }
 
   .framed-poster:hover {
-    transform: perspective(800px) rotateY(0deg) rotateX(0deg) scale(1.02);
+    transform: perspective(800px) rotateY(0deg) rotateX(0deg);
     animation-play-state: paused;
     cursor: pointer;
   }
@@ -1584,7 +1585,7 @@
   }
 
   .framed-poster:nth-child(even):hover {
-    transform: perspective(800px) rotateY(0deg) rotateX(0deg) scale(1.02);
+    transform: perspective(800px) rotateY(0deg) rotateX(0deg);
     animation-play-state: paused;
   }
 
