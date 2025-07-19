@@ -1,5 +1,6 @@
 /* Social Zone Decade-Specific Elements */
 @layer demo {
+
   /* Base social set styling - all hidden by default */
   .social-set {
     position: absolute;
@@ -14,19 +15,51 @@
   }
 
   /* Show specific decade social sets */
-  body:has(#item-0:checked) .social-set-1950s { display: flex; opacity: 1; }
-  body:has(#item-1:checked) .social-set-1960s { display: flex; opacity: 1; }
-  body:has(#item-2:checked) .social-set-1970s { display: flex; opacity: 1; }
-  body:has(#item-3:checked) .social-set-1980s { display: flex; opacity: 1; }
-  body:has(#item-4:checked) .social-set-1990s { display: flex; opacity: 1; }
-  body:has(#item-5:checked) .social-set-2000s { display: flex; opacity: 1; }
-  body:has(#item-6:checked) .social-set-2010s { display: flex; opacity: 1; }
-  body:has(#item-7:checked) .social-set-2020s { display: flex; opacity: 1; }
+  body:has(#item-0:checked) .social-set-1950s {
+    display: flex;
+    opacity: 1;
+    zoom: 1.3
+  }
+
+  body:has(#item-1:checked) .social-set-1960s {
+    display: flex;
+    opacity: 1;
+  }
+
+  body:has(#item-2:checked) .social-set-1970s {
+    display: flex;
+    opacity: 1;
+  }
+
+  body:has(#item-3:checked) .social-set-1980s {
+    display: flex;
+    opacity: 1;
+  }
+
+  body:has(#item-4:checked) .social-set-1990s {
+    display: flex;
+    opacity: 1;
+  }
+
+  body:has(#item-5:checked) .social-set-2000s {
+    display: flex;
+    opacity: 1;
+  }
+
+  body:has(#item-6:checked) .social-set-2010s {
+    display: flex;
+    opacity: 1;
+  }
+
+  body:has(#item-7:checked) .social-set-2020s {
+    display: flex;
+    opacity: 1;
+  }
 
   /* ================================================== */
   /* 1950s - Formal Social Spaces                      */
   /* ================================================== */
-  
+
   .water-cooler-1950s {
     width: 45%;
     height: 70%;
@@ -39,7 +72,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   }
 
   .water-cooler-1950s::before {
@@ -79,7 +112,7 @@
     color: #333;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
 
   .break-area-1950s::before {
@@ -107,7 +140,7 @@
   /* ================================================== */
   /* 1960s - Modern Social Hubs                        */
   /* ================================================== */
-  
+
   .water-cooler-1960s {
     width: 45%;
     height: 70%;
@@ -120,7 +153,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
 
   .water-cooler-1960s::before {
@@ -160,7 +193,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
 
   .break-area-1960s::before {
@@ -188,7 +221,7 @@
   /* ================================================== */
   /* 1970s - Earth-Friendly Social Spaces              */
   /* ================================================== */
-  
+
   .water-cooler-1970s {
     width: 45%;
     height: 70%;
@@ -201,7 +234,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
 
   .water-cooler-1970s::before {
@@ -241,7 +274,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
 
   .break-area-1970s::before {
@@ -251,20 +284,18 @@
     left: 20%;
     width: 60%;
     height: 60%;
-    background: repeating-linear-gradient(
-      45deg,
-      #8B4513 0px,
-      #8B4513 4px,
-      #CD853F 4px,
-      #CD853F 8px
-    );
+    background: repeating-linear-gradient(45deg,
+        #8B4513 0px,
+        #8B4513 4px,
+        #CD853F 4px,
+        #CD853F 8px);
     border-radius: 8px;
   }
 
   /* ================================================== */
   /* 1980s - Power Social & Executive Areas            */
   /* ================================================== */
-  
+
   .water-cooler-1980s {
     width: 45%;
     height: 70%;
@@ -277,7 +308,7 @@
     color: #FFD700;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   .water-cooler-1980s::before {
@@ -317,7 +348,7 @@
     color: #FFD700;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   }
 
   .break-area-1980s::before {
@@ -346,7 +377,7 @@
   /* ================================================== */
   /* 1990s - Team Building & Casual Social            */
   /* ================================================== */
-  
+
   .water-cooler-1990s {
     width: 45%;
     height: 70%;
@@ -359,7 +390,7 @@
     color: #333;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   }
 
   .water-cooler-1990s::before {
@@ -399,7 +430,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   }
 
   .break-area-1990s::before {
@@ -427,7 +458,7 @@
   /* ================================================== */
   /* 2000s - Modern Café Culture                       */
   /* ================================================== */
-  
+
   .water-cooler-2000s {
     width: 45%;
     height: 70%;
@@ -440,7 +471,7 @@
     color: #2F4F4F;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   }
 
   .water-cooler-2000s::before {
@@ -480,7 +511,7 @@
     color: #333;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
 
   .break-area-2000s::before {
@@ -508,7 +539,7 @@
   /* ================================================== */
   /* 2010s - Startup Recreation Culture                */
   /* ================================================== */
-  
+
   .water-cooler-2010s {
     width: 45%;
     height: 70%;
@@ -521,7 +552,7 @@
     color: #333;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
 
   .water-cooler-2010s::before {
@@ -561,7 +592,7 @@
     color: #FFF;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   }
 
   .break-area-2010s::before {
@@ -589,7 +620,7 @@
   /* ================================================== */
   /* 2020s - Virtual & Touchless Social Spaces        */
   /* ================================================== */
-  
+
   .water-cooler-2020s {
     width: 45%;
     height: 70%;
@@ -602,7 +633,7 @@
     color: #2F4F4F;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
 
   .water-cooler-2020s::before {
@@ -642,7 +673,7 @@
     color: #006400;
     font-size: 9px;
     position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
 
   .break-area-2020s::before {
