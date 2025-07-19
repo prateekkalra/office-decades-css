@@ -2400,11 +2400,8 @@
   /* 2010s Modern Computer Setup */
   .work-set-2010s {
     position: relative;
-    width: 70%;
-    height: 25%;
-    transform: scale(0.6);
-    transform-origin: center;
     z-index: 1;
+    top: 50%
   }
 
   /* 2010s CSS Variables */
@@ -2710,9 +2707,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.5);
-    transform-origin: center;
     z-index: 1;
+    zoom: 0.4
   }
 
   .macbook-wrapper-2020s {
@@ -2786,7 +2782,7 @@
     padding: 30px 5px 0em 5px;
     margin-top: -18px;
     width: 460px;
-    height: 295px;
+    height: 330px;
     background: #666;
     border-radius: 16px;
     position: relative;
