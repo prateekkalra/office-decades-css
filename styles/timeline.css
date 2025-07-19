@@ -1,6 +1,8 @@
 /* Timeline Navigation Component */
 @layer demo {
   .cards-container {
+    zoom: 0.8;
+    background-color: transparent!important;
     --base-rotation: 0deg;
     --full-circle: 360deg;
     --radius: 12vw;
@@ -40,20 +42,21 @@
     border-radius: 50%;
 
     @media (min-width: 800px) {
-        --radius: 10vw;
-        --label-size: 32px;
-        --label-dot-size: 10px;
-        --label-line-h-current: 2rem;
-        --title-top: 2rem;
-        --info-top: 5rem;
-      }
-      @media (min-width: 1200px) {
-        --radius: 8vw;
-        --label-size: 36px;
-        --border-color: rgba(102, 102, 102, 0.6);
-      }
+      --radius: 10vw;
+      --label-size: 32px;
+      --label-dot-size: 10px;
+      --label-line-h-current: 2rem;
+      --title-top: 2rem;
+      --info-top: 5rem;
     }
-  
+
+    @media (min-width: 1200px) {
+      --radius: 8vw;
+      --label-size: 36px;
+      --border-color: rgba(102, 102, 102, 0.6);
+    }
+  }
+
   .cards {
     position: absolute;
     inset: var(--cards-container-padding);
@@ -69,14 +72,14 @@
     inset: 0;
     margin: 0;
     padding: 0;
-    transform-origin:center;
+    transform-origin: center;
     display: grid;
     place-content: center;
     transform: rotate(calc(var(--i) * 360deg / var(--items)));
     pointer-events: none;
   }
 
-  .cards li > label {
+  .cards li>label {
     position: absolute;
     inset: 0;
     margin: auto;
@@ -87,25 +90,25 @@
     pointer-events: initial;
     text-align: center;
     color: var(--label-color);
-    font-size: clamp(.8rem, 2.5vw + .04rem,1rem);
+    font-size: clamp(.8rem, 2.5vw + .04rem, 1rem);
     transition: var(--duration) ease-in-out;
   }
 
-  .cards li > label::before{
-      content: '';
-      position: absolute;
-      top: var(--cards-container-padding);
-      left: 50%;
-      translate: -50% 0;
-      width: var(--label-dot-size);
-      height: var(--label-dot-size);
-      aspect-ratio: 50%;
-      border-radius: 50%;
-      background-color: var(--label-color);
-      transition: background-color var(--duration) ease-in-out;
+  .cards li>label::before {
+    content: '';
+    position: absolute;
+    top: var(--cards-container-padding);
+    left: 50%;
+    translate: -50% 0;
+    width: var(--label-dot-size);
+    height: var(--label-dot-size);
+    aspect-ratio: 50%;
+    border-radius: 50%;
+    background-color: var(--label-color);
+    transition: background-color var(--duration) ease-in-out;
   }
 
-  .cards li > label::after {
+  .cards li>label::after {
     content: '';
     position: absolute;
     top: 100%;
@@ -114,15 +117,15 @@
     width: 2px;
     height: var(--label-line-h);
     background-color: steelblue;
-    transition: height 300ms ease-in-out var(--label-line-delay,0ms);
+    transition: height 300ms ease-in-out var(--label-line-delay, 0ms);
   }
 
-  .cards li > label:hover{
+  .cards li>label:hover {
     --label-color: var(--label-color-hover);
   }
 
-  .cards > li > h2,
-  .cards > li > p{
+  .cards>li>h2,
+  .cards>li>p {
     position: absolute;
     left: 50%;
     text-align: center;
@@ -130,14 +133,14 @@
     transform-origin: center;
   }
 
-  .cards > li > h2{
+  .cards>li>h2 {
     top: var(--title-top);
-    opacity: var(--title-opacity,0);
+    opacity: var(--title-opacity, 0);
     translate: 0 var(--title-offset-y);
-    transition: var(--duration) ease-in-out var(--title-delay,0ms);
+    transition: var(--duration) ease-in-out var(--title-delay, 0ms);
   }
 
-  .cards > li > p{
+  .cards>li>p {
     top: var(--info-top);
     margin: 0 auto;
     width: var(--info-width);
@@ -145,24 +148,24 @@
     font-size: clamp(.8rem, 2.5vw + 0.05rem, .9rem);
     text-align: left;
     text-wrap: pretty;
-    opacity: var(--info-opacity,0);
-    transition: var(--duration) ease-in-out var(--info-delay,0ms);
+    opacity: var(--info-opacity, 0);
+    transition: var(--duration) ease-in-out var(--info-delay, 0ms);
   }
 
   /* update custom properties for checked item */
-  li:has(input:checked){
-      --label-opacity: 1;
-      --label-color: var(--label-color-hover);
-      --label-line-h: var(--label-line-h-current);
-      --label-line-delay: calc(var(--duration) * 2);
+  li:has(input:checked) {
+    --label-opacity: 1;
+    --label-color: var(--label-color-hover);
+    --label-line-h: var(--label-line-h-current);
+    --label-line-delay: calc(var(--duration) * 2);
 
-      --title-opacity: 1;
-      --title-offset-y: 0;
-      --title-delay: calc(var(--duration) * 3);
+    --title-opacity: 1;
+    --title-offset-y: 0;
+    --title-delay: calc(var(--duration) * 3);
 
-      --info-opacity: 1;
-      --info-offset-y: 0;
-      --info-delay: calc(var(--duration) * 4);
+    --info-opacity: 1;
+    --info-offset-y: 0;
+    --info-delay: calc(var(--duration) * 4);
   }
 
   /* rotate container based on checked radio */
@@ -171,30 +174,107 @@
   }
 
   /* Timeline index selectors for rotation */
-  .cards:has(li:nth-child(1)>input:checked) { --index: 0; }
-  .cards:has(li:nth-child(2)>input:checked) { --index: 1; }
-  .cards:has(li:nth-child(3)>input:checked) { --index: 2; }
-  .cards:has(li:nth-child(4)>input:checked) { --index: 3; }
-  .cards:has(li:nth-child(5)>input:checked) { --index: 4; }
-  .cards:has(li:nth-child(6)>input:checked) { --index: 5; }
-  .cards:has(li:nth-child(7)>input:checked) { --index: 6; }
-  .cards:has(li:nth-child(8)>input:checked) { --index: 7; }
-  .cards:has(li:nth-child(9)>input:checked) { --index: 8; }
-  .cards:has(li:nth-child(10)>input:checked) { --index: 9; }
-  .cards:has(li:nth-child(11)>input:checked) { --index: 10; }
-  .cards:has(li:nth-child(12)>input:checked) { --index: 11; }
-  .cards:has(li:nth-child(13)>input:checked) { --index: 12; }
-  .cards:has(li:nth-child(14)>input:checked) { --index: 13; }
-  .cards:has(li:nth-child(15)>input:checked) { --index: 14; }
-  .cards:has(li:nth-child(16)>input:checked) { --index: 15; }
-  .cards:has(li:nth-child(17)>input:checked) { --index: 16; }
-  .cards:has(li:nth-child(18)>input:checked) { --index: 17; }
-  .cards:has(li:nth-child(19)>input:checked) { --index: 18; }
-  .cards:has(li:nth-child(20)>input:checked) { --index: 19; }
-  .cards:has(li:nth-child(21)>input:checked) { --index: 20; }
-  .cards:has(li:nth-child(22)>input:checked) { --index: 21; }
-  .cards:has(li:nth-child(23)>input:checked) { --index: 22; }
-  .cards:has(li:nth-child(24)>input:checked) { --index: 23; }
-  .cards:has(li:nth-child(25)>input:checked) { --index: 24; }
-  .cards:has(li:nth-child(26)>input:checked) { --index: 25; }
+  .cards:has(li:nth-child(1)>input:checked) {
+    --index: 0;
+  }
+
+  .cards:has(li:nth-child(2)>input:checked) {
+    --index: 1;
+  }
+
+  .cards:has(li:nth-child(3)>input:checked) {
+    --index: 2;
+  }
+
+  .cards:has(li:nth-child(4)>input:checked) {
+    --index: 3;
+  }
+
+  .cards:has(li:nth-child(5)>input:checked) {
+    --index: 4;
+  }
+
+  .cards:has(li:nth-child(6)>input:checked) {
+    --index: 5;
+  }
+
+  .cards:has(li:nth-child(7)>input:checked) {
+    --index: 6;
+  }
+
+  .cards:has(li:nth-child(8)>input:checked) {
+    --index: 7;
+  }
+
+  .cards:has(li:nth-child(9)>input:checked) {
+    --index: 8;
+  }
+
+  .cards:has(li:nth-child(10)>input:checked) {
+    --index: 9;
+  }
+
+  .cards:has(li:nth-child(11)>input:checked) {
+    --index: 10;
+  }
+
+  .cards:has(li:nth-child(12)>input:checked) {
+    --index: 11;
+  }
+
+  .cards:has(li:nth-child(13)>input:checked) {
+    --index: 12;
+  }
+
+  .cards:has(li:nth-child(14)>input:checked) {
+    --index: 13;
+  }
+
+  .cards:has(li:nth-child(15)>input:checked) {
+    --index: 14;
+  }
+
+  .cards:has(li:nth-child(16)>input:checked) {
+    --index: 15;
+  }
+
+  .cards:has(li:nth-child(17)>input:checked) {
+    --index: 16;
+  }
+
+  .cards:has(li:nth-child(18)>input:checked) {
+    --index: 17;
+  }
+
+  .cards:has(li:nth-child(19)>input:checked) {
+    --index: 18;
+  }
+
+  .cards:has(li:nth-child(20)>input:checked) {
+    --index: 19;
+  }
+
+  .cards:has(li:nth-child(21)>input:checked) {
+    --index: 20;
+  }
+
+  .cards:has(li:nth-child(22)>input:checked) {
+    --index: 21;
+  }
+
+  .cards:has(li:nth-child(23)>input:checked) {
+    --index: 22;
+  }
+
+  .cards:has(li:nth-child(24)>input:checked) {
+    --index: 23;
+  }
+
+  .cards:has(li:nth-child(25)>input:checked) {
+    --index: 24;
+  }
+
+  .cards:has(li:nth-child(26)>input:checked) {
+    --index: 25;
+  }
 }
