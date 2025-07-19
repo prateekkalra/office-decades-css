@@ -24,21 +24,36 @@
     box-sizing: border-box;
   }
 
-  /* Zone labels - Enhanced Subtle */
+  /* Zone labels - Enhanced Beautiful */
   .zone-label {
     position: absolute;
     top: 8px;
     left: 12px;
     font-size: 11px;
-    font-weight: 500;
-    color: rgba(0,0,0,0.5);
-    background: transparent;
-    padding: 2px 6px;
-    z-index: 2;
-    opacity: 0.7;
-    text-shadow: 0 1px 2px rgba(255,255,255,0.8);
-    letter-spacing: 0.5px;
-    border-radius: 3px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.7);
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,240,0.8));
+    padding: 4px 10px;
+    z-index: 10;
+    opacity: 0.9;
+    text-shadow: 0 1px 3px rgba(255,255,255,1);
+    letter-spacing: 1px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 
+      0 2px 8px rgba(0,0,0,0.1),
+      inset 0 1px 0 rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .zone-label:hover {
+    opacity: 1;
+    background: linear-gradient(135deg, rgba(255,255,255,1), rgba(250,250,250,0.95));
+    box-shadow: 
+      0 4px 12px rgba(0,0,0,0.15),
+      inset 0 1px 0 rgba(255,255,255,1);
   }
 
   /* Timeline Grid Area (transparent placeholder) */
