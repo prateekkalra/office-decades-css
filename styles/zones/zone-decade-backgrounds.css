@@ -1,608 +1,669 @@
-/* Decade-Specific Zone Backgrounds */
+/* Decade-Specific Zone Backgrounds - CONSISTENT & AWESOME */
 @layer demo {
   
   /* ================================================== */
   /* 1950s - Mad Men Era Zone Backgrounds              */
+  /* Color Palette: Rich Mahogany & Gold               */
   /* ================================================== */
 
   body:has(#item-0:checked) .wall-zone {
     background: 
-      /* Art Deco lighting */
-      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(218,165,32,0.4) 0%, transparent 70%),
-      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(184,134,11,0.3) 0%, transparent 60%),
-      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(218,165,32,0.25) 0%, transparent 60%),
-      /* Mahogany warmth */
-      linear-gradient(180deg, rgba(160,82,45,0.15) 0%, rgba(139,69,19,0.1) 50%, rgba(205,133,63,0.2) 100%);
-    border: 2px solid rgba(218,165,32,0.6);
+      /* Consistent 4-layer gradient system */
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(218,165,32,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(184,134,11,0.35) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(218,165,32,0.3) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(160,82,45,0.2) 0%, rgba(139,69,19,0.15) 50%, rgba(205,133,63,0.25) 100%);
+    border: 2px solid rgba(218,165,32,0.8);
     box-shadow: 
-      inset 0 0 60px rgba(218,165,32,0.2),
-      0 8px 30px rgba(160,82,45,0.15);
+      inset 0 0 60px rgba(218,165,32,0.25),
+      0 8px 30px rgba(160,82,45,0.18),
+      0 0 15px rgba(218,165,32,0.4);
   }
 
   body:has(#item-0:checked) .work-zone {
     background: 
-      /* Executive office glow */
-      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(139,69,19,0.3) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(160,82,45,0.25) 0%, transparent 50%),
-      /* Rich mahogany base */
-      linear-gradient(45deg, rgba(205,133,63,0.15) 0%, rgba(222,184,135,0.12) 50%, rgba(245,245,220,0.1) 100%);
-    border: 2px solid rgba(160,82,45,0.6);
-    box-shadow: inset 0 0 50px rgba(139,69,19,0.15), 0 6px 25px rgba(160,82,45,0.12);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(139,69,19,0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(160,82,45,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(205,133,63,0.25) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(205,133,63,0.18) 0%, rgba(222,184,135,0.15) 50%, rgba(245,245,220,0.12) 100%);
+    border: 2px solid rgba(160,82,45,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(139,69,19,0.2),
+      0 8px 30px rgba(160,82,45,0.15),
+      0 0 15px rgba(139,69,19,0.3);
   }
 
   body:has(#item-0:checked) .tech-zone {
     background: 
-      /* Vintage electronics warmth */
-      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(105,105,105,0.4) 0%, transparent 70%),
-      /* Bakelite tones */
-      linear-gradient(135deg, rgba(47,79,79,0.15) 0%, rgba(105,105,105,0.12) 50%, rgba(169,169,169,0.1) 100%);
-    border: 2px solid rgba(105,105,105,0.6);
-    box-shadow: inset 0 0 40px rgba(105,105,105,0.15), 0 5px 20px rgba(47,79,79,0.1);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(105,105,105,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(47,79,79,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(169,169,169,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(47,79,79,0.18) 0%, rgba(105,105,105,0.15) 50%, rgba(169,169,169,0.12) 100%);
+    border: 2px solid rgba(105,105,105,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(105,105,105,0.2),
+      0 8px 30px rgba(47,79,79,0.15),
+      0 0 15px rgba(105,105,105,0.3);
   }
 
   body:has(#item-0:checked) .storage-zone {
     background: 
-      /* Filing cabinet steel */
-      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(119,136,153,0.3) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(176,196,222,0.2) 0%, rgba(230,230,250,0.15) 100%);
-    border: 2px solid rgba(119,136,153,0.6);
-    box-shadow: inset 0 0 40px rgba(119,136,153,0.12), 0 5px 20px rgba(176,196,222,0.1);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(119,136,153,0.4) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(176,196,222,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(230,230,250,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(176,196,222,0.18) 0%, rgba(230,230,250,0.15) 50%, rgba(255,255,255,0.12) 100%);
+    border: 2px solid rgba(119,136,153,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(119,136,153,0.2),
+      0 8px 30px rgba(176,196,222,0.15),
+      0 0 15px rgba(119,136,153,0.3);
   }
 
   body:has(#item-0:checked) .social-zone {
     background: 
-      /* Water cooler social warmth */
-      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(210,180,140,0.35) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(245,222,179,0.2) 0%, rgba(255,248,220,0.15) 100%);
-    border: 2px solid rgba(210,180,140,0.6);
-    box-shadow: inset 0 0 45px rgba(210,180,140,0.15), 0 6px 22px rgba(245,222,179,0.12);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(210,180,140,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(245,222,179,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,248,220,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(245,222,179,0.18) 0%, rgba(255,248,220,0.15) 50%, rgba(255,255,255,0.12) 100%);
+    border: 2px solid rgba(210,180,140,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(210,180,140,0.2),
+      0 8px 30px rgba(245,222,179,0.15),
+      0 0 15px rgba(210,180,140,0.3);
   }
 
   body:has(#item-0:checked) .personal-zone {
     background: 
-      /* Personal briefcase leather */
-      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(139,69,19,0.35) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(160,82,45,0.18) 0%, rgba(205,133,63,0.12) 100%);
-    border: 2px solid rgba(139,69,19,0.6);
-    box-shadow: inset 0 0 45px rgba(139,69,19,0.15), 0 6px 22px rgba(160,82,45,0.1);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(139,69,19,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(160,82,45,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(205,133,63,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(160,82,45,0.18) 0%, rgba(205,133,63,0.15) 50%, rgba(222,184,135,0.12) 100%);
+    border: 2px solid rgba(139,69,19,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(139,69,19,0.2),
+      0 8px 30px rgba(160,82,45,0.15),
+      0 0 15px rgba(139,69,19,0.3);
   }
 
   /* ================================================== */
   /* 1960s - Space Age Zone Backgrounds                */
+  /* Color Palette: Atomic Orange & Space Age Metals   */
   /* ================================================== */
 
   body:has(#item-1:checked) .wall-zone {
     background: 
-      /* Atomic age lighting */
-      radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,140,0,0.4) 0%, transparent 70%),
-      radial-gradient(ellipse 35% 85% at 10% 50%, rgba(255,165,0,0.3) 0%, transparent 60%),
-      radial-gradient(ellipse 35% 85% at 90% 50%, rgba(255,69,0,0.25) 0%, transparent 60%),
-      /* Space age orange */
-      linear-gradient(180deg, rgba(255,222,173,0.2) 0%, rgba(255,218,185,0.15) 50%, rgba(255,235,205,0.18) 100%);
-    border: 2px solid rgba(255,140,0,0.7);
-    box-shadow: inset 0 0 65px rgba(255,140,0,0.2), 0 8px 32px rgba(255,165,0,0.15);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255,140,0,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(255,165,0,0.35) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(255,69,0,0.3) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(255,222,173,0.2) 0%, rgba(255,218,185,0.15) 50%, rgba(255,235,205,0.25) 100%);
+    border: 2px solid rgba(255,140,0,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(255,140,0,0.25),
+      0 8px 30px rgba(255,165,0,0.18),
+      0 0 15px rgba(255,140,0,0.4);
   }
 
   body:has(#item-1:checked) .work-zone {
     background: 
-      /* Mod design glow */
-      radial-gradient(ellipse 85% 65% at 50% 50%, rgba(255,69,0,0.35) 0%, transparent 70%),
-      radial-gradient(ellipse 45% 45% at 25% 25%, rgba(255,140,0,0.25) 0%, transparent 50%),
-      /* Mod orange base */
-      linear-gradient(45deg, rgba(255,218,185,0.15) 0%, rgba(255,235,205,0.12) 50%, rgba(255,239,213,0.1) 100%);
-    border: 2px solid rgba(255,69,0,0.7);
-    box-shadow: inset 0 0 55px rgba(255,69,0,0.18), 0 6px 28px rgba(255,140,0,0.12);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,69,0,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(255,140,0,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(255,218,185,0.25) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(255,218,185,0.18) 0%, rgba(255,235,205,0.15) 50%, rgba(255,239,213,0.12) 100%);
+    border: 2px solid rgba(255,69,0,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(255,69,0,0.2),
+      0 8px 30px rgba(255,140,0,0.15),
+      0 0 15px rgba(255,69,0,0.3);
   }
 
   body:has(#item-1:checked) .tech-zone {
     background: 
-      /* Space age tech */
-      radial-gradient(ellipse 70% 75% at 50% 50%, rgba(255,215,0,0.4) 0%, transparent 70%),
-      /* Atomic orange */
-      linear-gradient(135deg, rgba(255,165,0,0.18) 0%, rgba(255,218,185,0.12) 50%, rgba(255,239,213,0.1) 100%);
-    border: 2px solid rgba(255,215,0,0.7);
-    box-shadow: inset 0 0 45px rgba(255,215,0,0.18), 0 5px 22px rgba(255,165,0,0.12);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(255,215,0,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(255,165,0,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,218,185,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,165,0,0.18) 0%, rgba(255,218,185,0.15) 50%, rgba(255,239,213,0.12) 100%);
+    border: 2px solid rgba(255,215,0,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(255,215,0,0.2),
+      0 8px 30px rgba(255,165,0,0.15),
+      0 0 15px rgba(255,215,0,0.3);
   }
 
   body:has(#item-1:checked) .storage-zone {
     background: 
-      /* Futuristic storage */
-      radial-gradient(ellipse 95% 55% at 50% 100%, rgba(255,140,0,0.35) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(255,222,173,0.2) 0%, rgba(255,235,205,0.15) 100%);
-    border: 2px solid rgba(255,140,0,0.6);
-    box-shadow: inset 0 0 42px rgba(255,140,0,0.15), 0 5px 21px rgba(255,222,173,0.12);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(255,140,0,0.45) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(255,222,173,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(255,235,205,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,222,173,0.18) 0%, rgba(255,235,205,0.15) 50%, rgba(255,255,255,0.12) 100%);
+    border: 2px solid rgba(255,140,0,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(255,140,0,0.2),
+      0 8px 30px rgba(255,222,173,0.15),
+      0 0 15px rgba(255,140,0,0.3);
   }
 
   body:has(#item-1:checked) .social-zone {
     background: 
-      /* Psychedelic social space */
-      radial-gradient(ellipse 85% 65% at 50% 60%, rgba(255,165,0,0.38) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(255,218,185,0.22) 0%, rgba(255,235,205,0.16) 100%);
-    border: 2px solid rgba(255,165,0,0.7);
-    box-shadow: inset 0 0 48px rgba(255,165,0,0.18), 0 6px 24px rgba(255,218,185,0.13);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(255,165,0,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(255,218,185,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,235,205,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,218,185,0.18) 0%, rgba(255,235,205,0.15) 50%, rgba(255,255,255,0.12) 100%);
+    border: 2px solid rgba(255,165,0,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(255,165,0,0.2),
+      0 8px 30px rgba(255,218,185,0.15),
+      0 0 15px rgba(255,165,0,0.3);
   }
 
   body:has(#item-1:checked) .personal-zone {
     background: 
-      /* Atomic personal space */
-      radial-gradient(ellipse 75% 85% at 65% 35%, rgba(255,69,0,0.38) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(255,140,0,0.2) 0%, rgba(255,218,185,0.14) 100%);
-    border: 2px solid rgba(255,69,0,0.7);
-    box-shadow: inset 0 0 48px rgba(255,69,0,0.18), 0 6px 24px rgba(255,140,0,0.12);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(255,69,0,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(255,140,0,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,218,185,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,140,0,0.18) 0%, rgba(255,218,185,0.15) 50%, rgba(255,235,205,0.12) 100%);
+    border: 2px solid rgba(255,69,0,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(255,69,0,0.2),
+      0 8px 30px rgba(255,140,0,0.15),
+      0 0 15px rgba(255,69,0,0.3);
   }
 
   /* ================================================== */
   /* 1970s - Groovy Office Zone Backgrounds            */
+  /* Color Palette: Harvest Gold & Earth Tones         */
   /* ================================================== */
 
   body:has(#item-2:checked) .wall-zone {
     background: 
-      /* Harvest gold lighting */
-      radial-gradient(ellipse 65% 45% at 50% 0%, rgba(218,165,32,0.45) 0%, transparent 70%),
-      radial-gradient(ellipse 32% 82% at 12% 50%, rgba(184,134,11,0.32) 0%, transparent 60%),
-      radial-gradient(ellipse 32% 82% at 88% 50%, rgba(240,230,140,0.28) 0%, transparent 60%),
-      /* Earth tones */
-      linear-gradient(180deg, rgba(222,184,135,0.22) 0%, rgba(240,230,140,0.16) 50%, rgba(245,222,179,0.2) 100%);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(218,165,32,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(184,134,11,0.4) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(240,230,140,0.3) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(222,184,135,0.25) 0%, rgba(240,230,140,0.18) 50%, rgba(245,222,179,0.22) 100%);
     border: 2px solid rgba(218,165,32,0.8);
-    box-shadow: inset 0 0 70px rgba(218,165,32,0.22), 0 8px 35px rgba(184,134,11,0.16);
+    box-shadow: 
+      inset 0 0 60px rgba(218,165,32,0.25),
+      0 8px 30px rgba(184,134,11,0.18),
+      0 0 15px rgba(218,165,32,0.4);
   }
 
   body:has(#item-2:checked) .work-zone {
     background: 
-      /* Earthy workspace */
-      radial-gradient(ellipse 88% 68% at 50% 50%, rgba(184,134,11,0.38) 0%, transparent 70%),
-      radial-gradient(ellipse 48% 48% at 28% 28%, rgba(205,133,63,0.28) 0%, transparent 50%),
-      /* Harvest base */
-      linear-gradient(45deg, rgba(240,230,140,0.16) 0%, rgba(245,222,179,0.13) 50%, rgba(255,228,196,0.11) 100%);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(184,134,11,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(205,133,63,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(240,230,140,0.25) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(240,230,140,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
     border: 2px solid rgba(184,134,11,0.8);
-    box-shadow: inset 0 0 58px rgba(184,134,11,0.2), 0 6px 30px rgba(205,133,63,0.14);
+    box-shadow: 
+      inset 0 0 60px rgba(184,134,11,0.2),
+      0 8px 30px rgba(205,133,63,0.15),
+      0 0 15px rgba(184,134,11,0.3);
   }
 
   body:has(#item-2:checked) .tech-zone {
     background: 
-      /* 70s tech warmth */
-      radial-gradient(ellipse 72% 78% at 50% 50%, rgba(210,180,140,0.42) 0%, transparent 70%),
-      /* Sandy brown tech */
-      linear-gradient(135deg, rgba(244,164,96,0.2) 0%, rgba(245,222,179,0.14) 50%, rgba(255,228,196,0.12) 100%);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(210,180,140,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(244,164,96,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(245,222,179,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(244,164,96,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
     border: 2px solid rgba(210,180,140,0.8);
-    box-shadow: inset 0 0 48px rgba(210,180,140,0.2), 0 5px 25px rgba(244,164,96,0.14);
+    box-shadow: 
+      inset 0 0 60px rgba(210,180,140,0.2),
+      0 8px 30px rgba(244,164,96,0.15),
+      0 0 15px rgba(210,180,140,0.3);
   }
 
   body:has(#item-2:checked) .storage-zone {
     background: 
-      /* Macrame storage vibes */
-      radial-gradient(ellipse 98% 58% at 50% 100%, rgba(205,133,63,0.38) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(222,184,135,0.22) 0%, rgba(245,222,179,0.17) 100%);
-    border: 2px solid rgba(205,133,63,0.7);
-    box-shadow: inset 0 0 45px rgba(205,133,63,0.17), 0 5px 23px rgba(222,184,135,0.14);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(205,133,63,0.5) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(222,184,135,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(245,222,179,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(222,184,135,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,255,255,0.12) 100%);
+    border: 2px solid rgba(205,133,63,0.8);
+    box-shadow: 
+      inset 0 0 60px rgba(205,133,63,0.2),
+      0 8px 30px rgba(222,184,135,0.15),
+      0 0 15px rgba(205,133,63,0.3);
   }
 
   body:has(#item-2:checked) .social-zone {
     background: 
-      /* Shag carpet social */
-      radial-gradient(ellipse 88% 68% at 50% 60%, rgba(244,164,96,0.42) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(245,222,179,0.24) 0%, rgba(255,228,196,0.18) 100%);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(244,164,96,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(245,222,179,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,228,196,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(245,222,179,0.18) 0%, rgba(255,228,196,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(244,164,96,0.8);
-    box-shadow: inset 0 0 52px rgba(244,164,96,0.2), 0 6px 26px rgba(245,222,179,0.15);
+    box-shadow: 
+      inset 0 0 60px rgba(244,164,96,0.2),
+      0 8px 30px rgba(245,222,179,0.15),
+      0 0 15px rgba(244,164,96,0.3);
   }
 
   body:has(#item-2:checked) .personal-zone {
     background: 
-      /* Groovy personal space */
-      radial-gradient(ellipse 78% 88% at 68% 38%, rgba(218,165,32,0.42) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(240,230,140,0.22) 0%, rgba(245,222,179,0.16) 100%);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(218,165,32,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(240,230,140,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(245,222,179,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(240,230,140,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
     border: 2px solid rgba(218,165,32,0.8);
-    box-shadow: inset 0 0 52px rgba(218,165,32,0.2), 0 6px 26px rgba(240,230,140,0.14);
+    box-shadow: 
+      inset 0 0 60px rgba(218,165,32,0.2),
+      0 8px 30px rgba(240,230,140,0.15),
+      0 0 15px rgba(218,165,32,0.3);
   }
 
   /* ================================================== */
   /* 1980s - Power Decade Zone Backgrounds             */
+  /* Color Palette: Electric Neons & High Energy       */
   /* ================================================== */
 
   body:has(#item-3:checked) .wall-zone {
     background: 
-      /* Neon gallery lighting */
-      radial-gradient(ellipse 68% 42% at 50% 0%, rgba(255,20,147,0.48) 0%, transparent 70%),
-      radial-gradient(ellipse 35% 88% at 8% 50%, rgba(0,255,255,0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 35% 88% at 92% 50%, rgba(138,43,226,0.32) 0%, transparent 60%),
-      /* Neon base */
-      linear-gradient(180deg, rgba(255,182,193,0.25) 0%, rgba(255,192,203,0.18) 50%, rgba(255,228,225,0.22) 100%);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255,20,147,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(0,255,255,0.45) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(138,43,226,0.35) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(255,182,193,0.3) 0%, rgba(255,192,203,0.22) 50%, rgba(255,228,225,0.25) 100%);
     border: 2px solid rgba(255,20,147,0.9);
     box-shadow: 
-      inset 0 0 75px rgba(255,20,147,0.25), 
-      0 8px 38px rgba(0,255,255,0.18),
-      0 0 15px rgba(255,20,147,0.6);
+      inset 0 0 60px rgba(255,20,147,0.3),
+      0 8px 30px rgba(0,255,255,0.2),
+      0 0 20px rgba(255,20,147,0.5);
   }
 
   body:has(#item-3:checked) .work-zone {
     background: 
-      /* Power suit energy */
-      radial-gradient(ellipse 92% 72% at 50% 50%, rgba(138,43,226,0.42) 0%, transparent 70%),
-      radial-gradient(ellipse 52% 52% at 32% 32%, rgba(255,20,147,0.32) 0%, transparent 50%),
-      /* Neon power base */
-      linear-gradient(45deg, rgba(255,192,203,0.18) 0%, rgba(255,228,225,0.15) 50%, rgba(240,248,255,0.13) 100%);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(138,43,226,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(255,20,147,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(255,192,203,0.25) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(255,192,203,0.2) 0%, rgba(255,228,225,0.18) 50%, rgba(240,248,255,0.15) 100%);
     border: 2px solid rgba(138,43,226,0.9);
     box-shadow: 
-      inset 0 0 62px rgba(138,43,226,0.22), 
-      0 6px 32px rgba(255,20,147,0.16),
-      0 0 12px rgba(138,43,226,0.5);
+      inset 0 0 60px rgba(138,43,226,0.25),
+      0 8px 30px rgba(255,20,147,0.18),
+      0 0 20px rgba(138,43,226,0.4);
   }
 
   body:has(#item-3:checked) .tech-zone {
     background: 
-      /* Cyberpunk tech */
-      radial-gradient(ellipse 75% 82% at 50% 50%, rgba(0,255,255,0.45) 0%, transparent 70%),
-      /* Electric blue tech */
-      linear-gradient(135deg, rgba(0,191,255,0.22) 0%, rgba(135,206,235,0.16) 50%, rgba(173,216,230,0.14) 100%);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(0,255,255,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(0,191,255,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(135,206,235,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(0,191,255,0.25) 0%, rgba(135,206,235,0.2) 50%, rgba(173,216,230,0.15) 100%);
     border: 2px solid rgba(0,255,255,0.9);
     box-shadow: 
-      inset 0 0 52px rgba(0,255,255,0.22), 
-      0 5px 28px rgba(0,191,255,0.16),
-      0 0 10px rgba(0,255,255,0.6);
+      inset 0 0 60px rgba(0,255,255,0.3),
+      0 8px 30px rgba(0,191,255,0.2),
+      0 0 20px rgba(0,255,255,0.5);
   }
 
   body:has(#item-3:checked) .storage-zone {
     background: 
-      /* Neon filing */
-      radial-gradient(ellipse 102% 62% at 50% 100%, rgba(255,20,147,0.42) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(255,182,193,0.25) 0%, rgba(255,228,225,0.19) 100%);
-    border: 2px solid rgba(255,20,147,0.8);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(255,20,147,0.55) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(255,182,193,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(255,228,225,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,182,193,0.2) 0%, rgba(255,228,225,0.18) 50%, rgba(255,255,255,0.15) 100%);
+    border: 2px solid rgba(255,20,147,0.9);
     box-shadow: 
-      inset 0 0 48px rgba(255,20,147,0.19), 
-      0 5px 25px rgba(255,182,193,0.16),
-      0 0 8px rgba(255,20,147,0.4);
+      inset 0 0 60px rgba(255,20,147,0.25),
+      0 8px 30px rgba(255,182,193,0.18),
+      0 0 20px rgba(255,20,147,0.4);
   }
 
   body:has(#item-3:checked) .social-zone {
     background: 
-      /* Electric social space */
-      radial-gradient(ellipse 92% 72% at 50% 60%, rgba(138,43,226,0.45) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(255,192,203,0.26) 0%, rgba(240,248,255,0.2) 100%);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(138,43,226,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(255,192,203,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,248,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,192,203,0.25) 0%, rgba(240,248,255,0.2) 50%, rgba(255,255,255,0.15) 100%);
     border: 2px solid rgba(138,43,226,0.9);
     box-shadow: 
-      inset 0 0 55px rgba(138,43,226,0.22), 
-      0 6px 28px rgba(255,192,203,0.17),
-      0 0 12px rgba(138,43,226,0.5);
+      inset 0 0 60px rgba(138,43,226,0.25),
+      0 8px 30px rgba(255,192,203,0.18),
+      0 0 20px rgba(138,43,226,0.4);
   }
 
   body:has(#item-3:checked) .personal-zone {
     background: 
-      /* Neon personal space */
-      radial-gradient(ellipse 82% 92% at 72% 42%, rgba(0,255,255,0.45) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(0,191,255,0.24) 0%, rgba(173,216,230,0.18) 100%);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(0,255,255,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(0,191,255,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(173,216,230,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(0,191,255,0.25) 0%, rgba(173,216,230,0.2) 50%, rgba(224,255,255,0.15) 100%);
     border: 2px solid rgba(0,255,255,0.9);
     box-shadow: 
-      inset 0 0 55px rgba(0,255,255,0.22), 
-      0 6px 28px rgba(0,191,255,0.16),
-      0 0 12px rgba(0,255,255,0.6);
+      inset 0 0 60px rgba(0,255,255,0.25),
+      0 8px 30px rgba(0,191,255,0.18),
+      0 0 20px rgba(0,255,255,0.4);
   }
 
   /* ================================================== */
   /* 1990s - Dot-Com Boom Zone Backgrounds             */
+  /* Color Palette: Digital Cyans & Matrix Greens      */
   /* ================================================== */
 
   body:has(#item-4:checked) .wall-zone {
     background: 
-      /* Digital gallery lighting */
-      radial-gradient(ellipse 70% 45% at 50% 0%, rgba(64,224,208,0.5) 0%, transparent 70%),
-      radial-gradient(ellipse 38% 92% at 5% 50%, rgba(127,255,212,0.38) 0%, transparent 60%),
-      radial-gradient(ellipse 38% 92% at 95% 50%, rgba(0,255,255,0.35) 0%, transparent 60%),
-      /* Cyber base */
-      linear-gradient(180deg, rgba(224,255,255,0.28) 0%, rgba(175,238,238,0.2) 50%, rgba(230,250,250,0.25) 100%);
-    border: 2px solid rgba(64,224,208,1);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(64,224,208,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(127,255,212,0.45) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(0,255,255,0.4) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(224,255,255,0.3) 0%, rgba(175,238,238,0.25) 50%, rgba(230,250,250,0.28) 100%);
+    border: 2px solid rgba(64,224,208,0.9);
     box-shadow: 
-      inset 0 0 78px rgba(64,224,208,0.28), 
-      0 8px 40px rgba(127,255,212,0.2),
+      inset 0 0 60px rgba(64,224,208,0.3),
+      0 8px 30px rgba(127,255,212,0.2),
       0 0 18px rgba(64,224,208,0.4);
   }
 
   body:has(#item-4:checked) .work-zone {
     background: 
-      /* Digital workspace */
-      radial-gradient(ellipse 95% 75% at 50% 50%, rgba(72,209,204,0.45) 0%, transparent 70%),
-      radial-gradient(ellipse 55% 55% at 35% 35%, rgba(64,224,208,0.35) 0%, transparent 50%),
-      /* Cyber work base */
-      linear-gradient(45deg, rgba(175,238,238,0.2) 0%, rgba(224,255,255,0.17) 50%, rgba(240,255,255,0.15) 100%);
-    border: 2px solid rgba(72,209,204,1);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(72,209,204,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(64,224,208,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(175,238,238,0.3) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(175,238,238,0.22) 0%, rgba(224,255,255,0.18) 50%, rgba(240,255,255,0.15) 100%);
+    border: 2px solid rgba(72,209,204,0.9);
     box-shadow: 
-      inset 0 0 65px rgba(72,209,204,0.25), 
-      0 6px 35px rgba(64,224,208,0.18),
-      0 0 15px rgba(72,209,204,0.4);
+      inset 0 0 60px rgba(72,209,204,0.28),
+      0 8px 30px rgba(64,224,208,0.2),
+      0 0 18px rgba(72,209,204,0.4);
   }
 
   body:has(#item-4:checked) .tech-zone {
     background: 
-      /* Matrix tech */
-      radial-gradient(ellipse 78% 85% at 50% 50%, rgba(0,255,255,0.48) 0%, transparent 70%),
-      /* Electric cyan tech */
-      linear-gradient(135deg, rgba(64,224,208,0.25) 0%, rgba(175,238,238,0.18) 50%, rgba(224,255,255,0.16) 100%);
-    border: 2px solid rgba(0,255,255,1);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(0,255,255,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(64,224,208,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(175,238,238,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(64,224,208,0.28) 0%, rgba(175,238,238,0.22) 50%, rgba(224,255,255,0.18) 100%);
+    border: 2px solid rgba(0,255,255,0.9);
     box-shadow: 
-      inset 0 0 55px rgba(0,255,255,0.25), 
-      0 5px 30px rgba(64,224,208,0.18),
-      0 0 13px rgba(0,255,255,0.5);
+      inset 0 0 60px rgba(0,255,255,0.3),
+      0 8px 30px rgba(64,224,208,0.2),
+      0 0 18px rgba(0,255,255,0.5);
   }
 
   body:has(#item-4:checked) .storage-zone {
     background: 
-      /* Digital storage */
-      radial-gradient(ellipse 105% 65% at 50% 100%, rgba(127,255,212,0.45) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(224,255,255,0.28) 0%, rgba(230,250,250,0.22) 100%);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(127,255,212,0.55) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(224,255,255,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(230,250,250,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(224,255,255,0.25) 0%, rgba(230,250,250,0.2) 50%, rgba(255,255,255,0.15) 100%);
     border: 2px solid rgba(127,255,212,0.9);
     box-shadow: 
-      inset 0 0 52px rgba(127,255,212,0.22), 
-      0 5px 28px rgba(224,255,255,0.18),
-      0 0 10px rgba(127,255,212,0.3);
+      inset 0 0 60px rgba(127,255,212,0.25),
+      0 8px 30px rgba(224,255,255,0.18),
+      0 0 18px rgba(127,255,212,0.3);
   }
 
   body:has(#item-4:checked) .social-zone {
     background: 
-      /* Cyber social space */
-      radial-gradient(ellipse 95% 75% at 50% 60%, rgba(72,209,204,0.48) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(175,238,238,0.28) 0%, rgba(240,255,255,0.22) 100%);
-    border: 2px solid rgba(72,209,204,1);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(72,209,204,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(175,238,238,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,255,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(175,238,238,0.28) 0%, rgba(240,255,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(72,209,204,0.9);
     box-shadow: 
-      inset 0 0 58px rgba(72,209,204,0.25), 
-      0 6px 30px rgba(175,238,238,0.19),
-      0 0 15px rgba(72,209,204,0.4);
+      inset 0 0 60px rgba(72,209,204,0.28),
+      0 8px 30px rgba(175,238,238,0.2),
+      0 0 18px rgba(72,209,204,0.4);
   }
 
   body:has(#item-4:checked) .personal-zone {
     background: 
-      /* Digital personal space */
-      radial-gradient(ellipse 85% 95% at 75% 45%, rgba(0,255,255,0.48) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(64,224,208,0.26) 0%, rgba(224,255,255,0.2) 100%);
-    border: 2px solid rgba(0,255,255,1);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(0,255,255,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(64,224,208,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(224,255,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(64,224,208,0.28) 0%, rgba(224,255,255,0.22) 50%, rgba(240,255,255,0.18) 100%);
+    border: 2px solid rgba(0,255,255,0.9);
     box-shadow: 
-      inset 0 0 58px rgba(0,255,255,0.25), 
-      0 6px 30px rgba(64,224,208,0.18),
-      0 0 15px rgba(0,255,255,0.5);
+      inset 0 0 60px rgba(0,255,255,0.28),
+      0 8px 30px rgba(64,224,208,0.2),
+      0 0 18px rgba(0,255,255,0.4);
   }
 
   /* ================================================== */
   /* 2000s - Millennium Office Zone Backgrounds        */
+  /* Color Palette: Y2K Blues & Holographic Silver     */
   /* ================================================== */
 
   body:has(#item-5:checked) .wall-zone {
     background: 
-      /* Y2K holographic lighting */
-      radial-gradient(ellipse 72% 48% at 50% 0%, rgba(65,105,225,0.52) 0%, transparent 70%),
-      radial-gradient(ellipse 42% 95% at 2% 50%, rgba(100,149,237,0.42) 0%, transparent 60%),
-      radial-gradient(ellipse 42% 95% at 98% 50%, rgba(135,206,250,0.38) 0%, transparent 60%),
-      /* Chrome base */
-      linear-gradient(180deg, rgba(240,248,255,0.3) 0%, rgba(230,230,250,0.22) 50%, rgba(248,248,255,0.28) 100%);
-    border: 2px solid rgba(65,105,225,1);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(135,206,250,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(176,196,222,0.45) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(100,149,237,0.4) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(240,248,255,0.3) 0%, rgba(230,230,250,0.25) 50%, rgba(248,248,255,0.28) 100%);
+    border: 2px solid rgba(135,206,250,0.9);
     box-shadow: 
-      inset 0 0 82px rgba(65,105,225,0.3), 
-      0 8px 42px rgba(100,149,237,0.22),
-      0 0 20px rgba(65,105,225,0.3);
+      inset 0 0 60px rgba(135,206,250,0.3),
+      0 8px 30px rgba(176,196,222,0.22),
+      0 0 18px rgba(135,206,250,0.4);
   }
 
   body:has(#item-5:checked) .work-zone {
     background: 
-      /* Millennium workspace */
-      radial-gradient(ellipse 98% 78% at 50% 50%, rgba(100,149,237,0.48) 0%, transparent 70%),
-      radial-gradient(ellipse 58% 58% at 38% 38%, rgba(65,105,225,0.38) 0%, transparent 50%),
-      /* Chrome work base */
-      linear-gradient(45deg, rgba(230,230,250,0.22) 0%, rgba(240,248,255,0.19) 50%, rgba(255,255,255,0.17) 100%);
-    border: 2px solid rgba(100,149,237,1);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(100,149,237,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(135,206,250,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(176,196,222,0.3) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(176,196,222,0.25) 0%, rgba(230,230,250,0.2) 50%, rgba(248,248,255,0.18) 100%);
+    border: 2px solid rgba(100,149,237,0.9);
     box-shadow: 
-      inset 0 0 68px rgba(100,149,237,0.28), 
-      0 6px 38px rgba(65,105,225,0.2),
-      0 0 17px rgba(100,149,237,0.3);
+      inset 0 0 60px rgba(100,149,237,0.28),
+      0 8px 30px rgba(135,206,250,0.2),
+      0 0 18px rgba(100,149,237,0.4);
   }
 
   body:has(#item-5:checked) .tech-zone {
     background: 
-      /* Y2K tech glow */
-      radial-gradient(ellipse 82% 88% at 50% 50%, rgba(135,206,250,0.52) 0%, transparent 70%),
-      /* Holographic tech */
-      linear-gradient(135deg, rgba(176,196,222,0.28) 0%, rgba(230,230,250,0.2) 50%, rgba(248,248,255,0.18) 100%);
-    border: 2px solid rgba(135,206,250,1);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(65,105,225,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(100,149,237,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(176,196,222,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(176,196,222,0.22) 50%, rgba(230,230,250,0.18) 100%);
+    border: 2px solid rgba(65,105,225,0.9);
     box-shadow: 
-      inset 0 0 58px rgba(135,206,250,0.28), 
-      0 5px 32px rgba(176,196,222,0.2),
-      0 0 15px rgba(135,206,250,0.4);
+      inset 0 0 60px rgba(65,105,225,0.3),
+      0 8px 30px rgba(100,149,237,0.22),
+      0 0 18px rgba(65,105,225,0.5);
   }
 
   body:has(#item-5:checked) .storage-zone {
     background: 
-      /* Millennium storage */
-      radial-gradient(ellipse 108% 68% at 50% 100%, rgba(100,149,237,0.48) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(240,248,255,0.3) 0%, rgba(248,248,255,0.24) 100%);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(100,149,237,0.55) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(240,248,255,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(248,248,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(240,248,255,0.25) 0%, rgba(248,248,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(100,149,237,0.9);
     box-shadow: 
-      inset 0 0 55px rgba(100,149,237,0.25), 
-      0 5px 30px rgba(240,248,255,0.2),
-      0 0 12px rgba(100,149,237,0.2);
+      inset 0 0 60px rgba(100,149,237,0.28),
+      0 8px 30px rgba(240,248,255,0.2),
+      0 0 18px rgba(100,149,237,0.3);
   }
 
   body:has(#item-5:checked) .social-zone {
     background: 
-      /* Y2K social space */
-      radial-gradient(ellipse 98% 78% at 50% 60%, rgba(135,206,250,0.52) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(230,230,250,0.3) 0%, rgba(255,255,255,0.24) 100%);
-    border: 2px solid rgba(135,206,250,1);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(135,206,250,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(230,230,250,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(248,248,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(230,230,250,0.28) 0%, rgba(248,248,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(135,206,250,0.9);
     box-shadow: 
-      inset 0 0 62px rgba(135,206,250,0.28), 
-      0 6px 32px rgba(230,230,250,0.21),
-      0 0 17px rgba(135,206,250,0.3);
+      inset 0 0 60px rgba(135,206,250,0.3),
+      0 8px 30px rgba(230,230,250,0.2),
+      0 0 18px rgba(135,206,250,0.4);
   }
 
   body:has(#item-5:checked) .personal-zone {
     background: 
-      /* Holographic personal space */
-      radial-gradient(ellipse 88% 98% at 78% 48%, rgba(65,105,225,0.52) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(176,196,222,0.28) 0%, rgba(248,248,255,0.22) 100%);
-    border: 2px solid rgba(65,105,225,1);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(65,105,225,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(176,196,222,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(248,248,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(176,196,222,0.28) 0%, rgba(248,248,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(65,105,225,0.9);
     box-shadow: 
-      inset 0 0 62px rgba(65,105,225,0.28), 
-      0 6px 32px rgba(176,196,222,0.2),
-      0 0 17px rgba(65,105,225,0.4);
+      inset 0 0 60px rgba(65,105,225,0.3),
+      0 8px 30px rgba(176,196,222,0.2),
+      0 0 18px rgba(65,105,225,0.4);
   }
 
   /* ================================================== */
   /* 2010s - Startup Era Zone Backgrounds              */
+  /* Color Palette: Minimal Grays & Clean Whites       */
   /* ================================================== */
 
   body:has(#item-6:checked) .wall-zone {
     background: 
-      /* Clean minimal lighting */
-      radial-gradient(ellipse 75% 50% at 50% 0%, rgba(105,105,105,0.35) 0%, transparent 70%),
-      radial-gradient(ellipse 45% 98% at -2% 50%, rgba(169,169,169,0.28) 0%, transparent 60%),
-      radial-gradient(ellipse 45% 98% at 102% 50%, rgba(211,211,211,0.25) 0%, transparent 60%),
-      /* Minimal base */
-      linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(250,250,250,0.3) 50%, rgba(248,248,255,0.35) 100%);
-    border: 1px solid rgba(200,200,200,0.8);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(105,105,105,0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(169,169,169,0.3) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(211,211,211,0.25) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(250,250,250,0.28) 50%, rgba(248,248,255,0.3) 100%);
+    border: 2px solid rgba(200,200,200,0.8);
     box-shadow: 
-      inset 0 0 60px rgba(105,105,105,0.15), 
-      0 4px 25px rgba(169,169,169,0.1),
-      0 0 8px rgba(200,200,200,0.2);
+      inset 0 0 60px rgba(105,105,105,0.18),
+      0 8px 30px rgba(169,169,169,0.12),
+      0 0 15px rgba(200,200,200,0.2);
   }
 
   body:has(#item-6:checked) .work-zone {
     background: 
-      /* Startup workspace */
-      radial-gradient(ellipse 100% 80% at 50% 50%, rgba(169,169,169,0.3) 0%, transparent 70%),
-      radial-gradient(ellipse 60% 60% at 40% 40%, rgba(105,105,105,0.25) 0%, transparent 50%),
-      /* Clean work base */
-      linear-gradient(45deg, rgba(250,250,250,0.3) 0%, rgba(255,255,255,0.28) 50%, rgba(248,248,255,0.25) 100%);
-    border: 1px solid rgba(169,169,169,0.8);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(169,169,169,0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(105,105,105,0.28) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(250,250,250,0.25) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(250,250,250,0.25) 0%, rgba(255,255,255,0.22) 50%, rgba(248,248,255,0.2) 100%);
+    border: 2px solid rgba(169,169,169,0.8);
     box-shadow: 
-      inset 0 0 45px rgba(169,169,169,0.18), 
-      0 3px 20px rgba(105,105,105,0.12),
-      0 0 6px rgba(169,169,169,0.2);
+      inset 0 0 60px rgba(169,169,169,0.2),
+      0 8px 30px rgba(105,105,105,0.15),
+      0 0 15px rgba(169,169,169,0.25);
   }
 
   body:has(#item-6:checked) .tech-zone {
     background: 
-      /* Minimalist tech */
-      radial-gradient(ellipse 85% 90% at 50% 50%, rgba(211,211,211,0.35) 0%, transparent 70%),
-      /* Clean tech */
-      linear-gradient(135deg, rgba(245,245,245,0.25) 0%, rgba(250,250,250,0.2) 50%, rgba(255,255,255,0.18) 100%);
-    border: 1px solid rgba(211,211,211,0.8);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(211,211,211,0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(245,245,245,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(250,250,250,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(245,245,245,0.22) 0%, rgba(250,250,250,0.18) 50%, rgba(255,255,255,0.15) 100%);
+    border: 2px solid rgba(211,211,211,0.8);
     box-shadow: 
-      inset 0 0 35px rgba(211,211,211,0.2), 
-      0 2px 15px rgba(245,245,245,0.15),
-      0 0 4px rgba(211,211,211,0.3);
+      inset 0 0 60px rgba(211,211,211,0.22),
+      0 8px 30px rgba(245,245,245,0.15),
+      0 0 15px rgba(211,211,211,0.3);
   }
 
   body:has(#item-6:checked) .storage-zone {
     background: 
-      /* Minimal storage */
-      radial-gradient(ellipse 110% 70% at 50% 100%, rgba(169,169,169,0.32) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(248,248,255,0.28) 100%);
-    border: 1px solid rgba(169,169,169,0.7);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(169,169,169,0.38) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(255,255,255,0.3) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(248,248,255,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(248,248,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(169,169,169,0.8);
     box-shadow: 
-      inset 0 0 40px rgba(169,169,169,0.15), 
-      0 2px 18px rgba(255,255,255,0.12),
-      0 0 3px rgba(169,169,169,0.15);
+      inset 0 0 60px rgba(169,169,169,0.18),
+      0 8px 30px rgba(255,255,255,0.15),
+      0 0 15px rgba(169,169,169,0.2);
   }
 
   body:has(#item-6:checked) .social-zone {
     background: 
-      /* Startup social space */
-      radial-gradient(ellipse 100% 80% at 50% 60%, rgba(211,211,211,0.38) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(250,250,250,0.32) 0%, rgba(255,255,255,0.26) 100%);
-    border: 1px solid rgba(211,211,211,0.8);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(211,211,211,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(250,250,250,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,255,255,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(250,250,250,0.25) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(211,211,211,0.8);
     box-shadow: 
-      inset 0 0 42px rgba(211,211,211,0.2), 
-      0 3px 22px rgba(250,250,250,0.15),
-      0 0 5px rgba(211,211,211,0.25);
+      inset 0 0 60px rgba(211,211,211,0.22),
+      0 8px 30px rgba(250,250,250,0.18),
+      0 0 15px rgba(211,211,211,0.3);
   }
 
   body:has(#item-6:checked) .personal-zone {
     background: 
-      /* Clean personal space */
-      radial-gradient(ellipse 90% 100% at 80% 50%, rgba(105,105,105,0.38) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(245,245,245,0.3) 0%, rgba(255,255,255,0.24) 100%);
-    border: 1px solid rgba(105,105,105,0.8);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(105,105,105,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(245,245,245,0.35) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,255,255,0.25) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(245,245,245,0.25) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(105,105,105,0.8);
     box-shadow: 
-      inset 0 0 42px rgba(105,105,105,0.2), 
-      0 3px 22px rgba(245,245,245,0.15),
-      0 0 5px rgba(105,105,105,0.3);
+      inset 0 0 60px rgba(105,105,105,0.22),
+      0 8px 30px rgba(245,245,245,0.18),
+      0 0 15px rgba(105,105,105,0.3);
   }
 
   /* ================================================== */
   /* 2020s - Hybrid Era Zone Backgrounds               */
+  /* Color Palette: Sustainable Greens & Eco Tech      */
   /* ================================================== */
 
   body:has(#item-7:checked) .wall-zone {
     background: 
-      /* Sustainable lighting */
-      radial-gradient(ellipse 78% 52% at 50% 0%, rgba(144,238,144,0.45) 0%, transparent 70%),
-      radial-gradient(ellipse 48% 100% at -5% 50%, rgba(152,251,152,0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 48% 100% at 105% 50%, rgba(173,255,47,0.32) 0%, transparent 60%),
-      /* Green base */
-      linear-gradient(180deg, rgba(240,255,240,0.38) 0%, rgba(245,255,250,0.28) 50%, rgba(240,255,255,0.32) 100%);
-    border: 2px solid rgba(144,238,144,0.9);
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(34,197,94,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(144,238,144,0.45) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(152,251,152,0.4) 0%, transparent 60%),
+      linear-gradient(180deg, rgba(240,255,240,0.35) 0%, rgba(245,255,250,0.28) 50%, rgba(240,255,255,0.3) 100%);
+    border: 2px solid rgba(34,197,94,0.8);
     box-shadow: 
-      inset 0 0 68px rgba(144,238,144,0.25), 
-      0 6px 35px rgba(152,251,152,0.18),
-      0 0 12px rgba(144,238,144,0.3);
+      inset 0 0 60px rgba(34,197,94,0.3),
+      0 8px 30px rgba(144,238,144,0.22),
+      0 0 15px rgba(34,197,94,0.4);
   }
 
   body:has(#item-7:checked) .work-zone {
     background: 
-      /* Hybrid workspace */
-      radial-gradient(ellipse 102% 82% at 50% 50%, rgba(152,251,152,0.42) 0%, transparent 70%),
-      radial-gradient(ellipse 62% 62% at 42% 42%, rgba(144,238,144,0.32) 0%, transparent 50%),
-      /* Eco work base */
-      linear-gradient(45deg, rgba(245,255,250,0.28) 0%, rgba(240,255,240,0.25) 50%, rgba(240,255,255,0.23) 100%);
-    border: 2px solid rgba(152,251,152,0.9);
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(74,222,128,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(34,197,94,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(144,238,144,0.3) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(144,238,144,0.25) 0%, rgba(240,255,240,0.2) 50%, rgba(245,255,250,0.18) 100%);
+    border: 2px solid rgba(74,222,128,0.8);
     box-shadow: 
-      inset 0 0 58px rgba(152,251,152,0.25), 
-      0 5px 30px rgba(144,238,144,0.18),
-      0 0 10px rgba(152,251,152,0.3);
+      inset 0 0 60px rgba(74,222,128,0.28),
+      0 8px 30px rgba(34,197,94,0.2),
+      0 0 15px rgba(74,222,128,0.4);
   }
 
   body:has(#item-7:checked) .tech-zone {
     background: 
-      /* Sustainable tech */
-      radial-gradient(ellipse 88% 92% at 50% 50%, rgba(173,255,47,0.48) 0%, transparent 70%),
-      /* Green tech */
-      linear-gradient(135deg, rgba(224,255,255,0.25) 0%, rgba(245,255,250,0.2) 50%, rgba(240,255,240,0.18) 100%);
-    border: 2px solid rgba(173,255,47,0.9);
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(16,185,129,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(74,222,128,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(187,247,208,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(74,222,128,0.28) 0%, rgba(187,247,208,0.22) 50%, rgba(240,255,240,0.18) 100%);
+    border: 2px solid rgba(16,185,129,0.8);
     box-shadow: 
-      inset 0 0 48px rgba(173,255,47,0.25), 
-      0 4px 25px rgba(224,255,255,0.18),
-      0 0 8px rgba(173,255,47,0.4);
+      inset 0 0 60px rgba(16,185,129,0.3),
+      0 8px 30px rgba(74,222,128,0.22),
+      0 0 15px rgba(16,185,129,0.5);
   }
 
   body:has(#item-7:checked) .storage-zone {
     background: 
-      /* Eco storage */
-      radial-gradient(ellipse 112% 72% at 50% 100%, rgba(144,238,144,0.45) 0%, transparent 80%),
-      linear-gradient(135deg, rgba(240,255,240,0.32) 0%, rgba(240,255,255,0.26) 100%);
+      radial-gradient(ellipse 90% 50% at 50% 100%, rgba(144,238,144,0.55) 0%, transparent 80%),
+      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(240,255,240,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(240,255,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(240,255,240,0.25) 0%, rgba(240,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(144,238,144,0.8);
     box-shadow: 
-      inset 0 0 48px rgba(144,238,144,0.22), 
-      0 4px 25px rgba(240,255,240,0.18),
-      0 0 6px rgba(144,238,144,0.2);
+      inset 0 0 60px rgba(144,238,144,0.28),
+      0 8px 30px rgba(240,255,240,0.2),
+      0 0 15px rgba(144,238,144,0.3);
   }
 
   body:has(#item-7:checked) .social-zone {
     background: 
-      /* Sustainable social space */
-      radial-gradient(ellipse 102% 82% at 50% 60%, rgba(152,251,152,0.48) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(245,255,250,0.32) 0%, rgba(240,255,255,0.26) 100%);
-    border: 2px solid rgba(152,251,152,0.9);
+      radial-gradient(ellipse 80% 60% at 50% 60%, rgba(152,251,152,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(245,255,250,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,255,255,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(245,255,250,0.28) 0%, rgba(240,255,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(152,251,152,0.8);
     box-shadow: 
-      inset 0 0 55px rgba(152,251,152,0.25), 
-      0 5px 28px rgba(245,255,250,0.19),
-      0 0 10px rgba(152,251,152,0.3);
+      inset 0 0 60px rgba(152,251,152,0.3),
+      0 8px 30px rgba(245,255,250,0.2),
+      0 0 15px rgba(152,251,152,0.4);
   }
 
   body:has(#item-7:checked) .personal-zone {
     background: 
-      /* Green personal space */
-      radial-gradient(ellipse 92% 102% at 82% 52%, rgba(173,255,47,0.48) 0%, transparent 70%),
-      linear-gradient(135deg, rgba(224,255,255,0.28) 0%, rgba(240,255,240,0.22) 100%);
-    border: 2px solid rgba(173,255,47,0.9);
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(173,255,47,0.6) 0%, transparent 70%),
+      radial-gradient(ellipse 35% 35% at 25% 25%, rgba(224,255,255,0.45) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,255,240,0.3) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(224,255,255,0.28) 0%, rgba(240,255,240,0.22) 50%, rgba(255,255,255,0.18) 100%);
+    border: 2px solid rgba(173,255,47,0.8);
     box-shadow: 
-      inset 0 0 55px rgba(173,255,47,0.25), 
-      0 5px 28px rgba(224,255,255,0.18),
-      0 0 10px rgba(173,255,47,0.4);
+      inset 0 0 60px rgba(173,255,47,0.3),
+      0 8px 30px rgba(224,255,255,0.2),
+      0 0 15px rgba(173,255,47,0.4);
   }
 
   /* Enhanced transitions for zone backgrounds */
