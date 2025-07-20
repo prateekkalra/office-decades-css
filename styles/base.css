@@ -5,11 +5,11 @@
 @layer demo {
   /* Color Variables for Title */
   :root {
-    --color-1: #186cb8;
-    --color-2: #2a9a9f;
-    --color-3: #f1b211;
-    --color-4: #e83611;
-    --color-5: #f9002f;
+    --color-1: #2050c0; /* Dark cool blue - Tech Zone */
+    --color-2: #20c050; /* Dark green - Storage Zone */
+    --color-3: #c85820; /* Dark warm orange - Work Zone */
+    --color-4: #c82058; /* Dark pink - Social Zone */
+    --color-5: #8020c0; /* Dark purple - Personal Zone */
   }
 
   * {
