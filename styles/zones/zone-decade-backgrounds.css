@@ -1,9 +1,9 @@
-/* Decade-Specific Zone Backgrounds - CONSISTENT & AWESOME */
+/* Decade-Specific Zone Backgrounds - PROGRESSIVE COLOR DARKENING */
 @layer demo {
   
   /* ================================================== */
-  /* 1950s - Mad Men Era Zone Backgrounds              */
-  /* Color Palette: Professional Warm Neutrals         */
+  /* 1950s - Very Light Color Foundation               */
+  /* Work: Warm Orange | Tech: Cool Blue | Storage: Green | Social: Warm Red | Personal: Purple */
   /* ================================================== */
 
   body:has(#item-0:checked) .wall-zone {
@@ -12,53 +12,52 @@
   }
 
   body:has(#item-0:checked) .work-zone {
-    background: #f8f8f6;
-    border: 1px solid #d5d5d5;
+    background: #fef7f0; /* Very light warm orange */
+    border: 1px solid #f4e6d7;
   }
 
   body:has(#item-0:checked) .work-zone:hover {
-    background: #fafaf8;
+    background: #fdf5ec;
   }
 
   body:has(#item-0:checked) .tech-zone {
-    background: #f0f0f0;
-    border: 1px solid #cccccc;
+    background: #f0f7fe; /* Very light cool blue */
+    border: 1px solid #d7e6f4;
   }
 
   body:has(#item-0:checked) .tech-zone:hover {
-    background: #f3f3f3;
+    background: #ecf5fd;
   }
 
   body:has(#item-0:checked) .storage-zone {
-    background: #f7f7f7;
-    border: 1px solid #d0d0d0;
+    background: #f0fef7; /* Very light green */
+    border: 1px solid #d7f4e6;
   }
 
   body:has(#item-0:checked) .storage-zone:hover {
-    background: #fafafa;
+    background: #ecfdf5;
   }
 
   body:has(#item-0:checked) .social-zone {
-    background: #f9f9f7;
-    border: 1px solid #e5e5e5;
+    background: #fef0f7; /* Very light warm red/pink */
+    border: 1px solid #f4d7e6;
   }
 
   body:has(#item-0:checked) .social-zone:hover {
-    background: #fbfbf9;
+    background: #fdecf5;
   }
 
   body:has(#item-0:checked) .personal-zone {
-    background: #f6f6f4;
-    border: 1px solid #dadada;
+    background: #f7f0fe; /* Very light purple */
+    border: 1px solid #e6d7f4;
   }
 
   body:has(#item-0:checked) .personal-zone:hover {
-    background: #f8f8f6;
+    background: #f5ecfd;
   }
 
   /* ================================================== */
-  /* 1960s - Space Age Zone Backgrounds                */
-  /* Color Palette: Clean Modern Grays                 */
+  /* 1960s - Light Colors                              */
   /* ================================================== */
 
   body:has(#item-1:checked) .wall-zone {
@@ -67,53 +66,52 @@
   }
 
   body:has(#item-1:checked) .work-zone {
-    background: #f6f6f6;
-    border: 1px solid #d8d8d8;
+    background: #fdeee0; /* Light warm orange */
+    border: 1px solid #f0d0b0;
   }
 
   body:has(#item-1:checked) .work-zone:hover {
-    background: #f8f8f8;
+    background: #fce6d5;
   }
 
   body:has(#item-1:checked) .tech-zone {
-    background: #f2f2f2;
-    border: 1px solid #cfcfcf;
+    background: #e0eefd; /* Light cool blue */
+    border: 1px solid #b0d0f0;
   }
 
   body:has(#item-1:checked) .tech-zone:hover {
-    background: #f5f5f5;
+    background: #d5e6fc;
   }
 
   body:has(#item-1:checked) .storage-zone {
-    background: #f7f7f7;
-    border: 1px solid #d2d2d2;
+    background: #e0fdef; /* Light green */
+    border: 1px solid #b0f0d0;
   }
 
   body:has(#item-1:checked) .storage-zone:hover {
-    background: #f9f9f9;
+    background: #d5fce6;
   }
 
   body:has(#item-1:checked) .social-zone {
-    background: #f5f5f5;
-    border: 1px solid #d5d5d5;
+    background: #fde0ee; /* Light warm red/pink */
+    border: 1px solid #f0b0d0;
   }
 
   body:has(#item-1:checked) .social-zone:hover {
-    background: #f7f7f7;
+    background: #fcd5e6;
   }
 
   body:has(#item-1:checked) .personal-zone {
-    background: #f3f3f3;
-    border: 1px solid #d0d0d0;
+    background: #efe0fd; /* Light purple */
+    border: 1px solid #d0b0f0;
   }
 
   body:has(#item-1:checked) .personal-zone:hover {
-    background: #f6f6f6;
+    background: #e6d5fc;
   }
 
   /* ================================================== */
-  /* 1970s - Groovy Office Zone Backgrounds            */
-  /* Color Palette: Warm Earth Tone Neutrals           */
+  /* 1970s - Medium-Light Colors                       */
   /* ================================================== */
 
   body:has(#item-2:checked) .wall-zone {
@@ -122,53 +120,52 @@
   }
 
   body:has(#item-2:checked) .work-zone {
-    background: #f8f7f5;
-    border: 1px solid #e5e3e0;
+    background: #fce4d0; /* Medium-light warm orange */
+    border: 1px solid #e8b888;
   }
 
   body:has(#item-2:checked) .work-zone:hover {
-    background: #faf9f7;
+    background: #fbdcc0;
   }
 
   body:has(#item-2:checked) .tech-zone {
-    background: #f6f5f3;
-    border: 1px solid #e2e0dd;
+    background: #d0e4fc; /* Medium-light cool blue */
+    border: 1px solid #88b8e8;
   }
 
   body:has(#item-2:checked) .tech-zone:hover {
-    background: #f8f7f5;
+    background: #c0dcfb;
   }
 
   body:has(#item-2:checked) .storage-zone {
-    background: #f9f8f6;
-    border: 1px solid #e6e4e1;
+    background: #d0fce4; /* Medium-light green */
+    border: 1px solid #88e8b8;
   }
 
   body:has(#item-2:checked) .storage-zone:hover {
-    background: #fbfaf8;
+    background: #c0fbdc;
   }
 
   body:has(#item-2:checked) .social-zone {
-    background: #f7f6f4;
-    border: 1px solid #e3e1de;
+    background: #fcd0e4; /* Medium-light warm red/pink */
+    border: 1px solid #e888b8;
   }
 
   body:has(#item-2:checked) .social-zone:hover {
-    background: #f9f8f6;
+    background: #fbc0dc;
   }
 
   body:has(#item-2:checked) .personal-zone {
-    background: #f8f7f5;
-    border: 1px solid #e4e2df;
+    background: #e4d0fc; /* Medium-light purple */
+    border: 1px solid #b888e8;
   }
 
   body:has(#item-2:checked) .personal-zone:hover {
-    background: #faf9f7;
+    background: #dcc0fb;
   }
 
   /* ================================================== */
-  /* 1980s - Power Decade Zone Backgrounds             */
-  /* Color Palette: Clean Corporate White              */
+  /* 1980s - Medium Colors                             */
   /* ================================================== */
 
   body:has(#item-3:checked) .wall-zone {
@@ -177,53 +174,52 @@
   }
 
   body:has(#item-3:checked) .work-zone {
-    background: #fdfdfd;
-    border: 1px solid #dddddd;
+    background: #fbd8c0; /* Medium warm orange */
+    border: 1px solid #e0a060;
   }
 
   body:has(#item-3:checked) .work-zone:hover {
-    background: #ffffff;
+    background: #fad0b0;
   }
 
   body:has(#item-3:checked) .tech-zone {
-    background: #fafafa;
-    border: 1px solid #d8d8d8;
+    background: #c0d8fb; /* Medium cool blue */
+    border: 1px solid #60a0e0;
   }
 
   body:has(#item-3:checked) .tech-zone:hover {
-    background: #fcfcfc;
+    background: #b0d0fa;
   }
 
   body:has(#item-3:checked) .storage-zone {
-    background: #fcfcfc;
-    border: 1px solid #dbdbdb;
+    background: #c0fbd8; /* Medium green */
+    border: 1px solid #60e0a0;
   }
 
   body:has(#item-3:checked) .storage-zone:hover {
-    background: #fefefe;
+    background: #b0fad0;
   }
 
   body:has(#item-3:checked) .social-zone {
-    background: #fbfbfb;
-    border: 1px solid #d9d9d9;
+    background: #fbc0d8; /* Medium warm red/pink */
+    border: 1px solid #e060a0;
   }
 
   body:has(#item-3:checked) .social-zone:hover {
-    background: #fdfdfd;
+    background: #fab0d0;
   }
 
   body:has(#item-3:checked) .personal-zone {
-    background: #f9f9f9;
-    border: 1px solid #d6d6d6;
+    background: #d8c0fb; /* Medium purple */
+    border: 1px solid #a060e0;
   }
 
   body:has(#item-3:checked) .personal-zone:hover {
-    background: #fbfbfb;
+    background: #d0b0fa;
   }
 
   /* ================================================== */
-  /* 1990s - Dot-Com Boom Zone Backgrounds             */
-  /* Color Palette: Light Gray Tech                    */
+  /* 1990s - Medium-Dark Colors                        */
   /* ================================================== */
 
   body:has(#item-4:checked) .wall-zone {
@@ -232,53 +228,52 @@
   }
 
   body:has(#item-4:checked) .work-zone {
-    background: #f6f7f8;
-    border: 1px solid #dee1e5;
+    background: #f9ccb0; /* Medium-dark warm orange */
+    border: 1px solid #d88848;
   }
 
   body:has(#item-4:checked) .work-zone:hover {
-    background: #f8f9fa;
+    background: #f8c0a0;
   }
 
   body:has(#item-4:checked) .tech-zone {
-    background: #f4f5f6;
-    border: 1px solid #dcdfe3;
+    background: #b0ccf9; /* Medium-dark cool blue */
+    border: 1px solid #4888d8;
   }
 
   body:has(#item-4:checked) .tech-zone:hover {
-    background: #f6f7f8;
+    background: #a0c0f8;
   }
 
   body:has(#item-4:checked) .storage-zone {
-    background: #f7f8f9;
-    border: 1px solid #dfe2e6;
+    background: #b0f9cc; /* Medium-dark green */
+    border: 1px solid #48d888;
   }
 
   body:has(#item-4:checked) .storage-zone:hover {
-    background: #f9fafb;
+    background: #a0f8c0;
   }
 
   body:has(#item-4:checked) .social-zone {
-    background: #f5f6f7;
-    border: 1px solid #dddfe3;
+    background: #f9b0cc; /* Medium-dark warm red/pink */
+    border: 1px solid #d84888;
   }
 
   body:has(#item-4:checked) .social-zone:hover {
-    background: #f7f8f9;
+    background: #f8a0c0;
   }
 
   body:has(#item-4:checked) .personal-zone {
-    background: #f6f7f8;
-    border: 1px solid #dee1e5;
+    background: #ccb0f9; /* Medium-dark purple */
+    border: 1px solid #8848d8;
   }
 
   body:has(#item-4:checked) .personal-zone:hover {
-    background: #f8f9fa;
+    background: #c0a0f8;
   }
 
   /* ================================================== */
-  /* 2000s - Millennium Office Zone Backgrounds        */
-  /* Color Palette: Cool Blue-Gray Neutrals            */
+  /* 2000s - Dark Colors                               */
   /* ================================================== */
 
   body:has(#item-5:checked) .wall-zone {
@@ -287,53 +282,52 @@
   }
 
   body:has(#item-5:checked) .work-zone {
-    background: #f6f8fa;
-    border: 1px solid #dfe2e6;
+    background: #f7c0a0; /* Dark warm orange */
+    border: 1px solid #d07030;
   }
 
   body:has(#item-5:checked) .work-zone:hover {
-    background: #f8fafb;
+    background: #f6b090;
   }
 
   body:has(#item-5:checked) .tech-zone {
-    background: #f4f6f8;
-    border: 1px solid #dde0e4;
+    background: #a0c0f7; /* Dark cool blue */
+    border: 1px solid #3070d0;
   }
 
   body:has(#item-5:checked) .tech-zone:hover {
-    background: #f6f8fa;
+    background: #90b0f6;
   }
 
   body:has(#item-5:checked) .storage-zone {
-    background: #f7f9fb;
-    border: 1px solid #e0e3e7;
+    background: #a0f7c0; /* Dark green */
+    border: 1px solid #30d070;
   }
 
   body:has(#item-5:checked) .storage-zone:hover {
-    background: #f9fbfc;
+    background: #90f6b0;
   }
 
   body:has(#item-5:checked) .social-zone {
-    background: #f5f7f9;
-    border: 1px solid #dee1e5;
+    background: #f7a0c0; /* Dark warm red/pink */
+    border: 1px solid #d03070;
   }
 
   body:has(#item-5:checked) .social-zone:hover {
-    background: #f7f9fb;
+    background: #f690b0;
   }
 
   body:has(#item-5:checked) .personal-zone {
-    background: #f6f8fa;
-    border: 1px solid #dfe2e6;
+    background: #c0a0f7; /* Dark purple */
+    border: 1px solid #7030d0;
   }
 
   body:has(#item-5:checked) .personal-zone:hover {
-    background: #f8fafb;
+    background: #b090f6;
   }
 
   /* ================================================== */
-  /* 2010s - Startup Era Zone Backgrounds              */
-  /* Color Palette: Minimal Clean White                */
+  /* 2010s - Darker Colors                             */
   /* ================================================== */
 
   body:has(#item-6:checked) .wall-zone {
@@ -342,53 +336,52 @@
   }
 
   body:has(#item-6:checked) .work-zone {
-    background: #fefefe;
-    border: 1px solid #e3e3e3;
+    background: #f5b490; /* Darker warm orange */
+    border: 1px solid #c85820;
   }
 
   body:has(#item-6:checked) .work-zone:hover {
-    background: #ffffff;
+    background: #f4a080;
   }
 
   body:has(#item-6:checked) .tech-zone {
-    background: #fcfcfc;
-    border: 1px solid #e1e1e1;
+    background: #90b4f5; /* Darker cool blue */
+    border: 1px solid #2058c8;
   }
 
   body:has(#item-6:checked) .tech-zone:hover {
-    background: #fefefe;
+    background: #80a0f4;
   }
 
   body:has(#item-6:checked) .storage-zone {
-    background: #fdfdfd;
-    border: 1px solid #e4e4e4;
+    background: #90f5b4; /* Darker green */
+    border: 1px solid #20c858;
   }
 
   body:has(#item-6:checked) .storage-zone:hover {
-    background: #ffffff;
+    background: #80f4a0;
   }
 
   body:has(#item-6:checked) .social-zone {
-    background: #fbfbfb;
-    border: 1px solid #e2e2e2;
+    background: #f590b4; /* Darker warm red/pink */
+    border: 1px solid #c82058;
   }
 
   body:has(#item-6:checked) .social-zone:hover {
-    background: #fdfdfd;
+    background: #f480a0;
   }
 
   body:has(#item-6:checked) .personal-zone {
-    background: #fafafa;
-    border: 1px solid #e0e0e0;
+    background: #b490f5; /* Darker purple */
+    border: 1px solid #5820c8;
   }
 
   body:has(#item-6:checked) .personal-zone:hover {
-    background: #fcfcfc;
+    background: #a080f4;
   }
 
   /* ================================================== */
-  /* 2020s - Hybrid Era Zone Backgrounds               */
-  /* Color Palette: Subtle Green-Tinted Neutrals       */
+  /* 2020s - Darkest Colors                            */
   /* ================================================== */
 
   body:has(#item-7:checked) .wall-zone {
@@ -397,52 +390,52 @@
   }
 
   body:has(#item-7:checked) .work-zone {
-    background: #f7f9f7;
-    border: 1px solid #e4e6e4;
+    background: #f3a880; /* Darkest warm orange */
+    border: 1px solid #c04010;
   }
 
   body:has(#item-7:checked) .work-zone:hover {
-    background: #f9faf9;
+    background: #f29070;
   }
 
   body:has(#item-7:checked) .tech-zone {
-    background: #f5f7f5;
-    border: 1px solid #e2e4e2;
+    background: #80a8f3; /* Darkest cool blue */
+    border: 1px solid #1040c0;
   }
 
   body:has(#item-7:checked) .tech-zone:hover {
-    background: #f7f9f7;
+    background: #7090f2;
   }
 
   body:has(#item-7:checked) .storage-zone {
-    background: #f8f9f8;
-    border: 1px solid #e5e7e5;
+    background: #80f3a8; /* Darkest green */
+    border: 1px solid #10c040;
   }
 
   body:has(#item-7:checked) .storage-zone:hover {
-    background: #fafbfa;
+    background: #70f290;
   }
 
   body:has(#item-7:checked) .social-zone {
-    background: #f6f8f6;
-    border: 1px solid #e3e5e3;
+    background: #f380a8; /* Darkest warm red/pink */
+    border: 1px solid #c01040;
   }
 
   body:has(#item-7:checked) .social-zone:hover {
-    background: #f8f9f8;
+    background: #f27090;
   }
 
   body:has(#item-7:checked) .personal-zone {
-    background: #f7f9f7;
-    border: 1px solid #e4e6e4;
+    background: #a880f3; /* Darkest purple */
+    border: 1px solid #4010c0;
   }
 
   body:has(#item-7:checked) .personal-zone:hover {
-    background: #f9faf9;
+    background: #9070f2;
   }
 
   /* Enhanced transitions for zone backgrounds */
   .wall-zone, .work-zone, .tech-zone, .storage-zone, .social-zone, .personal-zone {
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
-} 
+}
