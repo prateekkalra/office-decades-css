@@ -94,7 +94,7 @@
     width: 33vw;
     height: 42vh;
     border-top: 7px solid black !important;
-    border-left: 7px solid black !important;
+    /* border-left: 7px solid black !important; */
   }
 
   /* Work Zone - Top-left quadrant */
