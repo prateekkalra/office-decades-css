@@ -27,6 +27,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(205,133,63,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(205,133,63,0.18) 0%, rgba(222,184,135,0.15) 50%, rgba(245,245,220,0.12) 100%);
     border: 2px solid rgba(160,82,45,0.8);
+  }
+
+  body:has(#item-0:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(139,69,19,0.2),
       0 8px 30px rgba(160,82,45,0.15),
@@ -40,6 +43,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(169,169,169,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(47,79,79,0.18) 0%, rgba(105,105,105,0.15) 50%, rgba(169,169,169,0.12) 100%);
     border: 2px solid rgba(105,105,105,0.8);
+  }
+
+  body:has(#item-0:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(105,105,105,0.2),
       0 8px 30px rgba(47,79,79,0.15),
@@ -53,6 +59,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(230,230,250,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(176,196,222,0.18) 0%, rgba(230,230,250,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(119,136,153,0.8);
+  }
+
+  body:has(#item-0:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(119,136,153,0.2),
       0 8px 30px rgba(176,196,222,0.15),
@@ -66,6 +75,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,248,220,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(245,222,179,0.18) 0%, rgba(255,248,220,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(210,180,140,0.8);
+  }
+
+  body:has(#item-0:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(210,180,140,0.2),
       0 8px 30px rgba(245,222,179,0.15),
@@ -79,6 +91,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(205,133,63,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(160,82,45,0.18) 0%, rgba(205,133,63,0.15) 50%, rgba(222,184,135,0.12) 100%);
     border: 2px solid rgba(139,69,19,0.8);
+  }
+
+  body:has(#item-0:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(139,69,19,0.2),
       0 8px 30px rgba(160,82,45,0.15),
@@ -110,6 +125,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(255,218,185,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(255,218,185,0.18) 0%, rgba(255,235,205,0.15) 50%, rgba(255,239,213,0.12) 100%);
     border: 2px solid rgba(255,69,0,0.8);
+  }
+
+  body:has(#item-1:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(255,69,0,0.2),
       0 8px 30px rgba(255,140,0,0.15),
@@ -123,6 +141,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,218,185,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,165,0,0.18) 0%, rgba(255,218,185,0.15) 50%, rgba(255,239,213,0.12) 100%);
     border: 2px solid rgba(255,215,0,0.8);
+  }
+
+  body:has(#item-1:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(255,215,0,0.2),
       0 8px 30px rgba(255,165,0,0.15),
@@ -136,6 +157,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(255,235,205,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,222,173,0.18) 0%, rgba(255,235,205,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(255,140,0,0.8);
+  }
+
+  body:has(#item-1:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(255,140,0,0.2),
       0 8px 30px rgba(255,222,173,0.15),
@@ -149,6 +173,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,235,205,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,218,185,0.18) 0%, rgba(255,235,205,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(255,165,0,0.8);
+  }
+
+  body:has(#item-1:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(255,165,0,0.2),
       0 8px 30px rgba(255,218,185,0.15),
@@ -162,6 +189,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,218,185,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,140,0,0.18) 0%, rgba(255,218,185,0.15) 50%, rgba(255,235,205,0.12) 100%);
     border: 2px solid rgba(255,69,0,0.8);
+  }
+
+  body:has(#item-1:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(255,69,0,0.2),
       0 8px 30px rgba(255,140,0,0.15),
@@ -193,6 +223,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(240,230,140,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(240,230,140,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
     border: 2px solid rgba(184,134,11,0.8);
+  }
+
+  body:has(#item-2:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(184,134,11,0.2),
       0 8px 30px rgba(205,133,63,0.15),
@@ -206,6 +239,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(245,222,179,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(244,164,96,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
     border: 2px solid rgba(210,180,140,0.8);
+  }
+
+  body:has(#item-2:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(210,180,140,0.2),
       0 8px 30px rgba(244,164,96,0.15),
@@ -219,6 +255,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(245,222,179,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(222,184,135,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(205,133,63,0.8);
+  }
+
+  body:has(#item-2:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(205,133,63,0.2),
       0 8px 30px rgba(222,184,135,0.15),
@@ -232,6 +271,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,228,196,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(245,222,179,0.18) 0%, rgba(255,228,196,0.15) 50%, rgba(255,255,255,0.12) 100%);
     border: 2px solid rgba(244,164,96,0.8);
+  }
+
+  body:has(#item-2:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(244,164,96,0.2),
       0 8px 30px rgba(245,222,179,0.15),
@@ -245,6 +287,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(245,222,179,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(240,230,140,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
     border: 2px solid rgba(218,165,32,0.8);
+  }
+
+  body:has(#item-2:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(218,165,32,0.2),
       0 8px 30px rgba(240,230,140,0.15),
@@ -276,6 +321,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(255,192,203,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(255,192,203,0.2) 0%, rgba(255,228,225,0.18) 50%, rgba(240,248,255,0.15) 100%);
     border: 2px solid rgba(138,43,226,0.9);
+  }
+
+  body:has(#item-3:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(138,43,226,0.25),
       0 8px 30px rgba(255,20,147,0.18),
@@ -289,6 +337,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(135,206,235,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(0,191,255,0.25) 0%, rgba(135,206,235,0.2) 50%, rgba(173,216,230,0.15) 100%);
     border: 2px solid rgba(0,255,255,0.9);
+  }
+
+  body:has(#item-3:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(0,255,255,0.3),
       0 8px 30px rgba(0,191,255,0.2),
@@ -302,6 +353,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(255,228,225,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,182,193,0.2) 0%, rgba(255,228,225,0.18) 50%, rgba(255,255,255,0.15) 100%);
     border: 2px solid rgba(255,20,147,0.9);
+  }
+
+  body:has(#item-3:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(255,20,147,0.25),
       0 8px 30px rgba(255,182,193,0.18),
@@ -315,6 +369,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,248,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,192,203,0.25) 0%, rgba(240,248,255,0.2) 50%, rgba(255,255,255,0.15) 100%);
     border: 2px solid rgba(138,43,226,0.9);
+  }
+
+  body:has(#item-3:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(138,43,226,0.25),
       0 8px 30px rgba(255,192,203,0.18),
@@ -328,6 +385,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(173,216,230,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(0,191,255,0.25) 0%, rgba(173,216,230,0.2) 50%, rgba(224,255,255,0.15) 100%);
     border: 2px solid rgba(0,255,255,0.9);
+  }
+
+  body:has(#item-3:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(0,255,255,0.25),
       0 8px 30px rgba(0,191,255,0.18),
@@ -359,6 +419,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(175,238,238,0.3) 0%, transparent 50%),
       linear-gradient(45deg, rgba(175,238,238,0.22) 0%, rgba(224,255,255,0.18) 50%, rgba(240,255,255,0.15) 100%);
     border: 2px solid rgba(72,209,204,0.9);
+  }
+
+  body:has(#item-4:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(72,209,204,0.28),
       0 8px 30px rgba(64,224,208,0.2),
@@ -372,6 +435,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(175,238,238,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(64,224,208,0.28) 0%, rgba(175,238,238,0.22) 50%, rgba(224,255,255,0.18) 100%);
     border: 2px solid rgba(0,255,255,0.9);
+  }
+
+  body:has(#item-4:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(0,255,255,0.3),
       0 8px 30px rgba(64,224,208,0.2),
@@ -385,6 +451,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(230,250,250,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(224,255,255,0.25) 0%, rgba(230,250,250,0.2) 50%, rgba(255,255,255,0.15) 100%);
     border: 2px solid rgba(127,255,212,0.9);
+  }
+
+  body:has(#item-4:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(127,255,212,0.25),
       0 8px 30px rgba(224,255,255,0.18),
@@ -398,6 +467,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,255,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(175,238,238,0.28) 0%, rgba(240,255,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(72,209,204,0.9);
+  }
+
+  body:has(#item-4:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(72,209,204,0.28),
       0 8px 30px rgba(175,238,238,0.2),
@@ -411,6 +483,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(224,255,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(64,224,208,0.28) 0%, rgba(224,255,255,0.22) 50%, rgba(240,255,255,0.18) 100%);
     border: 2px solid rgba(0,255,255,0.9);
+  }
+
+  body:has(#item-4:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(0,255,255,0.28),
       0 8px 30px rgba(64,224,208,0.2),
@@ -442,6 +517,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(176,196,222,0.3) 0%, transparent 50%),
       linear-gradient(45deg, rgba(176,196,222,0.25) 0%, rgba(230,230,250,0.2) 50%, rgba(248,248,255,0.18) 100%);
     border: 2px solid rgba(100,149,237,0.9);
+  }
+
+  body:has(#item-5:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(100,149,237,0.28),
       0 8px 30px rgba(135,206,250,0.2),
@@ -455,6 +533,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(176,196,222,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(100,149,237,0.28) 0%, rgba(176,196,222,0.22) 50%, rgba(230,230,250,0.18) 100%);
     border: 2px solid rgba(65,105,225,0.9);
+  }
+
+  body:has(#item-5:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(65,105,225,0.3),
       0 8px 30px rgba(100,149,237,0.22),
@@ -468,6 +549,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(248,248,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(240,248,255,0.25) 0%, rgba(248,248,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(100,149,237,0.9);
+  }
+
+  body:has(#item-5:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(100,149,237,0.28),
       0 8px 30px rgba(240,248,255,0.2),
@@ -481,6 +565,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(248,248,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(230,230,250,0.28) 0%, rgba(248,248,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(135,206,250,0.9);
+  }
+
+  body:has(#item-5:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(135,206,250,0.3),
       0 8px 30px rgba(230,230,250,0.2),
@@ -494,6 +581,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(248,248,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(176,196,222,0.28) 0%, rgba(248,248,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(65,105,225,0.9);
+  }
+
+  body:has(#item-5:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(65,105,225,0.3),
       0 8px 30px rgba(176,196,222,0.2),
@@ -525,6 +615,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(250,250,250,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(250,250,250,0.25) 0%, rgba(255,255,255,0.22) 50%, rgba(248,248,255,0.2) 100%);
     border: 2px solid rgba(169,169,169,0.8);
+  }
+
+  body:has(#item-6:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(169,169,169,0.2),
       0 8px 30px rgba(105,105,105,0.15),
@@ -538,6 +631,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(250,250,250,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(245,245,245,0.22) 0%, rgba(250,250,250,0.18) 50%, rgba(255,255,255,0.15) 100%);
     border: 2px solid rgba(211,211,211,0.8);
+  }
+
+  body:has(#item-6:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(211,211,211,0.22),
       0 8px 30px rgba(245,245,245,0.15),
@@ -551,6 +647,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(248,248,255,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(248,248,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(169,169,169,0.8);
+  }
+
+  body:has(#item-6:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(169,169,169,0.18),
       0 8px 30px rgba(255,255,255,0.15),
@@ -564,6 +663,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,255,255,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(250,250,250,0.25) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(211,211,211,0.8);
+  }
+
+  body:has(#item-6:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(211,211,211,0.22),
       0 8px 30px rgba(250,250,250,0.18),
@@ -577,6 +679,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,255,255,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(245,245,245,0.25) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(105,105,105,0.8);
+  }
+
+  body:has(#item-6:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(105,105,105,0.22),
       0 8px 30px rgba(245,245,245,0.18),
@@ -608,6 +713,9 @@
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(144,238,144,0.3) 0%, transparent 50%),
       linear-gradient(45deg, rgba(144,238,144,0.25) 0%, rgba(240,255,240,0.2) 50%, rgba(245,255,250,0.18) 100%);
     border: 2px solid rgba(74,222,128,0.8);
+  }
+
+  body:has(#item-7:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(74,222,128,0.28),
       0 8px 30px rgba(34,197,94,0.2),
@@ -621,6 +729,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(187,247,208,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(74,222,128,0.28) 0%, rgba(187,247,208,0.22) 50%, rgba(240,255,240,0.18) 100%);
     border: 2px solid rgba(16,185,129,0.8);
+  }
+
+  body:has(#item-7:checked) .tech-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(16,185,129,0.3),
       0 8px 30px rgba(74,222,128,0.22),
@@ -634,6 +745,9 @@
       radial-gradient(ellipse 30% 30% at 80% 80%, rgba(240,255,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(240,255,240,0.25) 0%, rgba(240,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(144,238,144,0.8);
+  }
+
+  body:has(#item-7:checked) .storage-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(144,238,144,0.28),
       0 8px 30px rgba(240,255,240,0.2),
@@ -647,6 +761,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,255,255,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(245,255,250,0.28) 0%, rgba(240,255,255,0.22) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(152,251,152,0.8);
+  }
+
+  body:has(#item-7:checked) .social-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(152,251,152,0.3),
       0 8px 30px rgba(245,255,250,0.2),
@@ -660,6 +777,9 @@
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(240,255,240,0.3) 0%, transparent 50%),
       linear-gradient(135deg, rgba(224,255,255,0.28) 0%, rgba(240,255,240,0.22) 50%, rgba(255,255,255,0.18) 100%);
     border: 2px solid rgba(173,255,47,0.8);
+  }
+
+  body:has(#item-7:checked) .personal-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(173,255,47,0.3),
       0 8px 30px rgba(224,255,255,0.2),
