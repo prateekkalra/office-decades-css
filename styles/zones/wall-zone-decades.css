@@ -1,7 +1,36 @@
 /* Wall Zone Decade-Specific Elements */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;700;900&family=Agbalumo&display=swap');
 
 @layer demo {
+  /* Main Title Styling */
+  .main-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    text-align: center;
+  }
+
+  .main-title h1 {
+    margin: 0;
+    font-family: Agbalumo, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  /* Responsive title sizing */
+  @media (max-width: 768px) {
+    .main-title h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+  }
+
   /* Base wall set styling - all hidden by default */
   .wall-set {
     position: absolute;
