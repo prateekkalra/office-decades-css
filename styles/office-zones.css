@@ -1,39 +1,18 @@
 /* Individual Office Zone Styling */
 @layer demo {
-  /* Wall Zone - Museum Gallery Lighting */
+  /* Wall Zone - Clean Professional */
   .wall-zone {
-    background: 
-      /* Dramatic gallery lighting from above */
-      radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,248,220,0.4) 0%, transparent 70%),
-      /* Side spotlights */
-      radial-gradient(ellipse 30% 80% at 10% 50%, rgba(255,253,235,0.3) 0%, transparent 60%),
-      radial-gradient(ellipse 30% 80% at 90% 50%, rgba(255,253,235,0.3) 0%, transparent 60%),
-      /* Ambient gallery glow */
-      linear-gradient(180deg, rgba(250,248,246,0.25) 0%, rgba(255,255,255,0.15) 50%, rgba(248,245,240,0.2) 100%);
+    background: #ffffff;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid rgba(255,248,220,0.4);
-    box-shadow: 
-      inset 0 0 80px rgba(255,248,220,0.2),
-      inset 0 1px 0 rgba(255,255,255,0.6),
-      0 1px 3px rgba(0,0,0,0.08);
-    backdrop-filter: blur(1px);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .wall-zone:hover {
-    background: 
-      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,248,220,0.6) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 90% at 10% 50%, rgba(255,253,235,0.5) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 90% at 90% 50%, rgba(255,253,235,0.5) 0%, transparent 60%),
-      linear-gradient(180deg, rgba(250,248,246,0.35) 0%, rgba(255,255,255,0.25) 50%, rgba(248,245,240,0.3) 100%);
-    border: 1px solid rgba(255,248,220,0.6);
-    box-shadow: 
-      inset 0 0 100px rgba(255,248,220,0.3),
-      inset 0 1px 0 rgba(255,255,255,0.8),
-      0 2px 8px rgba(0,0,0,0.12);
+    background: #fafafa;
   }
 
   .wall-item {
@@ -47,39 +26,18 @@
     color: #555;
   }
 
-  /* Work Zone - Futuristic Digital Glow */
+  /* Work Zone - Clean Professional */
   .work-zone {
-    background: 
-      /* Central digital core glow */
-      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(147,51,234,0.4) 0%, rgba(168,85,247,0.2) 40%, transparent 70%),
-      /* Corner energy fields */
-      radial-gradient(ellipse 40% 40% at 0% 0%, rgba(196,181,253,0.3) 0%, transparent 50%),
-      radial-gradient(ellipse 40% 40% at 100% 100%, rgba(139,92,246,0.3) 0%, transparent 50%),
-      /* Ambient tech atmosphere */
-      linear-gradient(45deg, rgba(75,0,130,0.15) 0%, rgba(147,51,234,0.1) 25%, rgba(168,85,247,0.08) 75%, rgba(196,181,253,0.12) 100%);
+    background: #f8f8f8;
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    border: 1px solid rgba(196,181,253,0.4);
-    box-shadow: 
-      inset 0 0 100px rgba(147,51,234,0.2),
-      inset 0 1px 0 rgba(255,255,255,0.5),
-      0 1px 3px rgba(147,51,234,0.1);
-    backdrop-filter: blur(4px);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .work-zone:hover {
-    background: 
-      radial-gradient(ellipse 90% 70% at 50% 50%, rgba(147,51,234,0.6) 0%, rgba(168,85,247,0.3) 40%, transparent 70%),
-      radial-gradient(ellipse 50% 50% at 0% 0%, rgba(196,181,253,0.5) 0%, transparent 50%),
-      radial-gradient(ellipse 50% 50% at 100% 100%, rgba(139,92,246,0.5) 0%, transparent 50%),
-      linear-gradient(45deg, rgba(75,0,130,0.25) 0%, rgba(147,51,234,0.2) 25%, rgba(168,85,247,0.15) 75%, rgba(196,181,253,0.2) 100%);
-    border: 1px solid rgba(196,181,253,0.6);
-    box-shadow: 
-      inset 0 0 120px rgba(147,51,234,0.3),
-      inset 0 1px 0 rgba(255,255,255,0.7),
-      0 2px 8px rgba(147,51,234,0.15);
+    background: #f5f5f5;
   }
 
   .desk-area {
@@ -115,122 +73,42 @@
     font-size: 11px;
   }
 
-  /* Storage Zone - Ocean Depths Archive */
+  /* Storage Zone - Clean Professional */
   .storage-zone {
-    background: 
-      /* Deep ocean current from bottom */
-      radial-gradient(ellipse 100% 60% at 50% 100%, rgba(59,130,246,0.3) 0%, rgba(96,165,250,0.2) 50%, transparent 80%),
-      /* Side currents */
-      radial-gradient(ellipse 50% 80% at 0% 50%, rgba(147,197,253,0.25) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 80% at 100% 50%, rgba(219,234,254,0.2) 0%, transparent 60%),
-      /* Deep blue atmosphere */
-      linear-gradient(135deg, rgba(30,58,138,0.15) 0%, rgba(59,130,246,0.12) 30%, rgba(147,197,253,0.08) 70%, rgba(219,234,254,0.1) 100%);
+    background: #f6f6f6;
     border-radius: 10px;
-    border: 1px solid rgba(219,234,254,0.4);
-    box-shadow: 
-      inset 0 0 80px rgba(59,130,246,0.15),
-      inset 0 1px 0 rgba(255,255,255,0.5),
-      0 1px 3px rgba(59,130,246,0.1);
-    backdrop-filter: blur(3px);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid #d8d8d8;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .storage-zone:hover {
-    background: 
-      radial-gradient(ellipse 110% 70% at 50% 100%, rgba(59,130,246,0.4) 0%, rgba(96,165,250,0.3) 50%, transparent 80%),
-      radial-gradient(ellipse 60% 90% at 0% 50%, rgba(147,197,253,0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 90% at 100% 50%, rgba(219,234,254,0.3) 0%, transparent 60%),
-      linear-gradient(135deg, rgba(30,58,138,0.25) 0%, rgba(59,130,246,0.2) 30%, rgba(147,197,253,0.15) 70%, rgba(219,234,254,0.18) 100%);
-    border: 1px solid rgba(219,234,254,0.6);
-    box-shadow: 
-      inset 0 0 100px rgba(59,130,246,0.25),
-      inset 0 1px 0 rgba(255,255,255,0.7),
-      0 2px 8px rgba(59,130,246,0.15);
+    background: #f3f3f3;
   }
 
-  /* Tech Zone - Matrix Energy Field */
+  /* Tech Zone - Clean Professional */
   .tech-zone {
-    background: 
-      /* Central power core */
-      radial-gradient(ellipse 70% 70% at 50% 50%, rgba(34,197,94,0.4) 0%, rgba(74,222,128,0.25) 30%, transparent 70%),
-      /* Corner energy nodes */
-      radial-gradient(ellipse 30% 30% at 20% 20%, rgba(16,185,129,0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 30% 30% at 80% 80%, rgba(187,247,208,0.3) 0%, transparent 60%),
-      /* Energy field sweep */
-      radial-gradient(ellipse 90% 30% at 50% 0%, rgba(74,222,128,0.2) 0%, transparent 50%),
-      /* Matrix atmosphere */
-      linear-gradient(45deg, rgba(0,100,0,0.12) 0%, rgba(34,197,94,0.1) 25%, rgba(74,222,128,0.08) 75%, rgba(187,247,208,0.1) 100%);
+    background: #f7f7f7;
     border-radius: 10px;
-    border: 1px solid rgba(187,247,208,0.4);
-    box-shadow: 
-      inset 0 0 80px rgba(34,197,94,0.2),
-      inset 0 1px 0 rgba(255,255,255,0.5),
-      0 1px 3px rgba(34,197,94,0.1);
-    backdrop-filter: blur(3px);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid #dadada;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .tech-zone:hover {
-    background: 
-      radial-gradient(ellipse 80% 80% at 50% 50%, rgba(34,197,94,0.6) 0%, rgba(74,222,128,0.35) 30%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(16,185,129,0.5) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 40% at 80% 80%, rgba(187,247,208,0.45) 0%, transparent 60%),
-      radial-gradient(ellipse 100% 40% at 50% 0%, rgba(74,222,128,0.3) 0%, transparent 50%),
-      linear-gradient(45deg, rgba(0,100,0,0.2) 0%, rgba(34,197,94,0.18) 25%, rgba(74,222,128,0.15) 75%, rgba(187,247,208,0.18) 100%);
-    border: 1px solid rgba(187,247,208,0.6);
-    box-shadow: 
-      inset 0 0 100px rgba(34,197,94,0.3),
-      inset 0 1px 0 rgba(255,255,255,0.7),
-      0 2px 8px rgba(34,197,94,0.15);
+    background: #f4f4f4;
   }
 
-  .storage-item {
-    width: 85%;
-    height: 28%;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    color: #555;
-  }
-
-  /* Social Zone - Warm Campfire Gathering */
+  /* Social Zone - Clean Professional */
   .social-zone {
-    background: 
-      /* Central warm glow like a fireplace */
-      radial-gradient(ellipse 80% 50% at 50% 60%, rgba(249,115,22,0.4) 0%, rgba(251,146,60,0.25) 40%, transparent 70%),
-      /* Cozy corner lighting */
-      radial-gradient(ellipse 40% 60% at 15% 30%, rgba(254,215,170,0.3) 0%, transparent 50%),
-      radial-gradient(ellipse 40% 60% at 85% 30%, rgba(234,88,12,0.25) 0%, transparent 50%),
-      /* Warm ambient lighting from above */
-      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255,230,200,0.2) 0%, transparent 60%),
-      /* Cozy coffee shop atmosphere */
-      linear-gradient(135deg, rgba(139,69,19,0.1) 0%, rgba(249,115,22,0.12) 25%, rgba(254,215,170,0.08) 75%, rgba(255,240,220,0.1) 100%);
+    background: #f9f9f9;
     flex-direction: row;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid rgba(254,215,170,0.4);
-    box-shadow: 
-      inset 0 0 80px rgba(249,115,22,0.15),
-      inset 0 1px 0 rgba(255,255,255,0.5),
-      0 1px 3px rgba(249,115,22,0.1);
-    backdrop-filter: blur(2px);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid #dddddd;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .social-zone:hover {
-    background: 
-      radial-gradient(ellipse 90% 60% at 50% 60%, rgba(249,115,22,0.6) 0%, rgba(251,146,60,0.35) 40%, transparent 70%),
-      radial-gradient(ellipse 50% 70% at 15% 30%, rgba(254,215,170,0.4) 0%, transparent 50%),
-      radial-gradient(ellipse 50% 70% at 85% 30%, rgba(234,88,12,0.35) 0%, transparent 50%),
-      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,230,200,0.3) 0%, transparent 60%),
-      linear-gradient(135deg, rgba(139,69,19,0.18) 0%, rgba(249,115,22,0.2) 25%, rgba(254,215,170,0.15) 75%, rgba(255,240,220,0.18) 100%);
-    border: 1px solid rgba(254,215,170,0.6);
-    box-shadow: 
-      inset 0 0 100px rgba(249,115,22,0.25),
-      inset 0 1px 0 rgba(255,255,255,0.7),
-      0 2px 8px rgba(249,115,22,0.15);
+    background: #f6f6f6;
   }
 
   .social-item {
@@ -244,54 +122,29 @@
     color: #555;
   }
 
-  /* Personal Zone - Soft Sunset Sanctuary */
+  /* Personal Zone - Clean Professional */
   .personal-zone {
-    background: 
-      /* Gentle sunset glow from corner */
-      radial-gradient(ellipse 60% 80% at 80% 20%, rgba(252,207,224,0.4) 0%, rgba(251,113,133,0.2) 50%, transparent 70%),
-      /* Soft diffused lighting */
-      radial-gradient(ellipse 50% 60% at 20% 80%, rgba(236,72,153,0.3) 0%, transparent 60%),
-      radial-gradient(ellipse 70% 40% at 50% 100%, rgba(255,182,193,0.25) 0%, transparent 50%),
-      /* Warm personal space atmosphere */
-      radial-gradient(ellipse 80% 50% at 30% 50%, rgba(252,228,236,0.2) 0%, transparent 60%),
-      /* Base comfort gradient */
-      linear-gradient(135deg, rgba(255,240,245,0.15) 0%, rgba(252,207,224,0.12) 30%, rgba(251,113,133,0.08) 70%, rgba(255,220,240,0.1) 100%);
+    background: #fafafa;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid rgba(252,207,224,0.4);
-    box-shadow: 
-      inset 0 0 80px rgba(252,207,224,0.15),
-      inset 0 1px 0 rgba(255,255,255,0.5),
-      0 1px 3px rgba(236,72,153,0.1);
-    backdrop-filter: blur(2px);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid #e2e2e2;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .personal-zone:hover {
-    background: 
-      radial-gradient(ellipse 70% 90% at 80% 20%, rgba(252,207,224,0.6) 0%, rgba(251,113,133,0.3) 50%, transparent 70%),
-      radial-gradient(ellipse 60% 70% at 20% 80%, rgba(236,72,153,0.4) 0%, transparent 60%),
-      radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255,182,193,0.35) 0%, transparent 50%),
-      radial-gradient(ellipse 90% 60% at 30% 50%, rgba(252,228,236,0.3) 0%, transparent 60%),
-      linear-gradient(135deg, rgba(255,240,245,0.25) 0%, rgba(252,207,224,0.2) 30%, rgba(251,113,133,0.15) 70%, rgba(255,220,240,0.18) 100%);
-    border: 1px solid rgba(252,207,224,0.6);
-    box-shadow: 
-      inset 0 0 100px rgba(252,207,224,0.25),
-      inset 0 1px 0 rgba(255,255,255,0.7),
-      0 2px 8px rgba(236,72,153,0.15);
+    background: #f7f7f7;
   }
 
   .personal-item {
-    width: 40%;
-    height: 30%;
+    width: 70px;
+    height: 25%;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 9px;
     color: #555;
-    margin: 2px;
   }
 
   /* Accessibility: Respect reduced-motion preferences */
