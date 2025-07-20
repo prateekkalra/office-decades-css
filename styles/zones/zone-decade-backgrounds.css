@@ -3,21 +3,21 @@
   
   /* ================================================== */
   /* 1950s - Mad Men Era Zone Backgrounds              */
-  /* Color Palette: Rich Mahogany & Gold               */
+  /* Color Palette: Rich Mahogany & Dark Goldenrod     */
   /* ================================================== */
 
   body:has(#item-0:checked) .wall-zone {
     background: 
       /* Consistent 4-layer gradient system */
-      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(218,165,32,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(184,134,11,0.5) 0%, transparent 70%),
       radial-gradient(ellipse 30% 80% at 15% 50%, rgba(184,134,11,0.35) 0%, transparent 60%),
-      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(218,165,32,0.3) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 85% 50%, rgba(184,134,11,0.3) 0%, transparent 60%),
       linear-gradient(180deg, rgba(160,82,45,0.2) 0%, rgba(139,69,19,0.15) 50%, rgba(205,133,63,0.25) 100%);
-    border: 2px solid rgba(218,165,32,0.8);
+    border: 2px solid rgba(184,134,11,0.8);
     box-shadow: 
-      inset 0 0 60px rgba(218,165,32,0.25),
+      inset 0 0 60px rgba(184,134,11,0.25),
       0 8px 30px rgba(160,82,45,0.18),
-      0 0 15px rgba(218,165,32,0.4);
+      0 0 15px rgba(184,134,11,0.4);
   }
 
   body:has(#item-0:checked) .work-zone {
@@ -200,36 +200,36 @@
 
   /* ================================================== */
   /* 1970s - Groovy Office Zone Backgrounds            */
-  /* Color Palette: Harvest Gold & Earth Tones         */
+  /* Color Palette: Goldenrod & Earth Tones            */
   /* ================================================== */
 
   body:has(#item-2:checked) .wall-zone {
     background: 
       radial-gradient(ellipse 70% 40% at 50% 0%, rgba(218,165,32,0.55) 0%, transparent 70%),
-      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(184,134,11,0.4) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 80% at 15% 50%, rgba(218,165,32,0.4) 0%, transparent 60%),
       radial-gradient(ellipse 30% 80% at 85% 50%, rgba(240,230,140,0.3) 0%, transparent 60%),
       linear-gradient(180deg, rgba(222,184,135,0.25) 0%, rgba(240,230,140,0.18) 50%, rgba(245,222,179,0.22) 100%);
     border: 2px solid rgba(218,165,32,0.8);
     box-shadow: 
       inset 0 0 60px rgba(218,165,32,0.25),
-      0 8px 30px rgba(184,134,11,0.18),
+      0 8px 30px rgba(218,165,32,0.18),
       0 0 15px rgba(218,165,32,0.4);
   }
 
   body:has(#item-2:checked) .work-zone {
     background: 
-      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(184,134,11,0.5) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(218,165,32,0.5) 0%, transparent 70%),
       radial-gradient(ellipse 40% 40% at 20% 20%, rgba(205,133,63,0.35) 0%, transparent 50%),
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(240,230,140,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(240,230,140,0.18) 0%, rgba(245,222,179,0.15) 50%, rgba(255,228,196,0.12) 100%);
-    border: 2px solid rgba(184,134,11,0.8);
+    border: 2px solid rgba(218,165,32,0.8);
   }
 
   body:has(#item-2:checked) .work-zone:hover {
     box-shadow: 
-      inset 0 0 60px rgba(184,134,11,0.2),
+      inset 0 0 60px rgba(218,165,32,0.2),
       0 8px 30px rgba(205,133,63,0.15),
-      0 0 15px rgba(184,134,11,0.3);
+      0 0 15px rgba(218,165,32,0.3);
   }
 
   body:has(#item-2:checked) .tech-zone {
@@ -597,21 +597,21 @@
 
   body:has(#item-6:checked) .wall-zone {
     background: 
-      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(105,105,105,0.4) 0%, transparent 70%),
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(169,169,169,0.4) 0%, transparent 70%),
       radial-gradient(ellipse 30% 80% at 15% 50%, rgba(169,169,169,0.3) 0%, transparent 60%),
       radial-gradient(ellipse 30% 80% at 85% 50%, rgba(211,211,211,0.25) 0%, transparent 60%),
       linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(250,250,250,0.28) 50%, rgba(248,248,255,0.3) 100%);
-    border: 2px solid rgba(200,200,200,0.8);
+    border: 2px solid rgba(169,169,169,0.8);
     box-shadow: 
-      inset 0 0 60px rgba(105,105,105,0.18),
+      inset 0 0 60px rgba(169,169,169,0.18),
       0 8px 30px rgba(169,169,169,0.12),
-      0 0 15px rgba(200,200,200,0.2);
+      0 0 15px rgba(169,169,169,0.2);
   }
 
   body:has(#item-6:checked) .work-zone {
     background: 
       radial-gradient(ellipse 80% 60% at 50% 50%, rgba(169,169,169,0.35) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(105,105,105,0.28) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(169,169,169,0.28) 0%, transparent 50%),
       radial-gradient(ellipse 40% 40% at 80% 80%, rgba(250,250,250,0.25) 0%, transparent 50%),
       linear-gradient(45deg, rgba(250,250,250,0.25) 0%, rgba(255,255,255,0.22) 50%, rgba(248,248,255,0.2) 100%);
     border: 2px solid rgba(169,169,169,0.8);
@@ -620,7 +620,7 @@
   body:has(#item-6:checked) .work-zone:hover {
     box-shadow: 
       inset 0 0 60px rgba(169,169,169,0.2),
-      0 8px 30px rgba(105,105,105,0.15),
+      0 8px 30px rgba(169,169,169,0.15),
       0 0 15px rgba(169,169,169,0.25);
   }
 
@@ -674,18 +674,18 @@
 
   body:has(#item-6:checked) .personal-zone {
     background: 
-      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(105,105,105,0.45) 0%, transparent 70%),
+      radial-gradient(ellipse 70% 80% at 60% 30%, rgba(169,169,169,0.45) 0%, transparent 70%),
       radial-gradient(ellipse 35% 35% at 25% 25%, rgba(245,245,245,0.35) 0%, transparent 50%),
       radial-gradient(ellipse 35% 35% at 75% 75%, rgba(255,255,255,0.25) 0%, transparent 50%),
       linear-gradient(135deg, rgba(245,245,245,0.25) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.18) 100%);
-    border: 2px solid rgba(105,105,105,0.8);
+    border: 2px solid rgba(169,169,169,0.8);
   }
 
   body:has(#item-6:checked) .personal-zone:hover {
     box-shadow: 
-      inset 0 0 60px rgba(105,105,105,0.22),
+      inset 0 0 60px rgba(169,169,169,0.22),
       0 8px 30px rgba(245,245,245,0.18),
-      0 0 15px rgba(105,105,105,0.3);
+      0 0 15px rgba(169,169,169,0.3);
   }
 
   /* ================================================== */

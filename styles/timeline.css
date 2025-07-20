@@ -11,7 +11,7 @@
     --cards-container-size: calc(var(--radius) * 2);
     --cards-container-padding: 1.5rem;
 
-    --border-color: rgba(102, 102, 102, 0.4);
+    --border-color: rgba(102, 102, 102, 0.6);
 
     --label-offset: calc(var(--radius) * -1 - 0.8rem);
     --label-size: 28px;
@@ -37,7 +37,7 @@
     height: var(--cards-container-size);
     padding: var(--cards-container-padding);
     z-index: 100;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     border-radius: 50%;
 
@@ -53,7 +53,7 @@
     @media (min-width: 1200px) {
       --radius: 8vw;
       --label-size: 36px;
-      --border-color: rgba(102, 102, 102, 0.6);
+      --border-color: rgba(102, 102, 102, 0.8);
     }
   }
 
@@ -78,6 +78,16 @@
     transform: rotate(calc(var(--i) * 360deg / var(--items)));
     pointer-events: none;
   }
+
+  /* Decade-specific colors for dots - CONSISTENT WITH ZONE BACKGROUNDS */
+  .cards li:nth-child(1) { --decade-color: #B8860B; }  /* 1950s - Dark Goldenrod */
+  .cards li:nth-child(2) { --decade-color: #FF8C00; }  /* 1960s - Dark Orange */
+  .cards li:nth-child(3) { --decade-color: #DAA520; }  /* 1970s - Goldenrod */
+  .cards li:nth-child(4) { --decade-color: #FF1493; }  /* 1980s - Deep Pink */
+  .cards li:nth-child(5) { --decade-color: #40E0D0; }  /* 1990s - Turquoise */
+  .cards li:nth-child(6) { --decade-color: #87CEFA; }  /* 2000s - Sky Blue */
+  .cards li:nth-child(7) { --decade-color: #A9A9A9; }  /* 2010s - Dark Gray */
+  .cards li:nth-child(8) { --decade-color: #22C55E; }  /* 2020s - Green */
 
   .cards li>label {
     position: absolute;
@@ -104,8 +114,9 @@
     height: var(--label-dot-size);
     aspect-ratio: 50%;
     border-radius: 50%;
-    background-color: var(--label-color);
+    background-color: var(--decade-color);
     transition: background-color var(--duration) ease-in-out;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3), 0 0 4px var(--decade-color);
   }
 
   .cards li>label::after {
@@ -116,7 +127,7 @@
     translate: -50% 5px;
     width: 2px;
     height: var(--label-line-h);
-    background-color: steelblue;
+    background-color: var(--decade-color);
     transition: height 300ms ease-in-out var(--label-line-delay, 0ms);
   }
 
@@ -166,6 +177,12 @@
     --info-opacity: 1;
     --info-offset-y: 0;
     --info-delay: calc(var(--duration) * 4);
+  }
+
+  li:has(input:checked)>label::before {
+    background-color: var(--decade-color);
+    transform: scale(1.4);
+    box-shadow: 0 0 15px var(--decade-color), 0 0 8px rgba(0,0,0,0.4);
   }
 
   /* rotate container based on checked radio */
