@@ -8,6 +8,7 @@
 @import "office-layout.css";
 @import "office-zones.css";
 @import "zones/zone-decades-main.css";
+@import "zones/zone-decade-backgrounds.css";
 @import "timeline.css";
 @import "decade-themes.css";
 @import "decade-content.css";

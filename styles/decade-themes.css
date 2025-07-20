@@ -2,71 +2,133 @@
 @layer demo {
   /* Base background with smooth transitions */
   body {
-    transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
   }
 
-  /* 1950s - Mad Men Era: Light beige/cream */
+  /* 1950s - Mad Men Era: Elegant beige with art deco patterns */
   body:has(#item-0:checked) {
-    background: #F5F5DC radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Art Deco geometric pattern */
+      radial-gradient(circle at 25% 25%, rgba(218,165,32,0.15) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, rgba(184,134,11,0.12) 1px, transparent 1px),
+      /* Subtle diamond pattern */
+      linear-gradient(45deg, transparent 30%, rgba(218,165,32,0.08) 30%, rgba(218,165,32,0.08) 70%, transparent 70%),
+      /* Base elegant cream */
+      linear-gradient(135deg, #FFFEF7 0%, #FFFEF0 30%, #FFFFEB 70%, #FFFFF0 100%);
+    background-size: 60px 60px, 40px 40px, 80px 80px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 1960s - Space Age: Light orange */
+  /* 1960s - Space Age: Psychedelic orange with mod patterns */
   body:has(#item-1:checked) {
-    background: #FFE4B5 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Atomic/molecular pattern */
+      radial-gradient(ellipse at 30% 30%, rgba(255,69,0,0.2) 5px, transparent 5px),
+      radial-gradient(ellipse at 70% 70%, rgba(255,140,0,0.15) 3px, transparent 3px),
+      /* Mod circles */
+      radial-gradient(circle at 50% 10%, rgba(255,165,0,0.3) 20px, transparent 20px),
+      radial-gradient(circle at 20% 80%, rgba(255,215,0,0.25) 15px, transparent 15px),
+      /* Base space age gradient */
+      linear-gradient(45deg, #FFF8DC 0%, #FFFACD 25%, #FFF5EE 50%, #FFFAF0 75%, #FFFBF0 100%);
+    background-size: 70px 70px, 45px 45px, 150px 150px, 120px 120px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 1970s - Groovy Office: Light gold */
+  /* 1970s - Groovy Office: Harvest gold with organic patterns */
   body:has(#item-2:checked) {
-    background: #F0E68C radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Organic swirls */
+      radial-gradient(ellipse 40px 20px at 40% 40%, rgba(184,134,11,0.2) 40%, transparent 50%),
+      radial-gradient(ellipse 30px 60px at 80% 20%, rgba(218,165,32,0.15) 30%, transparent 40%),
+      /* Shag carpet texture */
+      repeating-linear-gradient(22.5deg, transparent 0px, rgba(139,69,19,0.1) 1px, transparent 2px),
+      /* Sunset gradient */
+      linear-gradient(135deg, #FFFACD 0%, #FFF8DC 20%, #FFFAF0 40%, #FFFBF0 60%, #FFEFD5 80%, #FFFAF0 100%);
+    background-size: 100px 100px, 80px 80px, 15px 15px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 1980s - Power Decade: Light pink */
+  /* 1980s - Power Decade: Neon pink with geometric patterns */
   body:has(#item-3:checked) {
-    background: #FFB6C1 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Grid pattern */
+      linear-gradient(rgba(255,20,147,0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,20,147,0.3) 1px, transparent 1px),
+      /* Neon triangles */
+      linear-gradient(45deg, transparent 45%, rgba(0,255,255,0.2) 50%, transparent 55%),
+      linear-gradient(-45deg, transparent 45%, rgba(255,0,255,0.15) 50%, transparent 55%),
+      /* Retro wave gradient */
+      linear-gradient(180deg, #FFF0F5 0%, #FFF5F8 20%, #FFFAFF 40%, #FFFBFF 60%, #FFFCFF 80%, #FFFFFF 100%);
+    background-size: 40px 40px, 40px 40px, 60px 60px, 60px 60px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 1990s - Dot-Com Boom: Light teal */
+  /* 1990s - Dot-Com Boom: Electric teal with digital patterns */
   body:has(#item-4:checked) {
-    background: #E0FFFF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Digital pixels */
+      linear-gradient(45deg, rgba(0,255,255,0.2) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(127,255,212,0.15) 25%, transparent 25%),
+      /* Circuit board lines */
+      linear-gradient(0deg, transparent 48%, rgba(64,224,208,0.3) 50%, transparent 52%),
+      linear-gradient(90deg, transparent 48%, rgba(72,209,204,0.25) 50%, transparent 52%),
+      /* Cyber gradient */
+      linear-gradient(135deg, #F0FFFF 0%, #F5FFFF 20%, #FAFFFF 40%, #FBFFFF 60%, #FCFFFF 80%, #FFFFFF 100%);
+    background-size: 30px 30px, 30px 30px, 80px 80px, 80px 80px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 2000s - Millennium Office: Light blue */
+  /* 2000s - Millennium Office: Holographic blue with Y2K patterns */
   body:has(#item-5:checked) {
-    background: #F0F8FF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Holographic shimmer */
+      radial-gradient(circle at 25% 50%, rgba(65,105,225,0.3) 2px, transparent 3px),
+      radial-gradient(circle at 75% 25%, rgba(100,149,237,0.25) 1px, transparent 2px),
+      /* Millennium sparkles */
+      radial-gradient(ellipse at 60% 80%, rgba(135,206,250,0.4) 5px, transparent 8px),
+      /* Chrome gradient */
+      linear-gradient(45deg, #FAFCFF 0%, #F8FBFF 15%, #F5FAFF 30%, #F3F9FF 45%, #F7FCFF 60%, #FAFCFF 75%, #FFFFFF 100%);
+    background-size: 50px 50px, 35px 35px, 120px 120px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 2010s - Startup Era: Light gray */
+  /* 2010s - Startup Era: Minimalist white with subtle tech patterns */
   body:has(#item-6:checked) {
-    background: #F8F8FF radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Clean dots */
+      radial-gradient(circle at 50% 50%, rgba(105,105,105,0.15) 1px, transparent 1px),
+      /* iPhone grid */
+      linear-gradient(rgba(200,200,200,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,200,200,0.1) 1px, transparent 1px),
+      /* Startup gradient */
+      linear-gradient(135deg, #FFFFFF 0%, #FAFAFA 20%, #F5F5F5 40%, #F8F8FF 60%, #F0F8FF 80%, #FFFFFF 100%);
+    background-size: 25px 25px, 20px 20px, 20px 20px, 100% 100%;
     background-attachment: fixed;
   }
 
-  /* 2020s - Hybrid Era: Light green */
+  /* 2020s - Hybrid Era: Sustainable green with organic patterns */
   body:has(#item-7:checked) {
-    background: #F0FFF0 radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      /* Organic bubbles */
+      radial-gradient(ellipse at 30% 40%, rgba(144,238,144,0.3) 8px, transparent 10px),
+      radial-gradient(ellipse at 70% 70%, rgba(152,251,152,0.25) 6px, transparent 8px),
+      radial-gradient(ellipse at 20% 80%, rgba(173,255,47,0.2) 4px, transparent 6px),
+      /* Sustainable gradient */
+      linear-gradient(135deg, #F0FFF0 0%, #F0FFF0 15%, #F5FFFA 30%, #F5FFFA 45%, #F0FFFF 60%, #E6FFED 75%, #F0FFF0 100%);
+    background-size: 90px 90px, 60px 60px, 40px 40px, 100% 100%;
     background-attachment: fixed;
   }
 
   /* Default 1950s background (since first radio is checked by default) */
   body {
-    background: #F5F5DC radial-gradient(circle, rgba(175, 208, 84, 0.25) 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 40px 40px;
+    background: 
+      radial-gradient(circle at 25% 25%, rgba(218,165,32,0.15) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, rgba(184,134,11,0.12) 1px, transparent 1px),
+      linear-gradient(45deg, transparent 30%, rgba(218,165,32,0.08) 30%, rgba(218,165,32,0.08) 70%, transparent 70%),
+      linear-gradient(135deg, #FFFEF7 0%, #FFFEF0 30%, #FFFFEB 70%, #FFFFF0 100%);
+    background-size: 60px 60px, 40px 40px, 80px 80px, 100% 100%;
     background-attachment: fixed;
   }
 
@@ -98,9 +160,5 @@
   
   li:has(input:checked) h2 {
     color: #000;
-  }
-  
-  li:has(input:checked) p {
-    color: #333;
   }
 }
