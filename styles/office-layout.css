@@ -1,5 +1,6 @@
 /* Office Layout Container and Grid Structure */
 @layer demo {
+
   /* Main office container */
   .office-container {
     position: fixed;
@@ -22,8 +23,8 @@
     align-items: center;
     padding: 0;
     box-sizing: border-box;
-    border:none!important;
-    border-radius: 0!important;
+    border: none !important;
+    border-radius: 0 !important;
   }
 
   /* Zone labels - Enhanced Beautiful */
@@ -33,18 +34,18 @@
     left: 12px;
     font-size: 11px;
     font-weight: 600;
-    color: rgba(0,0,0,0.7);
-    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,240,240,0.8));
+    color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.8));
     padding: 4px 10px;
     z-index: 10;
     opacity: 0.9;
-    text-shadow: 0 1px 3px rgba(255,255,255,1);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 1);
     letter-spacing: 1px;
     border-radius: 6px;
-    border: 1px solid rgba(255,255,255,0.6);
-    box-shadow: 
-      0 2px 8px rgba(0,0,0,0.1),
-      inset 0 1px 0 rgba(255,255,255,0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -52,10 +53,10 @@
 
   .zone-label:hover {
     opacity: 1;
-    background: linear-gradient(135deg, rgba(255,255,255,1), rgba(250,250,250,0.95));
-    box-shadow: 
-      0 4px 12px rgba(0,0,0,0.15),
-      inset 0 1px 0 rgba(255,255,255,1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(250, 250, 250, 0.95));
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
   }
 
   /* Timeline Grid Area (transparent placeholder) */
@@ -64,7 +65,7 @@
   }
 
   /* Bento Grid Layout - Full Screen Coverage */
-  
+
   /* Wall Zone - Top strip spanning full width */
   .wall-zone {
     top: 0;
@@ -74,6 +75,8 @@
     width: 100vw;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #FBFBFB!important
+
   }
 
   /* Storage Zone - Bottom-right section */
@@ -90,6 +93,8 @@
     right: 0;
     width: 33vw;
     height: 42vh;
+    border-top: 7px solid black !important;
+    border-left: 7px solid black !important;
   }
 
   /* Work Zone - Top-left quadrant */
@@ -98,6 +103,8 @@
     left: 0;
     width: 33vw;
     height: 42vh;
+    border-top: 7px solid black !important;
+    border-right: 7px solid black !important;
   }
 
   /* Social Zone - Bottom-left section */
@@ -127,39 +134,39 @@
       right: 0;
       width: 100vw;
     }
-    
+
     .storage-zone,
     .tech-zone {
       top: 28vh;
       height: 44vh;
     }
-    
+
     .storage-zone {
       top: 72vh;
       right: 0;
       width: 33vw;
       height: 28vh;
     }
-    
+
     .tech-zone {
       right: 0;
       width: 33vw;
     }
-    
+
     .work-zone {
       top: 28vh;
       left: 0;
       width: 33vw;
       height: 44vh;
     }
-    
+
     .social-zone {
       bottom: 0;
       left: 0;
       width: 50vw;
       height: 28vh;
     }
-    
+
     .personal-zone {
       bottom: 0;
       left: 50vw;
@@ -176,39 +183,39 @@
       right: 0;
       width: 100vw;
     }
-    
+
     .storage-zone,
     .tech-zone {
       top: 25vh;
       height: 47vh;
       width: 50vw;
     }
-    
+
     .storage-zone {
       top: 72vh;
       right: 0;
       width: 50vw;
       height: 28vh;
     }
-    
+
     .tech-zone {
       right: 0;
     }
-    
+
     .work-zone {
       top: 25vh;
       left: 0;
       width: 50vw;
       height: 47vh;
     }
-    
+
     .social-zone {
       bottom: 0;
       left: 0;
       width: 50vw;
       height: 28vh;
     }
-    
+
     .personal-zone {
       bottom: 0;
       left: 50vw;
@@ -221,31 +228,32 @@
     .wall-zone {
       height: 20vh;
     }
-    
+
     .storage-zone {
       top: 65vh;
       left: 0;
       width: 100vw;
       height: 35vh;
     }
-    
+
     .tech-zone {
       top: 45vh;
       left: 0;
       width: 100vw;
       height: 20vh;
     }
-    
+
     .work-zone {
       top: 20vh;
       left: 0;
       width: 100vw;
       height: 25vh;
     }
-    
+
     .social-zone,
     .personal-zone {
-      display: none; /* Hide on mobile for simplicity */
+      display: none;
+      /* Hide on mobile for simplicity */
     }
   }
 }

@@ -1,8 +1,14 @@
 /* Timeline Navigation Component */
 @layer demo {
+  .timeline-parent {
+    height: 72vh;
+    border: 7px solid black;
+    display: flex;
+  }
+
   .cards-container {
     zoom: 0.8;
-    background-color: transparent!important;
+    background-color: transparent !important;
     --base-rotation: 0deg;
     --full-circle: 360deg;
     --radius: 12vw;
@@ -80,14 +86,46 @@
   }
 
   /* Decade-specific colors for dots - CONSISTENT WITH ZONE BACKGROUNDS */
-  .cards li:nth-child(1) { --decade-color: #B8860B; }  /* 1950s - Dark Goldenrod */
-  .cards li:nth-child(2) { --decade-color: #FF8C00; }  /* 1960s - Dark Orange */
-  .cards li:nth-child(3) { --decade-color: #DAA520; }  /* 1970s - Goldenrod */
-  .cards li:nth-child(4) { --decade-color: #FF1493; }  /* 1980s - Deep Pink */
-  .cards li:nth-child(5) { --decade-color: #40E0D0; }  /* 1990s - Turquoise */
-  .cards li:nth-child(6) { --decade-color: #87CEFA; }  /* 2000s - Sky Blue */
-  .cards li:nth-child(7) { --decade-color: #A9A9A9; }  /* 2010s - Dark Gray */
-  .cards li:nth-child(8) { --decade-color: #22C55E; }  /* 2020s - Green */
+  .cards li:nth-child(1) {
+    --decade-color: #B8860B;
+  }
+
+  /* 1950s - Dark Goldenrod */
+  .cards li:nth-child(2) {
+    --decade-color: #FF8C00;
+  }
+
+  /* 1960s - Dark Orange */
+  .cards li:nth-child(3) {
+    --decade-color: #DAA520;
+  }
+
+  /* 1970s - Goldenrod */
+  .cards li:nth-child(4) {
+    --decade-color: #FF1493;
+  }
+
+  /* 1980s - Deep Pink */
+  .cards li:nth-child(5) {
+    --decade-color: #40E0D0;
+  }
+
+  /* 1990s - Turquoise */
+  .cards li:nth-child(6) {
+    --decade-color: #87CEFA;
+  }
+
+  /* 2000s - Sky Blue */
+  .cards li:nth-child(7) {
+    --decade-color: #A9A9A9;
+  }
+
+  /* 2010s - Dark Gray */
+  .cards li:nth-child(8) {
+    --decade-color: #22C55E;
+  }
+
+  /* 2020s - Green */
 
   .cards li>label {
     position: absolute;
@@ -116,7 +154,7 @@
     border-radius: 50%;
     background-color: var(--decade-color);
     transition: background-color var(--duration) ease-in-out;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3), 0 0 4px var(--decade-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 0 4px var(--decade-color);
   }
 
   .cards li>label::after {
@@ -182,7 +220,7 @@
   li:has(input:checked)>label::before {
     background-color: var(--decade-color);
     transform: scale(1.4);
-    box-shadow: 0 0 15px var(--decade-color), 0 0 8px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px var(--decade-color), 0 0 8px rgba(0, 0, 0, 0.4);
   }
 
   /* rotate container based on checked radio */
