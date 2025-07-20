@@ -12,48 +12,48 @@
   }
 
   body:has(#item-0:checked) .work-zone {
-    background: #fef7f0; /* Very light warm orange */
-    border: 1px solid #f4e6d7;
+    background: #fef9f5; /* Very light warm orange */
+    border: 1px solid #f6ede0;
   }
 
   body:has(#item-0:checked) .work-zone:hover {
-    background: #fdf5ec;
+    background: #fef7f2;
   }
 
   body:has(#item-0:checked) .tech-zone {
-    background: #f0f7fe; /* Very light cool blue */
-    border: 1px solid #d7e6f4;
+    background: #f5f9fe; /* Very light cool blue */
+    border: 1px solid #e0edf6;
   }
 
   body:has(#item-0:checked) .tech-zone:hover {
-    background: #ecf5fd;
+    background: #f2f7fe;
   }
 
   body:has(#item-0:checked) .storage-zone {
-    background: #f0fef7; /* Very light green */
-    border: 1px solid #d7f4e6;
+    background: #f5fef9; /* Very light green */
+    border: 1px solid #e0f6ed;
   }
 
   body:has(#item-0:checked) .storage-zone:hover {
-    background: #ecfdf5;
+    background: #f2fef7;
   }
 
   body:has(#item-0:checked) .social-zone {
-    background: #fef0f7; /* Very light warm red/pink */
-    border: 1px solid #f4d7e6;
+    background: #fef5f9; /* Very light warm red/pink */
+    border: 1px solid #f6e0ed;
   }
 
   body:has(#item-0:checked) .social-zone:hover {
-    background: #fdecf5;
+    background: #fef2f7;
   }
 
   body:has(#item-0:checked) .personal-zone {
-    background: #f7f0fe; /* Very light purple */
-    border: 1px solid #e6d7f4;
+    background: #f9f5fe; /* Very light purple */
+    border: 1px solid #ede0f6;
   }
 
   body:has(#item-0:checked) .personal-zone:hover {
-    background: #f5ecfd;
+    background: #f7f2fe;
   }
 
   /* ================================================== */
@@ -66,52 +66,52 @@
   }
 
   body:has(#item-1:checked) .work-zone {
-    background: #fdeee0; /* Light warm orange */
-    border: 1px solid #f0d0b0;
+    background: #fef7f0; /* Light warm orange */
+    border: 1px solid #f4e8d8;
   }
 
   body:has(#item-1:checked) .work-zone:hover {
-    background: #fce6d5;
+    background: #fef5ed;
   }
 
   body:has(#item-1:checked) .tech-zone {
-    background: #e0eefd; /* Light cool blue */
-    border: 1px solid #b0d0f0;
+    background: #f0f7fe; /* Light cool blue */
+    border: 1px solid #d8e8f4;
   }
 
   body:has(#item-1:checked) .tech-zone:hover {
-    background: #d5e6fc;
+    background: #edf5fe;
   }
 
   body:has(#item-1:checked) .storage-zone {
-    background: #e0fdef; /* Light green */
-    border: 1px solid #b0f0d0;
+    background: #f0fef7; /* Light green */
+    border: 1px solid #d8f4e8;
   }
 
   body:has(#item-1:checked) .storage-zone:hover {
-    background: #d5fce6;
+    background: #edfef5;
   }
 
   body:has(#item-1:checked) .social-zone {
-    background: #fde0ee; /* Light warm red/pink */
-    border: 1px solid #f0b0d0;
+    background: #fef0f7; /* Light warm red/pink */
+    border: 1px solid #f4d8e8;
   }
 
   body:has(#item-1:checked) .social-zone:hover {
-    background: #fcd5e6;
+    background: #feedf5;
   }
 
   body:has(#item-1:checked) .personal-zone {
-    background: #efe0fd; /* Light purple */
-    border: 1px solid #d0b0f0;
+    background: #f7f0fe; /* Light purple */
+    border: 1px solid #e8d8f4;
   }
 
   body:has(#item-1:checked) .personal-zone:hover {
-    background: #e6d5fc;
+    background: #f5edfe;
   }
 
   /* ================================================== */
-  /* 1970s - Medium-Light Colors                       */
+  /* 1970s - Slightly More Color                       */
   /* ================================================== */
 
   body:has(#item-2:checked) .wall-zone {
@@ -120,52 +120,52 @@
   }
 
   body:has(#item-2:checked) .work-zone {
-    background: #fce4d0; /* Medium-light warm orange */
-    border: 1px solid #e8b888;
+    background: #fef5ea; /* Slightly more warm orange */
+    border: 1px solid #f2e0d0;
   }
 
   body:has(#item-2:checked) .work-zone:hover {
-    background: #fbdcc0;
+    background: #fef3e7;
   }
 
   body:has(#item-2:checked) .tech-zone {
-    background: #d0e4fc; /* Medium-light cool blue */
-    border: 1px solid #88b8e8;
+    background: #eaf5fe; /* Slightly more cool blue */
+    border: 1px solid #d0e0f2;
   }
 
   body:has(#item-2:checked) .tech-zone:hover {
-    background: #c0dcfb;
+    background: #e7f3fe;
   }
 
   body:has(#item-2:checked) .storage-zone {
-    background: #d0fce4; /* Medium-light green */
-    border: 1px solid #88e8b8;
+    background: #eafef5; /* Slightly more green */
+    border: 1px solid #d0f2e0;
   }
 
   body:has(#item-2:checked) .storage-zone:hover {
-    background: #c0fbdc;
+    background: #e7fef3;
   }
 
   body:has(#item-2:checked) .social-zone {
-    background: #fcd0e4; /* Medium-light warm red/pink */
-    border: 1px solid #e888b8;
+    background: #feeaf5; /* Slightly more warm red/pink */
+    border: 1px solid #f2d0e0;
   }
 
   body:has(#item-2:checked) .social-zone:hover {
-    background: #fbc0dc;
+    background: #fee7f3;
   }
 
   body:has(#item-2:checked) .personal-zone {
-    background: #e4d0fc; /* Medium-light purple */
-    border: 1px solid #b888e8;
+    background: #f5eafe; /* Slightly more purple */
+    border: 1px solid #e0d0f2;
   }
 
   body:has(#item-2:checked) .personal-zone:hover {
-    background: #dcc0fb;
+    background: #f3e7fe;
   }
 
   /* ================================================== */
-  /* 1980s - Medium Colors                             */
+  /* 1980s - Gentle Color Increase                     */
   /* ================================================== */
 
   body:has(#item-3:checked) .wall-zone {
@@ -174,52 +174,52 @@
   }
 
   body:has(#item-3:checked) .work-zone {
-    background: #fbd8c0; /* Medium warm orange */
-    border: 1px solid #e0a060;
+    background: #fef3e5; /* Gentle warm orange increase */
+    border: 1px solid #f0d8c8;
   }
 
   body:has(#item-3:checked) .work-zone:hover {
-    background: #fad0b0;
+    background: #fef1e2;
   }
 
   body:has(#item-3:checked) .tech-zone {
-    background: #c0d8fb; /* Medium cool blue */
-    border: 1px solid #60a0e0;
+    background: #e5f3fe; /* Gentle cool blue increase */
+    border: 1px solid #c8d8f0;
   }
 
   body:has(#item-3:checked) .tech-zone:hover {
-    background: #b0d0fa;
+    background: #e2f1fe;
   }
 
   body:has(#item-3:checked) .storage-zone {
-    background: #c0fbd8; /* Medium green */
-    border: 1px solid #60e0a0;
+    background: #e5fef3; /* Gentle green increase */
+    border: 1px solid #c8f0d8;
   }
 
   body:has(#item-3:checked) .storage-zone:hover {
-    background: #b0fad0;
+    background: #e2fef1;
   }
 
   body:has(#item-3:checked) .social-zone {
-    background: #fbc0d8; /* Medium warm red/pink */
-    border: 1px solid #e060a0;
+    background: #fee5f3; /* Gentle warm red/pink increase */
+    border: 1px solid #f0c8d8;
   }
 
   body:has(#item-3:checked) .social-zone:hover {
-    background: #fab0d0;
+    background: #fee2f1;
   }
 
   body:has(#item-3:checked) .personal-zone {
-    background: #d8c0fb; /* Medium purple */
-    border: 1px solid #a060e0;
+    background: #f3e5fe; /* Gentle purple increase */
+    border: 1px solid #d8c8f0;
   }
 
   body:has(#item-3:checked) .personal-zone:hover {
-    background: #d0b0fa;
+    background: #f1e2fe;
   }
 
   /* ================================================== */
-  /* 1990s - Medium-Dark Colors                        */
+  /* 1990s - Still Light, Slight Saturation           */
   /* ================================================== */
 
   body:has(#item-4:checked) .wall-zone {
@@ -228,52 +228,52 @@
   }
 
   body:has(#item-4:checked) .work-zone {
-    background: #f9ccb0; /* Medium-dark warm orange */
-    border: 1px solid #d88848;
+    background: #fef1e0; /* Still light warm orange */
+    border: 1px solid #eed0c0;
   }
 
   body:has(#item-4:checked) .work-zone:hover {
-    background: #f8c0a0;
+    background: #feeedd;
   }
 
   body:has(#item-4:checked) .tech-zone {
-    background: #b0ccf9; /* Medium-dark cool blue */
-    border: 1px solid #4888d8;
+    background: #e0f1fe; /* Still light cool blue */
+    border: 1px solid #c0d0ee;
   }
 
   body:has(#item-4:checked) .tech-zone:hover {
-    background: #a0c0f8;
+    background: #ddeefe;
   }
 
   body:has(#item-4:checked) .storage-zone {
-    background: #b0f9cc; /* Medium-dark green */
-    border: 1px solid #48d888;
+    background: #e0fef1; /* Still light green */
+    border: 1px solid #c0eed0;
   }
 
   body:has(#item-4:checked) .storage-zone:hover {
-    background: #a0f8c0;
+    background: #ddfeed;
   }
 
   body:has(#item-4:checked) .social-zone {
-    background: #f9b0cc; /* Medium-dark warm red/pink */
-    border: 1px solid #d84888;
+    background: #fee0f1; /* Still light warm red/pink */
+    border: 1px solid #eec0d0;
   }
 
   body:has(#item-4:checked) .social-zone:hover {
-    background: #f8a0c0;
+    background: #feeded;
   }
 
   body:has(#item-4:checked) .personal-zone {
-    background: #ccb0f9; /* Medium-dark purple */
-    border: 1px solid #8848d8;
+    background: #f1e0fe; /* Still light purple */
+    border: 1px solid #d0c0ee;
   }
 
   body:has(#item-4:checked) .personal-zone:hover {
-    background: #c0a0f8;
+    background: #edddfe;
   }
 
   /* ================================================== */
-  /* 2000s - Dark Colors                               */
+  /* 2000s - Subtle Color Depth                        */
   /* ================================================== */
 
   body:has(#item-5:checked) .wall-zone {
@@ -282,52 +282,52 @@
   }
 
   body:has(#item-5:checked) .work-zone {
-    background: #f7c0a0; /* Dark warm orange */
-    border: 1px solid #d07030;
+    background: #feeeda; /* Subtle warm orange depth */
+    border: 1px solid #ecc8b8;
   }
 
   body:has(#item-5:checked) .work-zone:hover {
-    background: #f6b090;
+    background: #feebd7;
   }
 
   body:has(#item-5:checked) .tech-zone {
-    background: #a0c0f7; /* Dark cool blue */
-    border: 1px solid #3070d0;
+    background: #daeefe; /* Subtle cool blue depth */
+    border: 1px solid #b8c8ec;
   }
 
   body:has(#item-5:checked) .tech-zone:hover {
-    background: #90b0f6;
+    background: #d7ebfe;
   }
 
   body:has(#item-5:checked) .storage-zone {
-    background: #a0f7c0; /* Dark green */
-    border: 1px solid #30d070;
+    background: #dafeed; /* Subtle green depth */
+    border: 1px solid #b8ecc8;
   }
 
   body:has(#item-5:checked) .storage-zone:hover {
-    background: #90f6b0;
+    background: #d7feeb;
   }
 
   body:has(#item-5:checked) .social-zone {
-    background: #f7a0c0; /* Dark warm red/pink */
-    border: 1px solid #d03070;
+    background: #fedaed; /* Subtle warm red/pink depth */
+    border: 1px solid #ecb8c8;
   }
 
   body:has(#item-5:checked) .social-zone:hover {
-    background: #f690b0;
+    background: #fed7eb;
   }
 
   body:has(#item-5:checked) .personal-zone {
-    background: #c0a0f7; /* Dark purple */
-    border: 1px solid #7030d0;
+    background: #eddafe; /* Subtle purple depth */
+    border: 1px solid #c8b8ec;
   }
 
   body:has(#item-5:checked) .personal-zone:hover {
-    background: #b090f6;
+    background: #ebd7fe;
   }
 
   /* ================================================== */
-  /* 2010s - Darker Colors                             */
+  /* 2010s - Gentle Richness                           */
   /* ================================================== */
 
   body:has(#item-6:checked) .wall-zone {
@@ -336,52 +336,52 @@
   }
 
   body:has(#item-6:checked) .work-zone {
-    background: #f5b490; /* Darker warm orange */
-    border: 1px solid #c85820;
+    background: #feecd5; /* Gentle rich warm orange */
+    border: 1px solid #eac0b0;
   }
 
   body:has(#item-6:checked) .work-zone:hover {
-    background: #f4a080;
+    background: #fee9d2;
   }
 
   body:has(#item-6:checked) .tech-zone {
-    background: #90b4f5; /* Darker cool blue */
-    border: 1px solid #2058c8;
+    background: #d5ecfe; /* Gentle rich cool blue */
+    border: 1px solid #b0c0ea;
   }
 
   body:has(#item-6:checked) .tech-zone:hover {
-    background: #80a0f4;
+    background: #d2e9fe;
   }
 
   body:has(#item-6:checked) .storage-zone {
-    background: #90f5b4; /* Darker green */
-    border: 1px solid #20c858;
+    background: #d5feec; /* Gentle rich green */
+    border: 1px solid #b0eac0;
   }
 
   body:has(#item-6:checked) .storage-zone:hover {
-    background: #80f4a0;
+    background: #d2fee9;
   }
 
   body:has(#item-6:checked) .social-zone {
-    background: #f590b4; /* Darker warm red/pink */
-    border: 1px solid #c82058;
+    background: #fed5ec; /* Gentle rich warm red/pink */
+    border: 1px solid #eab0c0;
   }
 
   body:has(#item-6:checked) .social-zone:hover {
-    background: #f480a0;
+    background: #fed2e9;
   }
 
   body:has(#item-6:checked) .personal-zone {
-    background: #b490f5; /* Darker purple */
-    border: 1px solid #5820c8;
+    background: #ecd5fe; /* Gentle rich purple */
+    border: 1px solid #c0b0ea;
   }
 
   body:has(#item-6:checked) .personal-zone:hover {
-    background: #a080f4;
+    background: #e9d2fe;
   }
 
   /* ================================================== */
-  /* 2020s - Darkest Colors                            */
+  /* 2020s - Soft Final Progression                    */
   /* ================================================== */
 
   body:has(#item-7:checked) .wall-zone {
@@ -390,48 +390,48 @@
   }
 
   body:has(#item-7:checked) .work-zone {
-    background: #f3a880; /* Darkest warm orange */
-    border: 1px solid #c04010;
+    background: #fee9d0; /* Soft final warm orange */
+    border: 1px solid #e8b8a8;
   }
 
   body:has(#item-7:checked) .work-zone:hover {
-    background: #f29070;
+    background: #fee6cd;
   }
 
   body:has(#item-7:checked) .tech-zone {
-    background: #80a8f3; /* Darkest cool blue */
-    border: 1px solid #1040c0;
+    background: #d0e9fe; /* Soft final cool blue */
+    border: 1px solid #a8b8e8;
   }
 
   body:has(#item-7:checked) .tech-zone:hover {
-    background: #7090f2;
+    background: #cde6fe;
   }
 
   body:has(#item-7:checked) .storage-zone {
-    background: #80f3a8; /* Darkest green */
-    border: 1px solid #10c040;
+    background: #d0fee9; /* Soft final green */
+    border: 1px solid #a8e8b8;
   }
 
   body:has(#item-7:checked) .storage-zone:hover {
-    background: #70f290;
+    background: #cdfee6;
   }
 
   body:has(#item-7:checked) .social-zone {
-    background: #f380a8; /* Darkest warm red/pink */
-    border: 1px solid #c01040;
+    background: #fed0e9; /* Soft final warm red/pink */
+    border: 1px solid #e8a8b8;
   }
 
   body:has(#item-7:checked) .social-zone:hover {
-    background: #f27090;
+    background: #fecde6;
   }
 
   body:has(#item-7:checked) .personal-zone {
-    background: #a880f3; /* Darkest purple */
-    border: 1px solid #4010c0;
+    background: #e9d0fe; /* Soft final purple */
+    border: 1px solid #b8a8e8;
   }
 
   body:has(#item-7:checked) .personal-zone:hover {
-    background: #9070f2;
+    background: #e6cdfe;
   }
 
   /* Enhanced transitions for zone backgrounds */
